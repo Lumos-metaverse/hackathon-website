@@ -1,0 +1,19 @@
+{
+  "name": "hackthon",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "flickity": "^3.0.0",
+    "gridsome": "^0.7.0",
+    "hooper": "^0.3.4",
+    "vue-carousel": "^0.18.0"
+  },
+  "devDependencies": {
+    "sass": "^1.53.0",
+    "sass-loader": "^10.1.1"
+  }
+}
