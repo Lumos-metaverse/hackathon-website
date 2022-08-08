@@ -12,7 +12,6 @@
       <Faq id="faq"/>
       <Discord/>
       <Reach/>
-      <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrJ1TCAysePBJFCl?backgroundColor=orange" frameborder="0" onmousewheel="" width="100%" height="631" style="background: transparent; border: 1px solid #ccc;"></iframe>
       <Footer/>
     </div>
   </Layout>
