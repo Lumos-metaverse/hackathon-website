@@ -17,7 +17,6 @@
     </div>
   </Layout>
 </template>
-<script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
 <script>
 import FirstSection from '~/components/FirstSection.vue'
 import SecondSection from '~/components/SecondSection.vue'
