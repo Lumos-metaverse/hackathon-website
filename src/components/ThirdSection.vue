@@ -135,8 +135,9 @@ export default {
                     deadline:'Jul 10, 2020',
                     content:'The offerings that Web3 brings through Governance as a use case is tremendous. We challenge you to be inspired by Participation, Transparency, Consensus, Equity and Inclusiveness, Effectiveness and Efficiency, and Ac...',
                     icon:require('~/assets/third/cards/logo7.png'),
-                    url:'/pillars-of-governance'
+                    url:'/pillar-of-governance'
                 },
+                
                 // {
                 //     name:'Streaming Payments',
                 //     prize:'$10,000',

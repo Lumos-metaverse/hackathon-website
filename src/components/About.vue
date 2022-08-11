@@ -11,8 +11,9 @@
         <div class="content">
             Lumos is a metaverse for builders to learn and flourish in the Web3 economy. We’re bringing builders a boundless canvas to showcase their career journey and aggregate their builder identity silos in one place. 
         </div>
-        <button class="learn-cta">LEARN MORE <g-image style="width:12px;height:12px;margin-left:14px;" width="12px" height="12px" src="~/assets/arrows/gold-arrow.svg"/></button>
-       </div>
+        <form> <button class="learn-cta" type="submit" formaction="https://medium.com/lumos-labs/were-building-the-lumos-metaverse-to-elevate-builder-opportunities-in-web3-fadc7ea9e908" formtarget="_blank">LEARN MORE <g-image style="width:12px;height:12px;margin-left:14px;" width="12px" height="12px" src="~/assets/arrows/gold-arrow.svg"/></button>
+      </form>
+      </div>
     </section>
 </template>
 <style lang="scss" scoped>
@@ -32,7 +33,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-left: 32px;
+            padding-left: 1px;
+           // margin-left: 150px;
             z-index: 2;
             height: 100%;
             width: 100%;
@@ -80,7 +82,7 @@
             height: 667px;
             position: absolute;
             top: 0;
-            left: -119px;
+            left: -19px;
             z-index: 1;
             img{
                 width: 100%;

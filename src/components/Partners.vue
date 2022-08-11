@@ -110,6 +110,11 @@
                         logo: require('~/assets/sponsors/logos/truts.png'),
                         url:'https://www.truts.xyz/'
                     },
+                    {
+                        name: 'Questbook',
+                        logo: require('~/assets/sponsors/logos/questbook.jpeg'),
+                        url:'https://www.questbookapp.com/'
+                    },
                 ]
             }
         }

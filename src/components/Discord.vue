@@ -8,7 +8,7 @@
                 <div id="circle">
                     <g-image class="img" src="~/assets/discord/circle.svg"/>
                     <div>
-                        <a href=" https://discord.gg/WyfmzJpzZd" target="_blank">
+                        <a href="https://discord.com/channels/961897117377515611/963384975741304832" target="_blank">
                             <g-image src="~/assets/discord/discord.png"/>
                         </a>
                     </div>

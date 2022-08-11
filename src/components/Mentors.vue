@@ -154,6 +154,13 @@ data () {
          position:'Founder, States DAO',
          image: require('~/assets/mentors/final/ingi.png'),
          companyLogo: require('~/assets/mentors/logo/states.png'),
+       },
+       {
+        name: 'Ramesh Ramdoss',
+        position: 'Co-Chair, IEEE Blockchain', 
+        image: require('~/assets/mentors/final/ramesh.png'),
+         companyLogo: require('~/assets/mentors/logo/ieee-blockchain.png'),
+         
        }
      ],
      //Slider configuration [obj]
