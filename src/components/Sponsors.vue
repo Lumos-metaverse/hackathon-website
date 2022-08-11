@@ -1,7 +1,7 @@
 <template>
     <section class="sponsors">
         <div class="title">
-            Sponsors & Partners
+            Sponsors
         </div>
 
         <div class="wrapper">
@@ -43,82 +43,34 @@
             return{
                 sponsors:[
                     {
-                        name: 'IEEE',
-                        logo: require('~/assets/sponsors/logos/ieee.png'),
-                        url:'https://www.ieee.org/'
+                        name: 'Polygon',
+                        logo: require('~/assets/sponsors/logos/Polygon.png'),
+                        url:'https://www.polygon.network/'
                     },
                     {
-                        name: 'Buildspace',
-                        logo: require('~/assets/sponsors/logos/buildspace.jpeg'),
-                        url:'https://buildspace.so/'
+                        name: 'Aeternity',
+                        logo: require('~/assets/sponsors/logos/Aeternity.png'),
+                        url:'https://aeternity.com/'
                     },
                     {
-                        name: 'LearnWeb3 DAO',
-                        logo: require('~/assets/sponsors/logos/learn.png'),
+                        name: 'Tezos',
+                        logo: require('~/assets/sponsors/logos/tezoz.png'),
+                        url:'https://tezos.com/'
                     },
                     {
-                        name:'Buidlers Tribe',
-                        logo: require('~/assets/sponsors/logos/builders.png'),
-                        url:'https://buidlerstribe.com/'
+                        name: 'Fluence',
+                        logo: require('~/assets/sponsors/logos/fluence.png'),
+                        url:'https://fluence.com/'
                     },
                     {
-                        name: 'The Product House',
-                        logo: require('~/assets/sponsors/logos/product.png'),
-                        url:'https://www.theproduct.house/'
+                        name: 'Router',
+                        logo: require('~/assets/sponsors/logos/router.png'),
+                        url:'https://router.com/'
                     },
                     {
-                        name: 'EasyA',
-                        logo: require('~/assets/sponsors/logos/easya.png'),
-                    },
-                    {
-                        name: 'CryptoDevHub',
-                        logo: require('~/assets/sponsors/logos/hub.png'),
-                        url:'https://cryptodevhub.io/'
-                    },
-                    {
-                        name: 'Vanderbilt University',
-                        logo: require('~/assets/sponsors/logos/vanderbilt.png'),
-                        url:'https://www.vanderbilt.edu/'
-                    },
-                    {
-                        name: 'Lirn.io',
-                        logo: require('~/assets/sponsors/logos/lirn.png'),
-                        url:'http://lirn.io/'
-                    },
-                    {
-                        name: 'States DAO',
-                        logo: require('~/assets/sponsors/logos/states.png'),
-                        url:'https://statesdao.club/'
-                    },
-                    {
-                        name: 'Blockchain San Diago',
-                        logo: require('~/assets/sponsors/logos/san.png'),
-                        url:'https://blockchain.ucsd.edu/'
-                    },
-                    {
-                        name: 'WebX DAO',
-                        logo: require('~/assets/sponsors/logos/webx.png'),
-                        url:'https://bio.link/webxdao'
-                    },
-                    {
-                        name: 'Web3 Conf',
-                        logo: require('~/assets/sponsors/logos/web3.png'),
-                        url:'https://web3confindia.xyz/#home'
-                    },
-                    {
-                        name: 'Web3 Bharat',
-                        logo: require('~/assets/sponsors/logos/bharat.png'),
-                        url:'https://web3bharat.xyz/'
-                    },
-                    {
-                        name: 'Truts',
-                        logo: require('~/assets/sponsors/logos/truts.png'),
-                        url:'https://www.truts.xyz/'
-                    },
-                    {
-                        name: 'Penblockchain',
-                        logo: require('~/assets/sponsors/logos/pen.png'),
-                        url:'http://pennblockchain.com/'
+                        name: 'Arcana',
+                        logo: require('~/assets/sponsors/logos/arcana.png'),
+                        url:'https://arcana.com/'
                     }
                 ]
             }

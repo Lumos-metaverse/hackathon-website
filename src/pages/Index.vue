@@ -6,13 +6,13 @@
       <ThirdSection  ref="third" :isMobile="isMobile"/>
       <FourthSection id="roadmap" ref="fourth" :isMobile="isMobile"/>
       <Sponsors :isMobile="isMobile"/>
+       <Partners :isMobile="isMobile"/>
       <Mentors class="mb" :isMobile="isMobile"/>
       <MentorsDesktop class="desktop"/>
       <About/>
       <Faq id="faq"/>
       <Discord/>
       <Reach/>
-      <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrJ1TCAysePBJFCl?backgroundColor=orange" frameborder="0" onmousewheel="" width="100%" height="631" style="background: transparent; border: 1px solid #ccc;"></iframe>
       <Footer/>
     </div>
   </Layout>
@@ -24,6 +24,7 @@ import SecondSection from '~/components/SecondSection.vue'
 import ThirdSection from '~/components/ThirdSection.vue'
 import FourthSection from '~/components/FourthSection.vue'
 import Sponsors from '~/components/Sponsors.vue'
+import Partners from '~/components/Partners.vue'
 import Mentors from '~/components/Mentors.vue'
 import MentorsDesktop from '~/components/MentorsDesktop.vue'
 import About from '~/components/About.vue'
@@ -39,6 +40,7 @@ export default {
     ThirdSection, 
     FourthSection,
     Sponsors,
+    Partners,
     Mentors,
     MentorsDesktop,
     About,

@@ -7,7 +7,7 @@
         <DesktopNav class="desktop-nav" v-if="!isMobile"/>
         <MenuIcon class="mobile-nav" v-if="isMobile" :isDrawerOpen="isDrawerOpen" @toggleDrawer="sendEvent"/>
         <a
-            href="https://discord.gg/XWj3ruPYsN" target="_blank"
+            href=" https://discord.gg/WyfmzJpzZd" target="_blank"
             v-if="!isMobile"
             class="nav-button center"
         >

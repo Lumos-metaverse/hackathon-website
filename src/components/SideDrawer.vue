@@ -11,7 +11,7 @@
                 {{ nav }}                
             </a>
             <a
-                href="https://discord.gg/XWj3ruPYsN" target="_blank"
+                href=" https://discord.gg/WyfmzJpzZd" target="_blank"
                 class="nav-button mg"
             >
             JOIN OUR DISCORD COMMUNITY
