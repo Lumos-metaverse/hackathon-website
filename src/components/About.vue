@@ -82,7 +82,7 @@
             height: 667px;
             position: absolute;
             top: 0;
-            left: -19px;
+            left: -15px;
             z-index: 1;
             img{
                 width: 100%;
