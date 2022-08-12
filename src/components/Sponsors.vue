@@ -179,7 +179,7 @@
                     line-height: 145.9%;
                     color: #FFFFFF;
                     img{
-                        width:70px !important;
+                        width:100px !important;
                         height:70px !important;
                         object-fit: contain;
                         margin-left: 16px;
