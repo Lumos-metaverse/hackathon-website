@@ -124,15 +124,16 @@
                 }
                 .sponsor{
                     position: absolute;
-                    width:36px;
-                    height: 36px;
+                    width:2rem;
+                    height: 2rem;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     img{
-                        width: 100%;
+                        width: 70%;
                         height: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
+                        transform: scale(3.0);
                     }
                 }
             }
@@ -179,8 +180,8 @@
                     line-height: 145.9%;
                     color: #FFFFFF;
                     img{
-                        width:100px !important;
-                        height:70px !important;
+                        width:100px;
+                        height:70px;
                         object-fit: contain;
                         margin-left: 16px;
                     }
@@ -261,7 +262,7 @@
                 width: 100%;
                 margin-top: auto;
                 display: block;
-                position: absolute;
+                position: absolute; 
                 bottom: 0;
                 left: 0;
                 max-height: 600px;

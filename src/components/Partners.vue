@@ -3,7 +3,6 @@
         <div class="title">
             Partners
         </div>
-
         <div class="wrapper">
             <div style="cursor:pointer" class="tile" v-for="(sponsor,i) in sponsors" :key="i" @click="openPage(sponsor.url)">
                 <g-image class="bg" src="~/assets/sponsors/tile.svg"></g-image>
@@ -21,7 +20,33 @@
                 </div>
             </div>
         </div>
+
+        <div class="subsection"> 
+            <div class="subtitle">
+           Knowledge Partners
+        </div>
+
+        <div class="wrapper">
+            <div style="cursor:pointer" class="tile" v-for="(knowledgesponsors,i) in knowledgesponsors" :key="i" @click="openPage(knowledgesponsors.url)">
+                <g-image class="bg" src="~/assets/sponsors/tile.svg"></g-image>
+                <div class="sponsor">
+                    <g-image :src="knowledgesponsors.logo"></g-image>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-desktop">
+            <div style="cursor:pointer" class="tile" v-for="(knowledgesponsors,i) in knowledgesponsors" :key="i" @click="openPage(knowledgesponsors.url)">
+                <g-image class="bg" src="~/assets/sponsors/tile-desktop.svg"></g-image>
+                <div class="sponsor">
+                    <g-image :src="knowledgesponsors.logo"></g-image>
+                    <div>{{knowledgesponsors.name}}</div>
+                </div>
+            </div>
+        </div>
+        </div>
+
     </section>
+    
 </template>
 <script>
     export default{
@@ -42,16 +67,6 @@
         data(){
             return{
                 sponsors:[
-                    {
-                        name: 'IEEE Blockchain',
-                        logo: require('~/assets/sponsors/logos/ieee-blockchain.png'),
-                        url:'https://www.ieee.org/'
-                    },
-                    {
-                        name: 'IEEE SA Standards Association',
-                        logo: require('~/assets/sponsors/logos/ieee-sa.png'),
-                        url:'https://www.ieee.org/'
-                    },
                     {
                         name: 'Buildspace',
                         logo: require('~/assets/sponsors/logos/buildspace.jpeg'),
@@ -113,8 +128,36 @@
                     {
                         name: 'Questbook',
                         logo: require('~/assets/sponsors/logos/questbook.jpeg'),
-                        url:'https://www.questbookapp.com/'
+                        url:'https://www.questbookapp/'
                     },
+                    {
+                        name: 'DeveloperDAO',
+                        logo: require('~/assets/sponsors/logos/D_D_logo-dark.svg'),
+                        url:'https://www.developerdao.com/'
+                    },
+                    {
+                        name: 'Blockchain Nigeria',
+                        logo: require('~/assets/sponsors/logos/BNUG_white.png'),
+                        url:'https://blockchainnigeria.group/'
+                    },
+                    {
+                        name: 'OGClubDAO',
+                        logo: require('~/assets/sponsors/logos/ogclub.jpeg'),
+                        url:'https://twitter.com/OgclubDAO'
+                    },
+                ],
+                knowledgesponsors:[
+                     {
+                        name: 'IEEE Blockchain',
+                        logo: require('~/assets/sponsors/logos/ieee-blockchain.png'),
+                        url:'https://www.ieee.org/'
+                    },
+                    {
+                        name: 'IEEE SA Standards Association',
+                        logo: require('~/assets/sponsors/logos/ieee-sa.png'),
+                        url:'https://www.ieee.org/'
+                    },
+
                 ]
             }
         }
@@ -144,6 +187,18 @@
             padding-left:32px;
             margin-bottom: 25px;
         }
+        .sub-title{
+            font-family: 'Brinnan';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 145.9%;
+            letter-spacing: -0.015em;
+            color: #FFFFFF;
+            padding-left:32px;
+            margin-bottom: 25px;
+
+        }
         .wrapper{ 
                 display: grid;
                 row-gap: 12px;
@@ -151,7 +206,7 @@
                 width: 100%;
                 column-gap: 12px;
                 grid-template-columns: auto auto auto auto;
-                padding-bottom: 100px;
+                padding-bottom: 10px;
 
             .tile{
                 position: relative;
@@ -260,6 +315,9 @@
         }
                 
     }
+.subsection{
+  padding-top:50px;
+}
 
 </style>
 <style lang="scss" scoped>
@@ -279,6 +337,21 @@
                 font-size: 45px;
                 line-height: 145.9%;
                 padding-top:176px;
+                margin-left: 305px;
+                padding-bottom: 50px;
+                /* or 90px */
+
+                letter-spacing: -0.015em;
+
+                color: #FFFFFF;
+            }
+            .subtitle{
+                 font-family: 'Brinnan';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 145.9%;
+                padding-top:30px;
                 margin-left: 305px;
                 padding-bottom: 50px;
                 /* or 90px */
