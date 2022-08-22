@@ -1,27 +1,7 @@
 <template>
     <section class="sponsors">
-        <div class="title">
-            Partners
-        </div>
-        <div class="wrapper">
-            <div style="cursor:pointer" class="tile" v-for="(sponsor,i) in sponsors" :key="i" @click="openPage(sponsor.url)">
-                <g-image class="bg" src="~/assets/sponsors/tile.svg"></g-image>
-                <div class="sponsor">
-                    <g-image :src="sponsor.logo"></g-image>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper-desktop">
-            <div style="cursor:pointer" class="tile" v-for="(sponsor,i) in sponsors" :key="i" @click="openPage(sponsor.url)">
-                <g-image class="bg" src="~/assets/sponsors/tile-desktop.svg"></g-image>
-                <div class="sponsor">
-                    <g-image :src="sponsor.logo"></g-image>
-                    <div>{{sponsor.name}}</div>
-                </div>
-            </div>
-        </div>
 
-        <div class="subsection"> 
+                <div class="subsection"> 
             <div class="subtitle">
            Knowledge Partners
         </div>
@@ -44,6 +24,28 @@
             </div>
         </div>
         </div>
+        
+        <div class="title">
+          Community Partners
+        </div>
+        <div class="wrapper">
+            <div style="cursor:pointer" class="tile" v-for="(sponsor,i) in sponsors" :key="i" @click="openPage(sponsor.url)">
+                <g-image class="bg" src="~/assets/sponsors/tile.svg"></g-image>
+                <div class="sponsor">
+                    <g-image :src="sponsor.logo"></g-image>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-desktop">
+            <div style="cursor:pointer" class="tile" v-for="(sponsor,i) in sponsors" :key="i" @click="openPage(sponsor.url)">
+                <g-image class="bg" src="~/assets/sponsors/tile-desktop.svg"></g-image>
+                <div class="sponsor">
+                    <g-image :src="sponsor.logo"></g-image>
+                    <div>{{sponsor.name}}</div>
+                </div>
+            </div>
+        </div>
+
 
     </section>
     
