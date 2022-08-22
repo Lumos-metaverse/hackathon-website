@@ -81,6 +81,11 @@
                         url:'https://buidlerstribe.com/'
                     },
                     {
+                        name: 'DeveloperDAO',
+                        logo: require('~/assets/sponsors/logos/D_D_logo-dark.svg'),
+                        url:'https://www.developerdao.com/'
+                    },
+                    {
                         name: 'The Product House',
                         logo: require('~/assets/sponsors/logos/product.png'),
                         url:'https://www.theproduct.house/'
@@ -133,11 +138,6 @@
                         url:'https://www.questbookapp/'
                     },
                     {
-                        name: 'DeveloperDAO',
-                        logo: require('~/assets/sponsors/logos/D_D_logo-dark.svg'),
-                        url:'https://www.developerdao.com/'
-                    },
-                    {
                         name: 'Blockchain Nigeria',
                         logo: require('~/assets/sponsors/logos/BNUG_white.png'),
                         url:'https://blockchainnigeria.group/'
@@ -152,12 +152,12 @@
                      {
                         name: 'IEEE Blockchain',
                         logo: require('~/assets/sponsors/logos/ieee-blockchain.png'),
-                        url:'https://www.ieee.org/'
+                        url:'https://blockchain.ieee.org/'
                     },
                     {
                         name: 'IEEE SA Standards Association',
                         logo: require('~/assets/sponsors/logos/ieee-sa.png'),
-                        url:'https://www.ieee.org/'
+                        url:'https://standards.ieee.org/'
                     },
 
                 ]
@@ -193,7 +193,7 @@
             font-family: 'Brinnan';
             font-style: normal;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 30px;
             line-height: 145.9%;
             letter-spacing: -0.015em;
             color: #FFFFFF;
@@ -338,7 +338,7 @@
                 font-weight: 700;
                 font-size: 45px;
                 line-height: 145.9%;
-                padding-top:176px;
+                padding-top:100px;
                 margin-left: 305px;
                 padding-bottom: 50px;
                 /* or 90px */
@@ -351,7 +351,7 @@
                  font-family: 'Brinnan';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 25px;
+                font-size: 45px;
                 line-height: 145.9%;
                 padding-top:30px;
                 margin-left: 305px;
