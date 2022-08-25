@@ -17,15 +17,16 @@
     </div>    
 </template>
 <script>
+
 import FadeLine from '~/components/FadeLine.vue'
 import MenuIcon from '~/components/MenuIcon.vue'
 import DesktopNav from '~/components/DesktopNav.vue'
 export default {
     name:'Header',
     components:{
-        FadeLine,
-        MenuIcon,
-        DesktopNav
+    FadeLine,
+    MenuIcon,
+    DesktopNav,
     },
     methods:{
         sendEvent(){
@@ -44,6 +45,8 @@ export default {
     }
 }
 </script>
+<!-- Google tag (gtag.js) - Google Analytics -->
+
 <style lang="scss" scoped>
 @font-face {
     font-family: Inter;

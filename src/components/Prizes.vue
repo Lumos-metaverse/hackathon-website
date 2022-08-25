@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="wrap">
-            <div class="row" v-for="(row,idx) in prizes" :key="idx">
+            <div class="row" v-for="(row,idx) in prizes1" :key="idx">
                 <div class="cell" v-for="(cell,idx) in row" :key="idx">
                     <div v-if="cell && cell.icon" style="margin-right:18px">
                         <g-image :src="cell.icon" width="109px" height="109px"/>
@@ -21,6 +21,22 @@
                 </div>
             </div>
         </div>
+
+        //buildertribe price section
+        <div class="wrap">
+            <div class="row" v-for="(row,idx) in prizes2" :key="idx">
+                <div class="cell" v-for="(cell,idx) in row" :key="idx">
+                    <div v-if="cell && cell.icon" style="margin-right:18px">
+                        <g-image :src="cell.icon" width="109px" height="109px"/>
+                    </div>
+                    <div style="text-align:center">
+                        <div class="name">{{cell.name}}</div>
+                        <div class="cash1">${{cell.cash}}</div>
+                        <div class="description">EACH IN CONVERTIBLE GRANTS FROM BUILDERSTRIBE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -28,38 +44,26 @@
         name:'Prizes',
         data:function(){
             return{
-                prizes:[
+                prizes1:[
                     [
                         {
-                            name:'Grand Champion',
-                            cash:'50,000',
+                            name:'WIN FROM A LARGE PRIZE POOL OF',
+                            cash:'100,000+',
                             icon:require('~/assets/third/medal.png'),
-                        }
+                        },
+
                     ],
+                ],
+                 prizes2:[
                     [
                         {
-                            name:'Expert Award',
-                            cash:'25,000',
+                            name:'WIN UPTO',
+                            cash:'25,000*',
+                            icon:require('~/assets/third/bd.png'),
+                            //description: "each in Convertible Grants from BuildersTribe"
                         },
-                        {
-                            name:'Intermediate Award',
-                            cash:'15,000',
-                        },
-                        {
-                            name:'Beginner Award',
-                            cash:'10,000',
-                        }
+
                     ],
-                    [
-                        {
-                            name: 'Top 10 Projects',
-                            cash:'1,000',
-                        },
-                        {
-                            name:'Top 20 projects',
-                            cash: '700'
-                        }
-                    ]
                 ]
             }
         }
@@ -130,6 +134,22 @@
                         font-size: 40px;
                         letter-spacing: -0.015em;
                         color: #FDC506;
+                    }
+                    .cash1{
+                        font-family: 'Brinnan';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 40px;
+                        letter-spacing: -0.015em;
+                        color: #B4E32D;
+                    }
+                    .description{
+                        font-family: 'Brinnan';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        letter-spacing: -0.015em;
+                        color: #FFFFFF;
                     }
                 }
             }

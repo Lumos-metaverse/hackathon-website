@@ -8,6 +8,8 @@
 <script>
 import Header from '~/components/Header.vue'
 import SideDrawer from '~/components/SideDrawer.vue'
+import VueGtag from "vue-gtag";
+
 export default {
   components:{
     SideDrawer,

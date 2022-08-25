@@ -32,6 +32,11 @@ import Faq from '~/components/Faq.vue'
 import Discord from '~/components/Discord.vue'
 import Reach from '~/components/Reach.vue'
 import Footer from '~/components/Footer.vue'
+import VueGtag from "vue-gtag";
+
+// Vue.use(VueGtag, {
+//   config: { id: "UA-238485203-1" }
+// });
 export default {
   name:'Index',
   components:{
@@ -124,7 +129,8 @@ export default {
 }
 </script>
 
-//google analytics code 
+//google analytics code for vue
+
 
 
 <style lang="scss" scoped>
