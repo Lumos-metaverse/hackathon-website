@@ -20,24 +20,14 @@
             return{
                 roadmap:[
                     {
-                        date:'Aug - 16th',
-                        title:'Hackathon Pre Registration Start',
-                        endDate:'2022-08-16'
-                    },
-                    {
-                        date:'Aug - 30th',
-                        title:'Sponsors & Track Onboarding Deadline',
-                        endDate:'2022-08-30'
-                    },
-                    {
                         date:'Sept - 1st',
                         title:'Hackathon Official launch- Registration Start',
-                        endDate:'2022-09-01'
+                        endDate:'2022-09-02'
                     },
                     {
-                        date:'Sept - 30th',
+                        date:'Oct - 15th',
                         title:'Registration Close',
-                        endDate:'2022-09-30'
+                        endDate:'2022-10-15'
                     },
                     {
                         date:'Sept - Oct',

@@ -129,6 +129,13 @@ data () {
         image: require('~/assets/mentors/final/ramesh.png'),
          companyLogo: require('~/assets/mentors/logo/ieee-blockchain.png'),
          
+       },
+        {
+        name: 'Gnana Lakshmi T C',
+        position: 'Founder, The Phoenix Guild', 
+        image: require('~/assets/mentors/final/gyan.png'),
+         companyLogo: require('~/assets/mentors/logo/pguild.png'),
+         
        }
      ],
    }
