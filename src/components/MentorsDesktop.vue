@@ -107,13 +107,13 @@ data () {
        },
        {
          name:'Chunda McCain',
-         position:'Founder, Pen Blockchain',
+         position:'President, Pen Blockchain',
          image: require('~/assets/mentors/final/chundan.png'),
          companyLogo: require('~/assets/mentors/logo/pen.png'),
        },
        {
          name:'Kunal Arora',
-         position:'Founder, Blockchain San Diago',
+         position:' Co-Founder, Blockchain San Diago',
          image: require('~/assets/mentors/final/kunal.png'),
          companyLogo: require('~/assets/mentors/logo/san.png'),
        },

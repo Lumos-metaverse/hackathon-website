@@ -240,29 +240,30 @@ export default {
       ],
 
       //bounty for the hackathon
-      bounty: [{
-        name: "Arcana",
-          prize: "200000 USD",
-          level: "Beginner",
-          participants: "324",
-          //deadline: "Jul 10, 2020",
-          content:
-            "One the most popular problem statements that #BUIDLers are solving for in the Web3 space - Developer Tooling and infrastructure. Make the work a better place for developers and solve for one of the problem s...",
-          icon: require("~/assets/third/cards/arcana.png"),
-          url: "/builders-toolbox",
+      bounty: [
+      //   {
+      //   name: "Arcana",
+      //     prize: "200000 USD",
+      //     level: "Beginner",
+      //     participants: "324",
+      //     //deadline: "Jul 10, 2020",
+      //     content:
+      //       "One the most popular problem statements that #BUIDLers are solving for in the Web3 space - Developer Tooling and infrastructure. Make the work a better place for developers and solve for one of the problem s...",
+      //     icon: require("~/assets/third/cards/arcana.png"),
+      //     url: "/builders-toolbox",
 
-      },
-      {
-          name: "Arcana",
-          prize: "200000 USD",
-          level: "Beginner",
-          participants: "324",
-          //deadline: "Jul 10, 2020",
-          content:
-            "One the most popular problem statements that #BUIDLers are solving for in the Web3 space - Developer Tooling and infrastructure. Make the work a better place for developers and solve for one of the problem s...",
-          icon: require("~/assets/third/cards/arcana.png"),
-          url: "/builders-toolbox",
-      }
+      // },
+      // {
+      //     name: "Arcana",
+      //     prize: "200000 USD",
+      //     level: "Beginner",
+      //     participants: "324",
+      //     //deadline: "Jul 10, 2020",
+      //     content:
+      //       "One the most popular problem statements that #BUIDLers are solving for in the Web3 space - Developer Tooling and infrastructure. Make the work a better place for developers and solve for one of the problem s...",
+      //     icon: require("~/assets/third/cards/arcana.png"),
+      //     url: "/builders-toolbox",
+      // }
       
       ],
     };

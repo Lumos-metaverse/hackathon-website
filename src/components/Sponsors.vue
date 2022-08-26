@@ -1,6 +1,6 @@
 <template>
     <section class="sponsors">
-        <div class="title">
+        <div id="sponsors" class="title">
             Sponsors
         </div>
 

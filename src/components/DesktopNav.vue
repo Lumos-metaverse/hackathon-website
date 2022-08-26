@@ -17,7 +17,7 @@ export default {
     name:'DesktopNav',
     data(){
         return{
-           navs:['tracks','sponsors','about','faq'] 
+           navs:['tracks','sponsors', 'partners','about','faq'] 
         }
     }
 }

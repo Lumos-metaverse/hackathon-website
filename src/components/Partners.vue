@@ -1,7 +1,7 @@
 <template>
     <section class="sponsors">
 
-                <div class="subsection"> 
+                <div id="partners" class="subsection"> 
             <div class="subtitle">
            Knowledge Partners
         </div>
@@ -27,21 +27,21 @@
         
         <div class="title">
           Community Partners
-        </div>
+        </div> 
         <div class="wrapper">
-            <div style="cursor:pointer" class="tile" v-for="(sponsor,i) in sponsors" :key="i" @click="openPage(sponsor.url)">
+            <div style="cursor:pointer" class="tile" v-for="(partners,i) in partners" :key="i" @click="openPage(sponsor.url)">
                 <g-image class="bg" src="~/assets/sponsors/tile.svg"></g-image>
                 <div class="sponsor">
-                    <g-image :src="sponsor.logo"></g-image>
+                    <g-image :src="partners.logo"></g-image>
                 </div>
             </div>
         </div>
         <div class="wrapper-desktop">
-            <div style="cursor:pointer" class="tile" v-for="(sponsor,i) in sponsors" :key="i" @click="openPage(sponsor.url)">
+            <div style="cursor:pointer" class="tile" v-for="(partners,i) in partners" :key="i" @click="openPage(sponsor.url)">
                 <g-image class="bg" src="~/assets/sponsors/tile-desktop.svg"></g-image>
                 <div class="sponsor">
-                    <g-image :src="sponsor.logo"></g-image>
-                    <div>{{sponsor.name}}</div>
+                    <g-image :src="partners.logo"></g-image>
+                    <div>{{partners.name}}</div>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
 </template>
 <script>
     export default{
-        name:'Sponsors',
+        name:'Partners',
         props:{
             isMobile: {
                 type: Boolean,
@@ -68,7 +68,7 @@
         },
         data(){
             return{
-                sponsors:[
+                partners:[
                     {
                         name: 'Buildspace',
                         logo: require('~/assets/sponsors/logos/buildspace.jpeg'),
@@ -147,6 +147,11 @@
                         logo: require('~/assets/sponsors/logos/ogclub.jpeg'),
                         url:'https://twitter.com/OgclubDAO'
                     },
+                    {
+                        name: 'Penn Blockchain',
+                        logo: require('~/assets/sponsors/logos/pen.png'),
+                        url:'http://pennblockchain.com/'
+                    }
                 ],
                 knowledgesponsors:[
                      {

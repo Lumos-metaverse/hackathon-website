@@ -33,6 +33,7 @@
                         <div class="name">{{cell.name}}</div>
                         <div class="cash1">${{cell.cash}}</div>
                         <div class="description">EACH IN CONVERTIBLE GRANTS FROM BUILDERSTRIBE</div>
+                        <div class="disclamer">*Startups with traction</div>
                     </div>
                 </div>
             </div>
@@ -148,6 +149,14 @@
                         font-style: normal;
                         font-weight: 700;
                         font-size: 16px;
+                        letter-spacing: -0.015em;
+                        color: #FFFFFF;
+                    }
+                    .disclamer{
+                        font-family: 'Brinnan';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
                         letter-spacing: -0.015em;
                         color: #FFFFFF;
                     }
