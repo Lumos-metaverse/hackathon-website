@@ -12,7 +12,7 @@
           <div class="sub-title">
             Push the boundaries of the innovation in Web3 and win exciting prizes!
           </div>
-          <a href="https://bit.ly/HackathonRegistrationLL">
+          <a href="https://lu.ma/1bvd0pkf" target="_blank" rel="noopener noreferrer" >
           <button class="r-btn">
               REGISTER
               <g-image style="width:9px;height:9px;margin-left:17px;" width="12" height="12" src="~/assets/arrows/purple-arrow.svg"/>
