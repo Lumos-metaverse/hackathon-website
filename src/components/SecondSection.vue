@@ -79,8 +79,8 @@ export default {
             width:100%;
             margin-top: auto;
             img{
-                width:100%;
-                height: 100%;
+                width:90%;
+                height: 80%;
                 object-fit: contain;
             }
         }

@@ -5,8 +5,9 @@ const c4 = () => import(/* webpackChunkName: "page--src--pages--can-you-dao-it-v
 const c5 = () => import(/* webpackChunkName: "page--src--pages--defi-the-odds-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/defi-the-odds.vue")
 const c6 = () => import(/* webpackChunkName: "page--src--pages--entertainment-central-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/entertainment-central.vue")
 const c7 = () => import(/* webpackChunkName: "page--src--pages--builders-toolbox-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/builders-toolbox.vue")
-const c8 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/node_modules/gridsome/app/pages/404.vue")
-const c9 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/Index.vue")
+const c8 = () => import(/* webpackChunkName: "page--src--pages--alltracks-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/alltracks.vue")
+const c9 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/node_modules/gridsome/app/pages/404.vue")
+const c10 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/Index.vue")
 
 export default [
   {
@@ -38,18 +39,22 @@ export default [
     component: c7
   },
   {
+    path: "/alltracks/",
+    component: c8
+  },
+  {
     name: "404",
     path: "/404/",
-    component: c8
+    component: c9
   },
   {
     name: "home",
     path: "/",
-    component: c9
+    component: c10
   },
   {
     name: "*",
     path: "*",
-    component: c8
+    component: c9
   }
 ]

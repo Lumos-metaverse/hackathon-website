@@ -12,7 +12,7 @@
             <div class="row" v-for="(row,idx) in prizes1" :key="idx">
                 <div class="cell" v-for="(cell,idx) in row" :key="idx">
                     <div v-if="cell && cell.icon" style="margin-right:18px">
-                        <g-image :src="cell.icon" width="109px" height="109px"/>
+                        <g-image :src="cell.icon" width="60px" height="89px"/>
                     </div>
                     <div style="text-align:center">
                         <div class="name">{{cell.name}}</div>
@@ -22,12 +22,12 @@
             </div>
         </div>
 
-        //buildertribe price section
+        
         <div class="wrap">
             <div class="row" v-for="(row,idx) in prizes2" :key="idx">
                 <div class="cell" v-for="(cell,idx) in row" :key="idx">
-                    <div v-if="cell && cell.icon" style="margin-right:18px">
-                        <g-image :src="cell.icon" width="109px" height="109px"/>
+                    <div v-if="cell && cell.icon" style="margin-right:12px">
+                        <g-image :src="cell.icon" width="60px" height="50px"/>
                     </div>
                     <div style="text-align:center">
                         <div class="name">{{cell.name}}</div>
@@ -140,7 +140,7 @@
                         font-family: 'Brinnan';
                         font-style: normal;
                         font-weight: 700;
-                        font-size: 40px;
+                        font-size: 26px;
                         letter-spacing: -0.015em;
                         color: #B4E32D;
                     }
@@ -148,7 +148,7 @@
                         font-family: 'Brinnan';
                         font-style: normal;
                         font-weight: 700;
-                        font-size: 16px;
+                        font-size: 10px;
                         letter-spacing: -0.015em;
                         color: #FFFFFF;
                     }
@@ -166,30 +166,30 @@
     }
 </style>
 <style lang="scss" scoped>
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
         .prizes{
             .head{
                 .title{
-                    font-size: 45px;
+                    font-size: 36px;
                     letter-spacing: -0.015em;
                 }
                 .sub-title{
                     max-width: 370px;
-                    font-size: 16px;
+                    font-size: 12px;
                     margin-bottom: 64px;
                 }
             }
             .wrap{
                 .row{
                     .cell{
-                        min-width: 320px;
+                        min-width: 300px;
                         max-height:165.14px;
                         margin-bottom: 29px;
                         .name{
-                            font-size: 20px;
+                            font-size: 12px;
                         }
                         .cash{
-                            font-size: 58.88px;
+                            font-size: 32.88px;
                         }
                     }
                 }

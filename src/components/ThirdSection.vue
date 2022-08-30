@@ -28,7 +28,15 @@
       </div> -->
       <!-- Polygon Track-->
       <div>
-        <div class="altttile"> Polygon Track</div>
+        
+         <div class="altttile">
+             <div>
+          <g-image v-if="isMobile" src="~/assets/third/polygon-matic-logo.svg" />
+          <g-image v-else src="~/assets/third/polygon-matic-logo.svg" />
+        </div>
+        <div>Polygon Track</div>
+       
+      </div>
         <div class="tracks">
         <div class="card" v-for="(polygontrack, i) in polygontrack" :key="i">
           <div class="inner-card">
@@ -70,6 +78,11 @@
       </div>
       </div>
       
+     <!-- Associate Tracks -->
+     
+    <div class="title">Associate Track</div>
+
+
      <!-- Router Protocol-->
      <div>
         <div class="altttile"> Router Protocol Track</div>
@@ -114,9 +127,9 @@
       </div>
       </div>
       
-      <!-- Archana Network Track-->
+      <!-- Arcana Network Track-->
       <div>
-        <div class="altttile"> Archana Network Track</div>
+        <div class="altttile"> Arcana Network Track</div>
         <div class="tracks">
         <div class="card" v-for="(ArcanaNetwork, i) in ArcanaNetwork" :key="i">
           <div class="inner-card">
@@ -160,46 +173,51 @@
       
       <!-- All other Tracks-->
 
-       <div class="altttile"> All Tracks</div>
-      <div class="bounty">
-        <div class="cardforbounty" v-for="(track, i) in tracks" :key="i">
-          <div class="inner-card">
-            <div class="name">
-              <div class="icon">
-                <div class="layer">
-                  <img :src="track.icon" />
-                </div>
-              </div>
-              <div class="t">{{ track.name }}</div>
-            </div>
-            <div class="details">
-              {{ track.content }}
-            </div>
-            <div class="buttons">
-              <g-link
+      <!--  <div class="altttile"> All Tracks</div> -->
+     <!--   <div class="bounty"> -->
+       <!-- <div class="cardforbounty" v-for="(track, i) in tracks" :key="i">   -->
+       <!--   <div class="inner-card">   -->
+        <!--    <div class="name">  -->
+        <!--      <div class="icon">  -->
+        <!--        <div class="layer">  -->
+        <!--          <img :src="track.icon" />  -->
+        <!--        </div>  -->
+        <!--      </div>  -->
+        <!--      <div class="t">{{ track.name }}</div>  -->
+        <!--    </div>  -->
+        <!--    <div class="details">  -->
+        <!--      {{ track.content }}  -->
+        <!--    </div>  -->
+        <!--    <div class="buttons">  -->
+        <!--      <g-link  -->
+        <!--        style="text-decoration: none; cursor: pointer"  -->
+        <!--        :to="track.url"  -->
+        <!--      >  -->
+        <!--        <button class="learn">  -->
+        <!--          LEARN MORE  -->
+        <!--          <g-image  -->
+        <!--            style="width: 12px; height: 12px; margin-left: 8px"  -->
+        <!--            width="12"  -->
+        <!--            height="12"  -->
+        <!--            src="~/assets/arrows/purple-arrow.svg"  -->
+        <!--          />  -->
+        <!--        </button>  -->
+        <!--      </g-link>  -->
+        <!--      <div class="sponsor" v-if="track && track.sponsor">  -->
+        <!--        <div>Sponsors:</div>  -->
+        <!--        <div>  -->
+        <!--          <img :src="track.sponsor" />  -->
+        <!--        </div>  -->
+       <!--       </div>  -->
+        <!--    </div>  -->
+        <!--  </div>  -->
+     <!--   </div>  -->
+    <!--  </div>  -->
+    <g-link :to=website.url> Click Here for tracks </g-link>
+    <g-link
                 style="text-decoration: none; cursor: pointer"
-                :to="track.url"
+                :to="/alltracks/"
               >
-                <button class="learn">
-                  LEARN MORE
-                  <g-image
-                    style="width: 12px; height: 12px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/arrows/purple-arrow.svg"
-                  />
-                </button>
-              </g-link>
-              <div class="sponsor" v-if="track && track.sponsor">
-                <div>Sponsors:</div>
-                <div>
-                  <img :src="track.sponsor" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <button class="rotating-button">
         VIEW ALL
         <g-image
@@ -209,8 +227,9 @@
           src="~/assets/arrows/gold-arrow.svg"
         />
       </button>
+      </g-link>
     </div>
-    <div class="content" style="margin-top: 30px">
+    <!-- <div class="content" style="margin-top: 30px">
       <div class="title">BOUNTIES</div>
       <div class="sub-title">
         Choose a Problem Statement based on your interest and win exciting
@@ -258,15 +277,17 @@
           <div class="hr"> </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 <script>
 import Prizes from "../components/Prizes.vue";
+import alltracks from "../pages/alltracks.vue";
 export default {
   name: "ThirdSection",
   components: {
     Prizes,
+    alltracks
   },
   props: {
     isMobile: {
@@ -276,6 +297,11 @@ export default {
   },
   data() {
     return {
+               website: [ {
+        url: "/alltracks",
+       }
+
+       ],
         polygontrack: [
             {
           name: "Best DeFi App built on Polygon ",
@@ -559,7 +585,10 @@ export default {
     z-index: 1;
     .tracks {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 9px;
+      justify-content:center;
+
     }
 
     .rotating-button {
@@ -582,20 +611,27 @@ export default {
       margin-top: 100px;
       cursor: pointer;
       transition: transform 2s ease-in-out;
-      display: none;
+      display:flex;
     }
     .rotating-button:hover {
       transform: rotate(-360deg);
     }
     .card {
+        //place three cards in a row
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      
       min-height: 250px;
       width: 70%;
       // margin:0 auto;
-      margin-right: auto;
-      margin-left: auto;
-      max-width: 450px;
-      margin-bottom: 19px;
-      display: flex;
+     
+      max-width: 440px;
+      
       align-items: center;
       justify-content: center;
       // background: linear-gradient(180deg, rgba(90, 62, 158, 0.9) 0%, rgba(60, 41, 116, 0.9) 0.01%, rgba(111, 47, 153, 0.9) 100%);
@@ -1089,22 +1125,23 @@ export default {
       }
     }
     .altttile {
-     width: 80%;
-      margin: 0 auto;
-      margin-bottom: 53px;
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 25px;
-      line-height: 145.9%;
+     display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
       padding-bottom: 30px;
-      /* or 20px */
-
-      text-align: center;
+      font-family: "Brinnan";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 27px;
+      line-height: 145.9%;
       letter-spacing: -0.015em;
-
-      color: rgba(255, 255, 255, 0.8);
-      margin-top: 10px;
+      color: #ffffff;
+      img {
+        margin-left: 5px;
+        padding-right: 10px;
+      }
     }
     
     .sub-title {
@@ -1146,19 +1183,22 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
-@media (min-width: 768px) {
+@media (max-width: 750px) {
   .third {
     .content {
       .rotating-button {
         display: flex;
       }
       .tracks {
-        margin: 0 auto;
-        max-width: 1200px;
-        justify-content: center;
+        margin: 0 0;
+        //max-width: 1200px;
+        justify-content:center;
+        flex-direction:column;
+        align-content: center;
+        
       }
       .card {
-        margin-right: 63px;
+        margin-right: 0px;
         margin-bottom: 40px;
         margin-left: 0;
         .inner-card {
@@ -1169,11 +1209,9 @@ export default {
           }
         }
       }
-      .card:nth-child(2n) {
-        margin-right: 0;
-      }
+     
       .title {
-        font-size: 45px;
+        font-size: 20px;
         margin-top: 169px;
       }
       .sub-title {
@@ -1190,6 +1228,13 @@ export default {
         width: 45%;
       }
     }
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .tracks {
+    flex-direction: column;
+    align-items: center;
   }
 }
 </style>
