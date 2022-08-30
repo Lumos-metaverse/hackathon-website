@@ -8,9 +8,12 @@
                 <div class="s-btn" @click="registerNow">
                     <g-image class="outline" src="~/assets/fourth/btn-outline.svg"></g-image>
                     <g-image id="bg" ref="bg" class="bg" src="~/assets/fourth/btn.svg"/>
-                    <div id="outline" ref="outline">REGISTER NOW
-                        <g-image style="width:9px;height:9px;margin-left:8px;" width="12" height="12" src="~/assets/arrows/purple-arrow.svg"/>
+                    <a href="https://lu.ma/1bvd0pkf" target="_blank" rel="noopener noreferrer">
+                    <div id="outline" ref="outline">
+                    REGISTER NOW
+                    <g-image style="width:9px;height:9px;margin-left:8px;" width="12" height="12" src="~/assets/arrows/purple-arrow.svg"/>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
