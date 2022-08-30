@@ -14,7 +14,7 @@
         Choose a track based on your skill level and win exciting prizes
       </div>
       <!-- nav bar menu for sorting-->
-      <div class="nav-container">
+      <!-- <div class="nav-container">
         <div class="nav-links">
           <a
             class="nav-button"
@@ -25,9 +25,144 @@
             {{ nav }}
           </a>
         </div>
+      </div> -->
+      <!-- Polygon Track-->
+      <div>
+        <div class="altttile"> Polygon Track</div>
+        <div class="tracks">
+        <div class="card" v-for="(polygontrack, i) in polygontrack" :key="i">
+          <div class="inner-card">
+            <div class="name">
+              <div class="icon">
+                <div class="layer">
+                  <img :src="polygontrack.icon" />
+                </div>
+              </div>
+              <div class="t">{{ polygontrack.name }}</div>
+            </div>
+            <div class="details">
+              {{ polygontrack.content }}
+            </div>
+            <div class="buttons">
+              <g-link
+                style="text-decoration: none; cursor: pointer"
+                :to="polygontrack.url"
+              >
+                <button class="learn">
+                  LEARN MORE
+                  <g-image
+                    style="width: 12px; height: 12px; margin-left: 8px"
+                    width="12"
+                    height="12"
+                    src="~/assets/arrows/purple-arrow.svg"
+                  />
+                </button>
+              </g-link>
+              <div class="sponsor" v-if="track && track.sponsor">
+                <div>Sponsors:</div>
+                <div>
+                  <img :src="track.sponsor" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="tracks">
-        <div class="card" v-for="(track, i) in tracks" :key="i">
+      </div>
+      
+     <!-- Router Protocol-->
+     <div>
+        <div class="altttile"> Router Protocol Track</div>
+        <div class="tracks">
+        <div class="card" v-for="(RouterProtocol, i) in RouterProtocol" :key="i">
+          <div class="inner-card">
+            <div class="name">
+              <div class="icon">
+                <div class="layer">
+                  <img :src="RouterProtocol.icon" />
+                </div>
+              </div>
+              <div class="t">{{ RouterProtocol.name }}</div>
+            </div>
+            <div class="details">
+              {{ RouterProtocol.content }}
+            </div>
+            <div class="buttons">
+              <g-link
+                style="text-decoration: none; cursor: pointer"
+                :to="RouterProtocol.url"
+              >
+                <button class="learn">
+                  LEARN MORE
+                  <g-image
+                    style="width: 12px; height: 12px; margin-left: 8px"
+                    width="12"
+                    height="12"
+                    src="~/assets/arrows/purple-arrow.svg"
+                  />
+                </button>
+              </g-link>
+              <div class="sponsor" v-if="track && track.sponsor">
+                <div>Sponsors:</div>
+                <div>
+                  <img :src="track.sponsor" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <!-- Archana Network Track-->
+      <div>
+        <div class="altttile"> Archana Network Track</div>
+        <div class="tracks">
+        <div class="card" v-for="(ArcanaNetwork, i) in ArcanaNetwork" :key="i">
+          <div class="inner-card">
+            <div class="name">
+              <div class="icon">
+                <div class="layer">
+                  <img :src="ArcanaNetwork.icon" />
+                </div>
+              </div>
+              <div class="t">{{ ArcanaNetwork.name }}</div>
+            </div>
+            <div class="details">
+              {{ ArcanaNetwork.content }}
+            </div>
+            <div class="buttons">
+              <g-link
+                style="text-decoration: none; cursor: pointer"
+                :to="ArcanaNetwork.url"
+              >
+                <button class="learn">
+                  LEARN MORE
+                  <g-image
+                    style="width: 12px; height: 12px; margin-left: 8px"
+                    width="12"
+                    height="12"
+                    src="~/assets/arrows/purple-arrow.svg"
+                  />
+                </button>
+              </g-link>
+              <div class="sponsor" v-if="track && track.sponsor">
+                <div>Sponsors:</div>
+                <div>
+                  <img :src="track.sponsor" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <!-- All other Tracks-->
+
+       <div class="altttile"> All Tracks</div>
+      <div class="bounty">
+        <div class="cardforbounty" v-for="(track, i) in tracks" :key="i">
           <div class="inner-card">
             <div class="name">
               <div class="icon">
@@ -141,6 +276,75 @@ export default {
   },
   data() {
     return {
+        polygontrack: [
+            {
+          name: "Best DeFi App built on Polygon ",
+          prize: "$$$",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "",
+          icon: require("~/assets/third/cards/logo1.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/can-you-dao-it",
+        },
+        {
+            name: "Best NFT App built on Polygon ",
+          prize: "$$$",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "",
+          icon: require("~/assets/third/cards/logo1.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/can-you-dao-it",
+
+        },
+        {
+                name: "Best Gaming/ Metaverse Track ",
+          prize: "$$$",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "",
+          icon: require("~/assets/third/cards/logo1.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/can-you-dao-it",
+        }
+        ],
+        AeternityTrack: [{
+
+        }] ,
+        DfinityTrack: [{
+        }] ,
+
+        RouterProtocol: [
+            {
+            name: "Create a Cross chain Yield Aggregator using Router CrossTalk Library. ",
+          prize: "$$$",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "",
+          icon: require("~/assets/third/cards/logo1.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/can-you-dao-it",
+        }
+
+        ],
+        
+        ArcanaNetwork: [{
+            name: "BUIDL Privacy Preserving Apps. ",
+          prize: "$$$",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "Use your imagination and feel free to build any DApp that excites you! Show us how best you can leverage Arcana’s access control feature to store data and Social/Magic links to create wallets. We do not want to limit your imagination but here are some topics for your team to consider as reference: Marketplaces, Games, social apps, NFT based apps.",
+          icon: require("~/assets/third/cards/logo1.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/can-you-dao-it",
+        }],
+
       tracks: [
         {
           name: "Can you DAO it? ",
@@ -384,12 +588,12 @@ export default {
       transform: rotate(-360deg);
     }
     .card {
-      min-height: 329px;
+      min-height: 250px;
       width: 70%;
       // margin:0 auto;
       margin-right: auto;
       margin-left: auto;
-      max-width: 418px;
+      max-width: 450px;
       margin-bottom: 19px;
       display: flex;
       align-items: center;
@@ -884,6 +1088,25 @@ export default {
         margin-left: 5px;
       }
     }
+    .altttile {
+     width: 80%;
+      margin: 0 auto;
+      margin-bottom: 53px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 145.9%;
+      padding-bottom: 30px;
+      /* or 20px */
+
+      text-align: center;
+      letter-spacing: -0.015em;
+
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 10px;
+    }
+    
     .sub-title {
       width: 80%;
       margin: 0 auto;
