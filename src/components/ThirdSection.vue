@@ -45,7 +45,7 @@
                 <div class="layer">
                   <img :src="polygontrack.icon" />
                 </div>
-              </div>f
+              </div>
               <div class="t">{{ polygontrack.name }}</div>
             </div>
             <div class="details">
@@ -57,14 +57,14 @@
                 style="text-decoration: none; cursor: pointer"
                 :to="polygontrack.url"
               >
-                <button class="learn">
+                <button class="learn" style="text-decoration: none; cursor: pointer">
                   LEARN MORE
                   <g-image
                     style="width: 12px; height: 12px; margin-left: 8px"
                     width="12"
                     height="12"
-                    src="~/assets/arrows/purple-arrow.svg" />
-                  
+                    src="~/assets/arrows/purple-arrow.svg"
+                  />
                 </button>
                 
               </g-link>
@@ -74,8 +74,7 @@
                   <img :src="track.sponsor" />
                 </div>
               </div>
-            </div>
-            <div class="prize">
+              <div class="prize">
             <div class="prizeAndMedal">
                 <div>
                 {{polygontrack.prize}}
@@ -88,6 +87,7 @@
                     src="~/assets/third/medal.png" />
                 </div>
                 </div>
+            </div>
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@
                 style="text-decoration: none; cursor: pointer"
                 :to="AeternityTrack.url"
               >
-                <button class="learn">
+                <button class="learn" style="text-decoration: none; cursor: pointer">
                   LEARN MORE
                   <g-image
                     style="width: 12px; height: 12px; margin-left: 8px"
@@ -142,9 +142,20 @@
                   <img :src="track.sponsor" />
                 </div>
               </div>
-            </div>
-            <div class="prize">
+              <div class="prize">
+            <div class="prizeAndMedal">
+                <div>
                 {{AeternityTrack.prize}}
+                </div>
+                <div>
+                <g-image
+                    style="width: 15px; height: 15px; margin-left: 8px"
+                    width="12"
+                    height="12"
+                    src="~/assets/third/medal.png" />
+                </div>
+                </div>
+            </div>
             </div>
           </div>
         </div>
@@ -184,7 +195,7 @@
                 style="text-decoration: none; cursor: pointer"
                 :to="Dfinity.url"
               >
-                <button class="learn">
+                <button class="learn" style="text-decoration: none; cursor: pointer">
                   LEARN MORE
                   <g-image
                     style="width: 12px; height: 12px; margin-left: 8px"
@@ -201,9 +212,20 @@
                   <img :src="track.sponsor" />
                 </div>
               </div>
-            </div>
-            <div class="prize">
+              <div class="prize">
+            <div class="prizeAndMedal">
+                <div>
                 {{Dfinity.prize}}
+                </div>
+                <div>
+                <g-image
+                    style="width: 15px; height: 15px; margin-left: 8px"
+                    width="12"
+                    height="12"
+                    src="~/assets/third/medal.png" />
+                </div>
+                </div>
+            </div>
             </div>
           </div>
         </div>
@@ -236,6 +258,7 @@
               {{ RouterProtocol.content }}
             </div>
             <div class="buttons">
+              
             </div>
           </div>
         </div>
@@ -254,9 +277,9 @@
                 </div>
               </div>
               <div class="t">{{ ArcanaNetwork.name }}</div>
-            <div class="prize">
-               <b> {{ArcanaNetwork.prize}} </b>
-            </div>
+              <div class="prize">
+                <b> {{ArcanaNetwork.prize}} </b>
+              </div>
             </div>
             <div class="details">
               {{ ArcanaNetwork.content }}
@@ -925,9 +948,6 @@ export default {
           margin-bottom: 28px;
         }
         .prize {
-          margin-bottom: 8px;
-          margin-top: -30px;
-         padding-left: 14.125rem;
           align-items: right;
           font-family: "Inter";
           font-style: normal;
@@ -1119,6 +1139,7 @@ export default {
           letter-spacing: -0.015em;
           color: #ffffff;
           margin-bottom: 23px;
+          justify-content:space-between;
           .t {
             max-width: 80%;
             font-family: "Brinnan";
