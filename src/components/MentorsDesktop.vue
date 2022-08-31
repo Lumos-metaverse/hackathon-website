@@ -124,12 +124,6 @@ data () {
          companyLogo: require('~/assets/mentors/logo/san.png'),
        },
        {
-         name:'Ingi Kim',
-         position:'Founder, States DAO',
-         image: require('~/assets/mentors/final/ingi.png'),
-         companyLogo: require('~/assets/mentors/logo/states.png'),
-       },
-       {
         name: 'Ramesh Ramdoss',
         position: 'Co-Chair, IEEE Blockchain', 
         image: require('~/assets/mentors/final/ramesh.png'),

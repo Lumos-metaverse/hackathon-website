@@ -94,7 +94,7 @@
           <g-image v-if="isMobile" src="~/assets/third/aeternity-ae-logo.svg" />
           <g-image v-else src="~/assets/third/aeternity-ae-logo.svg" />
         </div>
-        <div>Aeternity Track</div>
+        <div>æternity Track</div>
        
       </div>
         <div class="tracks">
@@ -220,6 +220,9 @@
                 </div>
               </div>
               <div class="t">{{ RouterProtocol.name }}</div>
+              <div class="prize">
+               <b> {{RouterProtocol.prize}} </b>
+            </div>
             </div>
             <div class="details">
               {{ RouterProtocol.content }}
@@ -537,7 +540,7 @@ export default {
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "Climate change is a reality - and *the time to act is now.* The first step of action is Awareness. We rely on you to make your fellow citizens aware of it. Create an NFT using Revise SDK and climate/weather data to showcase the impact it has on humanity.",
+          content: "",
           icon: require("~/assets/sponsors/logos/tatum.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",

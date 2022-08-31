@@ -7,7 +7,7 @@
                 :key="nav"
                 :href="'/#'+nav"
             >
-                {{ nav }}                
+                {{ nav }}
             </a>
         </div>
     </div>
@@ -17,7 +17,7 @@ export default {
     name:'DesktopNav',
     data(){
         return{
-           navs:['tracks','sponsors', 'partners','about','faq'] 
+           navs:['tracks','sponsors', 'partners','about','faq', 'Register'] 
         }
     }
 }
@@ -38,6 +38,6 @@ export default {
     padding: 0;
     margin-right: 6vw;
     height: 45px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
   }
 </style>
