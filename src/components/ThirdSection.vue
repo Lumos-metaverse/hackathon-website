@@ -251,7 +251,18 @@
               </div>
               <div class="t">{{ RouterProtocol.name }}</div>
               <div class="prize">
-               <b> {{RouterProtocol.prize}} </b>
+            <div class="prizeAndMedal">
+                <div>
+                {{RouterProtocol.prize}}
+                </div>
+                <div>
+                <g-image
+                    style="width: 15px; height: 15px; margin-left: 8px"
+                    width="12"
+                    height="12"
+                    src="~/assets/third/medal.png" />
+                </div>
+                </div>
             </div>
             </div>
             <div class="details">
@@ -278,8 +289,19 @@
               </div>
               <div class="t">{{ ArcanaNetwork.name }}</div>
               <div class="prize">
-                <b> {{ArcanaNetwork.prize}} </b>
-              </div>
+            <div class="prizeAndMedal">
+                <div>
+                {{ArcanaNetwork.prize}}
+                </div>
+                <div>
+                <g-image
+                    style="width: 15px; height: 15px; margin-left: 8px"
+                    width="12"
+                    height="12"
+                    src="~/assets/third/medal.png" />
+                </div>
+                </div>
+            </div>
             </div>
             <div class="details">
               {{ ArcanaNetwork.content }}
@@ -429,7 +451,7 @@ export default {
           content: "The onset of DeFi is changing FinTech as we know it! Identify problem statements that are plaguing the DeFi space and leverage Polygon to change the way consumers transact. ",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/polygon",
+          url: "/polygon/",
         },
         {
             name: "Best NFT App built on Polygon ",
@@ -440,7 +462,7 @@ export default {
           content: "NFTs are taking digital assets to a whole new level by opening the proverbial Web3 doors to the general public. Show us how you will revolutionize this space with the support of Polygon and win big!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/polygon",
+          url: "/polygon/",
 
         },
         {
@@ -452,7 +474,7 @@ export default {
           content: "Web3 is raising the stakes for incentives within gaming experiences and providing gamers with a whole new experience. Double down and show us how you can elevate gaming experiences with the help of Polygon!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/polygon",
+          url: "/polygon/",
         }
         ],
         AeternityTrack: [
@@ -465,7 +487,7 @@ export default {
           content: "By using the native Oracle system we want you to build a powerful price feed alternative to ChainLink that can power all DeFi æpps built on æternity in a decentralized and efficient way!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/aternity",
+          url: "/aternity/",
         },
         {
             name: "NFTs everywhere!",
@@ -476,7 +498,7 @@ export default {
           content: "Take the unique opportunity to build one of the first NFT solutions that are built around our brand new AEX-141 NFT standard. We're looking for minting solutions, launchpads, auction platforms and marketplaces. Check out our Graffiti æpp and think of innovative ways to NFT-ise the artworks!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/aternity",
+          url: "/aternity/",
 
         },
         {
@@ -499,7 +521,7 @@ export default {
           //content: "Our mission is to develop and contribute technology that enables the Internet Computer (IC) blockchain and its ecosystem. It is powered by new chain key cryptography that allows it to run at web speed with an efficiency that is many orders of magnitude improved, for smart contracts to serve the web directly to end users, and for on-chain compute to scale without bound-allowing mass market web3 services to run entirely on-chain, and for blockchain to become an alternative to traditional IT, such as cloud services. The IC is governed and updated by the Network Nervous System (NNS), a protocol-integrated DAO that decides to use liquid democracy.",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/Dfinity",
+          url: "/Dfinity/",
 
         }
         ] ,
