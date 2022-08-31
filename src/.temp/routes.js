@@ -5,7 +5,7 @@ const c4 = () => import(/* webpackChunkName: "page--src--pages--keep-calm-nft-vu
 const c5 = () => import(/* webpackChunkName: "page--src--pages--can-you-dao-it-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/can-you-dao-it.vue")
 const c6 = () => import(/* webpackChunkName: "page--src--pages--defi-the-odds-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/defi-the-odds.vue")
 const c7 = () => import(/* webpackChunkName: "page--src--pages--entertainment-central-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/entertainment-central.vue")
-const c8 = () => import(/* webpackChunkName: "page--src--pages--dfinity-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/Dfinity.vue")
+const c8 = () => import(/* webpackChunkName: "page--src--pages--difinity-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/difinity.vue")
 const c9 = () => import(/* webpackChunkName: "page--src--pages--builders-toolbox-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/builders-toolbox.vue")
 const c10 = () => import(/* webpackChunkName: "page--src--pages--all-tracks-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/all-tracks.vue")
 const c11 = () => import(/* webpackChunkName: "page--src--pages--aternity-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/aternity.vue")
@@ -42,7 +42,7 @@ export default [
     component: c7
   },
   {
-    path: "/dfinity/",
+    path: "/difinity/",
     component: c8
   },
   {
