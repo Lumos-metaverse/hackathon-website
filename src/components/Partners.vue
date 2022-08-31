@@ -150,12 +150,12 @@
                     },
                     {
                         name: 'The Phoenix Guild',
-                        logo: require('~/assets/sponsors/logos/pen.png'),
+                        logo: require('~/assets/sponsors/logos/tpg.jpeg'),
                         url:'https://twitter.com/PhoenixGuildHQ'
                     },
                     {
                         name: 'Web3 Learn',
-                        logo: require('~/assets/sponsors/logos/pen.png'),
+                        logo: require('~/assets/sponsors/logos/web3learn.svg'),
                         url:'https://www.web3learn.io/#vision'
                     },
                 ],

@@ -45,7 +45,7 @@
                 <div class="layer">
                   <img :src="polygontrack.icon" />
                 </div>
-              </div>
+              </div>f
               <div class="t">{{ polygontrack.name }}</div>
             </div>
             <div class="details">
@@ -63,8 +63,8 @@
                     style="width: 12px; height: 12px; margin-left: 8px"
                     width="12"
                     height="12"
-                    src="~/assets/arrows/purple-arrow.svg"
-                  />
+                    src="~/assets/arrows/purple-arrow.svg" />
+                  
                 </button>
                 
               </g-link>
@@ -76,10 +76,18 @@
               </div>
             </div>
             <div class="prize">
+            <div class="prizeAndMedal">
                 <div>
                 {{polygontrack.prize}}
                 </div>
-                
+                <div>
+                <g-image
+                    style="width: 15px; height: 15px; margin-left: 8px"
+                    width="12"
+                    height="12"
+                    src="~/assets/third/medal.png" />
+                </div>
+                </div>
             </div>
           </div>
         </div>
@@ -228,7 +236,6 @@
               {{ RouterProtocol.content }}
             </div>
             <div class="buttons">
-              
             </div>
           </div>
         </div>
@@ -699,6 +706,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.prizeAndMedal{
+  display: flex;
+  flex-direction: row;
+}
 .sponsor {
   font-family: "Brinnan";
   font-style: normal;
