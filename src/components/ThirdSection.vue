@@ -51,6 +51,7 @@
             <div class="details">
               {{ polygontrack.content }}
             </div>
+            
             <div class="buttons">
               <g-link
                 style="text-decoration: none; cursor: pointer"
@@ -65,6 +66,7 @@
                     src="~/assets/arrows/purple-arrow.svg"
                   />
                 </button>
+                
               </g-link>
               <div class="sponsor" v-if="track && track.sponsor">
                 <div>Sponsors:</div>
@@ -73,11 +75,131 @@
                 </div>
               </div>
             </div>
+            <div class="prize">
+                {{polygontrack.prize}}
+            </div>
           </div>
         </div>
       </div>
       </div>
-      
+
+      <!--AeternityTrack-->
+      <div>
+        
+         <div class="altttile">
+             <div>
+          <g-image v-if="isMobile" src="~/assets/third/aeternity-ae-logo.svg" />
+          <g-image v-else src="~/assets/third/aeternity-ae-logo.svg" />
+        </div>
+        <div>Aeternity Track</div>
+       
+      </div>
+        <div class="tracks">
+        <div class="card" v-for="(AeternityTrack, i) in AeternityTrack" :key="i">
+          <div class="inner-card">
+            <div class="name">
+              <div class="icon">
+                <div class="layer">
+                  <img :src="AeternityTrack.icon" />
+                </div>
+              </div>
+              <div class="t">{{ AeternityTrack.name }}</div>
+            </div>
+            <div class="details">
+              {{ AeternityTrack.content }}
+            </div>
+            
+            <div class="buttons">
+              <g-link
+                style="text-decoration: none; cursor: pointer"
+                :to="AeternityTrack.url"
+              >
+                <button class="learn">
+                  LEARN MORE
+                  <g-image
+                    style="width: 12px; height: 12px; margin-left: 8px"
+                    width="12"
+                    height="12"
+                    src="~/assets/arrows/purple-arrow.svg"
+                  />
+                </button>
+
+              </g-link>
+              <div class="sponsor" v-if="track && track.sponsor">
+                <div>Sponsors:</div>
+                <div>
+                  <img :src="track.sponsor" />
+                </div>
+              </div>
+            </div>
+            <div class="prize">
+                {{AeternityTrack.prize}}
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Dfinity Tracks -->
+
+      <!--AeternityTrack-->
+      <div>
+        
+         <div class="altttile">
+             <div>
+          <g-image v-if="isMobile" src="~/assets/third/dfinity-logo-vector.png" />
+          <g-image v-else src="~/assets/third/dfinity-logo-vector.png" />
+        </div>
+        <div>Dfinity Track</div>
+       
+      </div>
+        <div class="tracks">
+        <div class="card" v-for="(Dfinity, i) in Dfinity" :key="i">
+          <div class="inner-card">
+            <div class="name">
+              <div class="icon">
+                <div class="layer">
+                  <img :src="Dfinity.icon" />
+                </div>
+              </div>
+              <div class="t">{{ Dfinity.name }}</div>
+            </div>
+            <div class="details">
+              {{ Dfinity.content }}
+            </div>
+            
+            <div class="buttons">
+              <g-link
+                style="text-decoration: none; cursor: pointer"
+                :to="Dfinity.url"
+              >
+                <button class="learn">
+                  LEARN MORE
+                  <g-image
+                    style="width: 12px; height: 12px; margin-left: 8px"
+                    width="12"
+                    height="12"
+                    src="~/assets/arrows/purple-arrow.svg"
+                  />
+                </button>
+
+              </g-link>
+              <div class="sponsor" v-if="track && track.sponsor">
+                <div>Sponsors:</div>
+                <div>
+                  <img :src="track.sponsor" />
+                </div>
+              </div>
+            </div>
+            <div class="prize">
+                {{Dfinity.prize}}
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
      <!-- Associate Tracks -->
      
     <div class="title">Associate Track</div>
@@ -85,9 +207,8 @@
 
      <!-- Router Protocol-->
      <div>
-        <div class="altttile"> Router Protocol Track</div>
-        <div class="tracks">
-        <div class="card" v-for="(RouterProtocol, i) in RouterProtocol" :key="i">
+        <div class="bounty">
+        <div class="cardforbounty" v-for="(RouterProtocol, i) in RouterProtocol" :key="i">
           <div class="inner-card">
             <div class="name">
               <div class="icon">
@@ -101,26 +222,7 @@
               {{ RouterProtocol.content }}
             </div>
             <div class="buttons">
-              <g-link
-                style="text-decoration: none; cursor: pointer"
-                :to="RouterProtocol.url"
-              >
-                <button class="learn">
-                  LEARN MORE
-                  <g-image
-                    style="width: 12px; height: 12px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/arrows/purple-arrow.svg"
-                  />
-                </button>
-              </g-link>
-              <div class="sponsor" v-if="track && track.sponsor">
-                <div>Sponsors:</div>
-                <div>
-                  <img :src="track.sponsor" />
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -129,9 +231,8 @@
       
       <!-- Arcana Network Track-->
       <div>
-        <div class="altttile"> Arcana Network Track</div>
-        <div class="tracks">
-        <div class="card" v-for="(ArcanaNetwork, i) in ArcanaNetwork" :key="i">
+        <div class="bounty">
+        <div class="cardforbounty" v-for="(ArcanaNetwork, i) in ArcanaNetwork" :key="i">
           <div class="inner-card">
             <div class="name">
               <div class="icon">
@@ -141,32 +242,19 @@
               </div>
               <div class="t">{{ ArcanaNetwork.name }}</div>
             </div>
+            <div class="prize">
+                {{ArcanaNetwork.prize}}
+            </div>
             <div class="details">
               {{ ArcanaNetwork.content }}
             </div>
             <div class="buttons">
-              <g-link
-                style="text-decoration: none; cursor: pointer"
-                :to="ArcanaNetwork.url"
-              >
-                <button class="learn">
-                  LEARN MORE
-                  <g-image
-                    style="width: 12px; height: 12px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/arrows/purple-arrow.svg"
-                  />
-                </button>
-              </g-link>
-              <div class="sponsor" v-if="track && track.sponsor">
-                <div>Sponsors:</div>
-                <div>
-                  <img :src="track.sponsor" />
-                </div>
-              </div>
+            </div>
+             <div class="prize">
+                {{ArcanaNetwork.prize}}
             </div>
           </div>
+          
         </div>
       </div>
       </div>
@@ -213,10 +301,8 @@
         <!--  </div>  -->
      <!--   </div>  -->
     <!--  </div>  -->
-    <g-link :to=website.url> Click Here for tracks </g-link>
-    <g-link
-                style="text-decoration: none; cursor: pointer"
-                :to="/alltracks/"
+    <div>
+    <!-- <g-link to="/all-tracks/">
               >
       <button class="rotating-button">
         VIEW ALL
@@ -227,7 +313,8 @@
           src="~/assets/arrows/gold-arrow.svg"
         />
       </button>
-      </g-link>
+      </g-link> -->
+      </div>
     </div>
     <!-- <div class="content" style="margin-top: 30px">
       <div class="title">BOUNTIES</div>
@@ -282,12 +369,10 @@
 </template>
 <script>
 import Prizes from "../components/Prizes.vue";
-import alltracks from "../pages/alltracks.vue";
 export default {
   name: "ThirdSection",
   components: {
     Prizes,
-    alltracks
   },
   props: {
     isMobile: {
@@ -297,78 +382,116 @@ export default {
   },
   data() {
     return {
-               website: [ {
-        url: "/alltracks",
-       }
 
-       ],
         polygontrack: [
             {
           name: "Best DeFi App built on Polygon ",
-          prize: "$$$",
+          prize: "$5000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "",
+          content: "The onset of DeFi is changing FinTech as we know it! Identify problem statements that are plaguing the DeFi space and leverage Polygon to change the way consumers transact. ",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/can-you-dao-it",
+          url: "/polygon",
         },
         {
             name: "Best NFT App built on Polygon ",
-          prize: "$$$",
+          prize: "$5000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "",
+          content: "NFTs are taking digital assets to a whole new level by opening the proverbial Web3 doors to the general public. Show us how you will revolutionize this space with the support of Polygon and win big!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/can-you-dao-it",
+          url: "/polygon",
 
         },
         {
                 name: "Best Gaming/ Metaverse Track ",
-          prize: "$$$",
+          prize: "$5000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "",
+          content: "Web3 is raising the stakes for incentives within gaming experiences and providing gamers with a whole new experience. Double down and show us how you can elevate gaming experiences with the help of Polygon!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/can-you-dao-it",
+          url: "/polygon",
         }
         ],
-        AeternityTrack: [{
+        AeternityTrack: [
+             {
+          name: "DeFi the Odds! ",
+          prize: "$8000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "Can you build a reliable and useful price feed alternative to ChainLink on aternity",
+          icon: require("~/assets/third/cards/logo1.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/aternity",
+        },
+        {
+            name: "Keep calm and NFT-ise it!",
+          prize: "$4000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "We're searching for innovative minting solutions / NFT launchpad. Can æternity Oracles be used to host social NFT giveaway campaigns to verify participation and entries. How creative is the community? Check out the Graffiti dApp on æternity and think of ways to NFT-ise the artworks!",
+          icon: require("~/assets/third/cards/logo1.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/aternity",
 
+        },
+        {
+                name: "Can you DAO it?  ",
+          prize: "$8000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "DAOs are the potential future of organizations led by a community and you’re tasked with building solutions for DAOS. Show us how you can solve problems of governance and community and reap the rewards!",
+          icon: require("~/assets/third/cards/logo1.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/aternity",
         }] ,
-        DfinityTrack: [{
+        Dfinity: [{
+                   name: "Coming Soon! ",
+          prize: "$10,000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          //content: "Our mission is to develop and contribute technology that enables the Internet Computer (IC) blockchain and its ecosystem. It is powered by new chain key cryptography that allows it to run at web speed with an efficiency that is many orders of magnitude improved, for smart contracts to serve the web directly to end users, and for on-chain compute to scale without bound-allowing mass market web3 services to run entirely on-chain, and for blockchain to become an alternative to traditional IT, such as cloud services. The IC is governed and updated by the Network Nervous System (NNS), a protocol-integrated DAO that decides to use liquid democracy.",
+          icon: require("~/assets/third/cards/logo1.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/Dfinity",
+
         }] ,
 
         RouterProtocol: [
             {
             name: "Create a Cross chain Yield Aggregator using Router CrossTalk Library. ",
-          prize: "$$$",
+          prize: "$5,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
           content: "",
-          icon: require("~/assets/third/cards/logo1.png"),
+          icon: require("~/assets/sponsors/logos/router.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/can-you-dao-it",
+          url: "/",
         }
 
         ],
         
         ArcanaNetwork: [{
             name: "BUIDL Privacy Preserving Apps. ",
-          prize: "$$$",
+          prize: "$5,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
           content: "Use your imagination and feel free to build any DApp that excites you! Show us how best you can leverage Arcana’s access control feature to store data and Social/Magic links to create wallets. We do not want to limit your imagination but here are some topics for your team to consider as reference: Marketplaces, Games, social apps, NFT based apps.",
-          icon: require("~/assets/third/cards/logo1.png"),
+          icon: require("~/assets/sponsors/logos/arcana.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/can-you-dao-it",
+          url: "/",
         }],
 
       tracks: [
@@ -550,7 +673,7 @@ export default {
     justify-content: center;
     flex-direction: row;
     margin-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     max-width: 1200px;
      margin: 0 auto;
       display: flex;
@@ -619,6 +742,7 @@ export default {
     .card {
         //place three cards in a row
         display: flex;
+        width: 50%;
         flex-direction: row;
         gap: 7px;
         justify-content: center;
@@ -709,7 +833,17 @@ export default {
           margin-bottom: 28px;
         }
         .prize {
-          margin-bottom: 18px;
+          margin-bottom: 8px;
+          margin-top: -30px;
+         padding-left: 14.125rem;
+          align-items: right;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 22px;
+          line-height: 145.9%;
+          letter-spacing: -0.015em;
+          color: rgb(255, 255, 255);
           .head {
             font-family: "Inter";
             font-style: italic;
@@ -848,13 +982,13 @@ export default {
       }
     }
     .cardforbounty{
-      min-height: 329px;
+      min-height: 200px;
       width: 70%;
       // margin:0 auto;
       margin-right: auto;
       margin-left: auto;
       //max-width: 448px;
-      margin-bottom: 19px;
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -886,18 +1020,18 @@ export default {
           align-items: center;
           font-family: "Brinnan";
           font-style: normal;
-          font-weight: 700;
-          font-size: 24px;
+          font-weight: 400;
+          font-size: 15px;
           line-height: 145.9%;
           letter-spacing: -0.015em;
           color: #ffffff;
           margin-bottom: 23px;
           .t {
-            max-width: 300px;
+            max-width: 80%;
             font-family: "Brinnan";
             font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
+            font-weight: 500;
+            font-size: 18px;
             line-height: 145.9%;
             letter-spacing: -0.015em;
             color: #ffffff;
@@ -905,15 +1039,14 @@ export default {
           }
           .prize {
             font-family: 'Inter';
-            width: 126px;
             margin-top:0.9375rem;
             padding-top: 0.3rem;
             height: 20px;
-      text-align: center;
+      //text-align: center;
             font-style: normal;
             background: #7506ac;
             font-weight: 400;
-            font-size: 13px;
+            font-size: 100px;
             line-height: 145.9%;
             letter-spacing: -0.015em;
             color: #ffffff;
@@ -968,6 +1101,15 @@ export default {
         }
         .prize {
           margin-bottom: 18px;
+          //padding-left: 3.125rem;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 145.9%;
+          letter-spacing: -0.015em;
+          color: rgba(255, 255, 255, 0.8);
+          margin-bottom: 28px;
           .head {
             font-family: "Inter";
             font-style: italic;
@@ -1199,6 +1341,7 @@ export default {
       }
       .card {
         margin-right: 0px;
+        width: 50%;
         margin-bottom: 40px;
         margin-left: 0;
         .inner-card {
