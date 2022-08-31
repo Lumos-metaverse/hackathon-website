@@ -144,17 +144,18 @@ data () {
          companyLogo: require('~/assets/mentors/logo/pen.png'),
        },
        {
+         name:'Rahat Chowdhary',
+         position:'Lead Developer Relations Engineer, Polygon',
+         // image: require('~/assets/mentors/final/chundan.png'),
+         companyLogo: require('~/assets/sponsors/logos/Polygon.png'),
+       },
+       {
          name:'Kunal Arora',
          position:'Co-Founder, Blockchain San Diago',
          image: require('~/assets/mentors/final/kunal.png'),
          companyLogo: require('~/assets/mentors/logo/san.png'),
        },
-       {
-         name:'Ingi Kim',
-         position:'Founder, States DAO',
-         image: require('~/assets/mentors/final/ingi.png'),
-         companyLogo: require('~/assets/mentors/logo/states.png'),
-       },
+      
        {
         name: 'Ramesh Ramdoss',
         position: 'Co-Chair, IEEE Blockchain', 

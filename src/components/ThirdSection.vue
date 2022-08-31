@@ -76,7 +76,10 @@
               </div>
             </div>
             <div class="prize">
+                <div>
                 {{polygontrack.prize}}
+                </div>
+                
             </div>
           </div>
         </div>
@@ -421,35 +424,35 @@ export default {
         ],
         AeternityTrack: [
              {
-          name: "DeFi the Odds! ",
+          name: "DeFi powered by Oracles",
           prize: "$8000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "Can you build a reliable and useful price feed alternative to ChainLink on aternity",
+          content: "By using the native Oracle system we want you to build a powerful price feed alternative to ChainLink that can power all DeFi æpps built on æternity in a decentralized and efficient way!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aternity",
         },
         {
-            name: "Keep calm and NFT-ise it!",
-          prize: "$4000",
+            name: "NFTs everywhere!",
+          prize: "$5000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "We're searching for innovative minting solutions / NFT launchpad. Can æternity Oracles be used to host social NFT giveaway campaigns to verify participation and entries. How creative is the community? Check out the Graffiti dApp on æternity and think of ways to NFT-ise the artworks!",
+          content: "Take the unique opportunity to build one of the first NFT solutions that are built around our brand new AEX-141 NFT standard. We're looking for minting solutions, launchpads, auction platforms and marketplaces. Check out our Graffiti æpp and think of innovative ways to NFT-ise the artworks!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aternity",
 
         },
         {
-                name: "Can you DAO it?  ",
-          prize: "$8000",
+                name: "DAOs - the future of our society!",
+          prize: "$7000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "DAOs are the potential future of organizations led by a community and you’re tasked with building solutions for DAOS. Show us how you can solve problems of governance and community and reap the rewards!",
+          content: "The future of society will be powered by DAOs. Think about innovative solutions that empower our future society to fundraise, to make the right decisions & to empower the people!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aternity",
@@ -465,7 +468,8 @@ export default {
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/Dfinity",
 
-        }] ,
+        }
+        ] ,
 
         RouterProtocol: [
             {
@@ -482,7 +486,8 @@ export default {
 
         ],
         
-        ArcanaNetwork: [{
+        ArcanaNetwork: [
+          {
             name: "BUIDL Privacy Preserving Apps. ",
           prize: "$5,000",
           level: "Intermediate",
@@ -492,7 +497,74 @@ export default {
           icon: require("~/assets/sponsors/logos/arcana.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
-        }],
+        },
+          {
+            name: "Upgrade the Buidlers Toolbox",
+          prize: "$5,000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "Build Best tooling, API, SDK, services, or patterns that make it easier for Web3 devs to build with Fluence and Aqua. The easiest way to get started is to go swing by the developer's docs and then build a small Fluence project or try one of the examples, identify tooling deficits, and kick off your hackathon project.",
+          icon: require("~/assets/sponsors/logos/fluence.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/",
+        },
+          {
+            name: "Fight climate change with NFTs",
+          prize: "$5,000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "Climate change is a reality - and *the time to act is now.* The first step of action is Awareness. We rely on you to make your fellow citizens aware of it. Create an NFT using Revise SDK and climate/weather data to showcase the impact it has on humanity.",
+          icon: require("~/assets/sponsors/logos/revise.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/",
+        },
+          {
+            name: "Build on Tezos tokens and solve real world problems",
+          prize: "$2,000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "Build a platform using which users can go long and short on Tezos based tokens, or Tokens bridged to Tezos. The project should use https://kolibri.finance/ (for borrowing against Tez) and a Dex like PlentyDeFi.com (for trading tokens).",
+          icon: require("~/assets/sponsors/logos/tezoz.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/",
+        },
+          {
+            name: "Coming Soon!",
+          prize: "$5,000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "Climate change is a reality - and *the time to act is now.* The first step of action is Awareness. We rely on you to make your fellow citizens aware of it. Create an NFT using Revise SDK and climate/weather data to showcase the impact it has on humanity.",
+          icon: require("~/assets/sponsors/logos/tatum.png"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/",
+        },
+          {
+            name: " Design a cross-chain identity aggregator for Web3:",
+          prize: "$5,000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "User1 can send assets to User2 by knowing their DID (It could be Vedant.Komet or KID Vedant)",
+          icon: require("~/assets/sponsors/logos/komet.svg"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/",
+        },
+          {
+            name: "Keep Calm and NFT-ise!",
+          prize: "$ 7,777 worth $MNTL tokens",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content: "NFT based event ticketing platform, that facilitates easy NFT event ticket issuing and easy check-ins using AssetMantle blockchain and MantleWallet. The process should be abstract user friendly such that the tickets should be verifiable by scanning a QR code on mobile. A mobile application with a simple username-based SignUp mechanism would be interesting.",
+          icon: require("~/assets/sponsors/logos/assetmantle.svg"),
+          // sponsor: require('~/assets/third/sponsors/solana.png'),
+          url: "/",
+        },
+        ],
 
       tracks: [
         {
@@ -677,7 +749,7 @@ export default {
     max-width: 1200px;
      margin: 0 auto;
       display: flex;
-      flex-wrap: wrap;
+     flex-wrap: wrap;
 }
 .bountyHeader{
   display: flex;
@@ -795,7 +867,8 @@ export default {
           font-size: 24px;
           line-height: 145.9%;
           letter-spacing: -0.015em;
-          color: #ffffff;
+          
+          justify-content: space-between;
           margin-bottom: 23px;
           .t {
             max-width: 300px;
@@ -817,12 +890,12 @@ export default {
               width: 100%;
               height: 100%;
               border-radius: 6.0263px;
-              background: white;
+              background-color:none;
               transform: translate3d(-3.59px, -3.59px, -3.59px);
               img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
               }
             }
           }
@@ -1076,21 +1149,22 @@ export default {
             border: 0.773455px solid #8650A6;
           }
           .icon {
-            min-width: 50px;
+            width: 150px;
             height: 70px;
-            border: 0.60263px solid #ffffff;
+            border: 0.60263px solid #ffffff63;
             border-radius: 6.0263px;
             margin-right: 23.59px;
             .layer {
-              width: 100%;
-              height: 100%;
+              width: 80%;
+              height: 80%;
+              padding:5px;
               border-radius: 6.0263px;
-              background: white;
-              transform: translate3d(-3.59px, -3.59px, -3.59px);
+              // background: white;
+             // transform: translate3d(-3.59px, -3.59px, -3.59px);
               img {
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: scale-down;
               }
             }
           }

@@ -16,20 +16,22 @@ export default {
                 icon:require('~/assets/third/cards/logo3.png'),
                 points:[
                     {
-                        heading: 'DeFi the odds!',
-                        copy:  'Can you build a reliable and useful price feed alternative to ChainLink on æternity?'
+                        heading: 'DeFi powered by Oracles',
+                        copy:  'By using the native Oracle system we want you to build a powerful price feed alternative to ChainLink that can power all DeFi æpps built on æternity in a decentralized and efficient way!'
                     },
                     {
-                        heading: 'Keep calm and NFT-ise it!',
-                        copy: 'We are searching for innovative minting solutions / NFT launchpad. Can æternity Oracles be used to host social NFT giveaway campaigns to verify participation and entries. How creative is the community. Check out the Graffiti dApp on æternity and think of ways to NFT-ise the artworks!'
+                        heading: 'DAOs - the future of our society!',
+                        copy: 'The future of society will be powered by DAOs. Think about innovative solutions that empower our future society to fundraise, to make the right decisions & to empower the people!'
                     },
                     {
-                        heading:'Can you DAO it?',
-                        copy: 'DAOs are the potential future of organizations led by a community and you’re tasked with building solutions for DAOS. Show us how you can solve problems of governance and community and reap the rewards!'
-                    },
-                ],      
+                        heading:'NFTs everywhere!',
+                        copy: 'Take the unique opportunity to build one of the first NFT solutions that are built around our brand new AEX-141 NFT standard. Were looking for minting solutions, launchpads, auction platforms and marketplaces. Check out our Graffiti æpp and think of innovative ways to NFT-ise the artworks!'
+            
+                    }
+                        
+                ]      
             }   
         }
-    },
+    }
 }
 </script>

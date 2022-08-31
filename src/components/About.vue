@@ -13,7 +13,15 @@
         </div>
         <form> <button class="learn-cta" type="submit" formaction="https://medium.com/lumos-labs/were-building-the-lumos-metaverse-to-elevate-builder-opportunities-in-web3-fadc7ea9e908" formtarget="_blank">LEARN MORE <g-image style="width:12px;height:12px;margin-left:14px;" width="12px" height="12px" src="~/assets/arrows/gold-arrow.svg"/></button>
       </form>
+      <div class="content2"> To get whitelisted for Lumos Metaverse.</div>
+        <form> <button class="learn-cta" type="submit" formaction="https://my.forms.app/lumoslabs/whitelist" formtarget="_blank"> Register Here<g-image style="width:12px;height:12px;margin-left:14px;" width="12px" height="12px" src="~/assets/arrows/gold-arrow.svg"/></button>
+      </form>
+       <div class="content2"> Are you interested in exploring full-time opportunities and internships in the web3 space? Reach out to us, today!</div>
+        <form> <button class="learn-cta" type="submit" formaction="https://lumos-recruitment.super.site/" formtarget="_blank">Click Here<g-image style="width:12px;height:12px;margin-left:14px;" width="12px" height="12px" src="~/assets/arrows/gold-arrow.svg"/></button>
+      </form>
       </div>
+      
+
     </section>
 </template>
 <style lang="scss" scoped>
@@ -61,6 +69,19 @@
                 max-width: 289px;
                 margin-bottom:69px;
             }
+            .content2 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 145.9%;
+                letter-spacing: -0.015em;
+                color: rgba(255, 255, 255, 0.8);
+                max-width: 289px;
+                margin-bottom:10px;
+                padding-top: 20px;
+                
+            }
             .learn-cta{
                 font-family: 'Brinnan';
                 font-style: normal;
@@ -71,7 +92,7 @@
                 color: #FDC506;
                 background: none;
                 border: none;
-                max-width: 200px;
+                max-width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;

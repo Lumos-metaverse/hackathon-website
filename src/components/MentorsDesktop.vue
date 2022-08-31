@@ -82,6 +82,12 @@ data () {
          companyLogo: require('~/assets/mentors/logo/product.png'),
        },
        {
+         name:'Rahat Chowdhary',
+         position:'Lead Developer Relations Engineer, Polygon',
+         image: require('~/assets/mentors/final/rahat.jpeg'),
+         companyLogo: require('~/assets/sponsors/logos/Polygon.png'),
+       },
+       {
          name:'Raj Karia',
          position:'Founder, Truts',
          image: require('~/assets/mentors/final/raj.png'),

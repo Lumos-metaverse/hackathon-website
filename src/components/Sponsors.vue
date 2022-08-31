@@ -53,6 +53,11 @@
                         url:'https://aeternity.com/'
                     },
                     {
+                        name: 'Dfinity',
+                        logo: require('~/assets/sponsors/logos/dfinity.png'),
+                        url:'https://dfinity.org/'
+                    },
+                    {
                         name: 'Tezos',
                         logo: require('~/assets/sponsors/logos/tezoz.png'),
                         url:'https://tezos.com/'
@@ -60,17 +65,37 @@
                     {
                         name: 'Fluence',
                         logo: require('~/assets/sponsors/logos/fluence.png'),
-                        url:'https://fluence.com/'
+                        url:'https://fluence.network/'
                     },
                     {
                         name: 'Router',
                         logo: require('~/assets/sponsors/logos/router.png'),
-                        url:'https://router.com/'
+                        url:'http://www.routerprotocol.com/'
+                    },
+                    {
+                        name: 'tatum',
+                        logo: require('~/assets/sponsors/logos/tatum.png'),
+                        url:'https://tatum.io/'
+                    },
+                    {
+                        name: 'revise',
+                        logo: require('~/assets/sponsors/logos/revise.png'),
+                        url:'https://revise.network/'
                     },
                     {
                         name: 'Arcana',
                         logo: require('~/assets/sponsors/logos/arcana.png'),
                         url:'https://arcana.com/'
+                    },
+                    {
+                        name: 'Komet',
+                        logo: require('~/assets/sponsors/logos/komet.svg'),
+                        url:'https://Komet.me/'
+                    },  
+                    {
+                        name: 'AssetMantle',
+                        logo: require('~/assets/sponsors/logos/assetmantle.svg'),
+                        url:'https://assetmantle.one/'
                     }
                 ]
             }

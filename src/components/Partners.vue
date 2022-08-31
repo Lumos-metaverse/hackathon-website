@@ -102,11 +102,7 @@
                         url:'https://www.vanderbilt.edu/'
                     },
  
-                    {
-                        name: 'States DAO',
-                        logo: require('~/assets/sponsors/logos/states.png'),
-                        url:'https://statesdao.club/'
-                    },
+                    
                     {
                         name: 'Blockchain San Diago',
                         logo: require('~/assets/sponsors/logos/san.png'),
@@ -151,7 +147,17 @@
                         name: 'Penn Blockchain',
                         logo: require('~/assets/sponsors/logos/pen.png'),
                         url:'http://pennblockchain.com/'
-                    }
+                    },
+                    {
+                        name: 'The Phoenix Guild',
+                        logo: require('~/assets/sponsors/logos/pen.png'),
+                        url:'https://twitter.com/PhoenixGuildHQ'
+                    },
+                    {
+                        name: 'Web3 Learn',
+                        logo: require('~/assets/sponsors/logos/pen.png'),
+                        url:'https://www.web3learn.io/#vision'
+                    },
                 ],
                 knowledgesponsors:[
                      {
