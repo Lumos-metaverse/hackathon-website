@@ -241,18 +241,18 @@
                 </div>
               </div>
               <div class="t">{{ ArcanaNetwork.name }}</div>
-            </div>
             <div class="prize">
-                {{ArcanaNetwork.prize}}
+               <b> {{ArcanaNetwork.prize}} </b>
+            </div>
             </div>
             <div class="details">
               {{ ArcanaNetwork.content }}
             </div>
             <div class="buttons">
             </div>
-             <div class="prize">
-                {{ArcanaNetwork.prize}}
-            </div>
+             <!-- <div class="prize"> -->
+                <!-- {{ArcanaNetwork.prize}} -->
+            <!-- </div> -->
           </div>
           
         </div>
@@ -331,8 +331,8 @@
                   <img :src="bounty.icon" />
                 </div>
               </div>
-              <div class="t">{{ bounty.name }}</div>
-              <div class="prize">{{bounty.prize}}</div>
+              <div class="t">{{ bounty.name }} {{bounty.prize}}</div>
+              
               <div class="levelbounty">{{bounty.level}}</div>
             </div>
             <div class="details">
@@ -679,6 +679,10 @@ export default {
       display: flex;
       flex-wrap: wrap;
 }
+.bountyHeader{
+  display: flex;
+  flex-direction: row;
+}
 .third {
   position: relative;
   min-height: 100vh;
@@ -785,6 +789,7 @@ export default {
           display: flex;
           align-items: center;
           font-family: "Brinnan";
+          flex-direction: row;
           font-style: normal;
           font-weight: 700;
           font-size: 24px;
@@ -1020,6 +1025,7 @@ export default {
           align-items: center;
           font-family: "Brinnan";
           font-style: normal;
+          flex-direction: row;
           font-weight: 400;
           font-size: 15px;
           line-height: 145.9%;
@@ -1044,9 +1050,9 @@ export default {
             height: 20px;
       //text-align: center;
             font-style: normal;
-            background: #7506ac;
+            
             font-weight: 400;
-            font-size: 100px;
+         
             line-height: 145.9%;
             letter-spacing: -0.015em;
             color: #ffffff;
@@ -1070,7 +1076,7 @@ export default {
             border: 0.773455px solid #8650A6;
           }
           .icon {
-            min-width: 70px;
+            min-width: 50px;
             height: 70px;
             border: 0.60263px solid #ffffff;
             border-radius: 6.0263px;
@@ -1084,7 +1090,7 @@ export default {
               img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
               }
             }
           }
