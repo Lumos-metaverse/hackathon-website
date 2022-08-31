@@ -5,5 +5,15 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Lumos Hackthon',
+  siteName: 'Lumos Hackathon',
+  plugins: [
+    {
+      use: 'gridsome-plugin-gtm',
+      options: {
+        id: 'UA-238825085-2',
+        enabled: true,
+        debug: true
+      }
+    }
+  ]
 }
