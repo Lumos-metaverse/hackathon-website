@@ -9,7 +9,6 @@
             >
                 {{ nav }}
             </a>
-            <g-link to="https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149"> <a class="nav-button"> Register </a></g-link>
         </div>
     </div>
 </template>
