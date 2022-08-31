@@ -359,9 +359,9 @@
         <!--  </div>  -->
      <!--   </div>  -->
     <!--  </div>  -->
-    <div>
+    <div> 
     <!-- <g-link to="/all-tracks/">
-              >
+              
       <button class="rotating-button">
         VIEW ALL
         <g-image
