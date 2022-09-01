@@ -37,7 +37,8 @@
                         <g-image src="~/assets/details/diamond.svg"></g-image>
                         <div class="point">
                             <div class="heading">{{point.heading}}</div>
-                            <div class="copy">{{point.copy}}</div>
+                            <div class="copy" v-if="point.copy">{{point.copy}}</div>
+                            <a class="copy" target="_blank" :href="point.href" v-else>{{point.href}}</a>
                         </div>
                     </div>
                 </div>
