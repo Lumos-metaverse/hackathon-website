@@ -27,6 +27,11 @@ export default {
                         heading:'NFTs everywhere!',
                         copy: 'Take the unique opportunity to build one of the first NFT solutions that are built around our brand new AEX-141 NFT standard. Were looking for minting solutions, launchpads, auction platforms and marketplaces. Check out our Graffiti æpp and think of innovative ways to NFT-ise the artworks!'
             
+                    },
+                    {
+                        heading:'Some Tools and Resources to get you started',
+                        copy: 'https://github.com/aeternity'
+            
                     }
                         
                 ]      
