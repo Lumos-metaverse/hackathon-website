@@ -130,46 +130,46 @@
                 {{ AeternityTrack.content }}
               </div>
               <div class="buttonMedal">
-              <div class="buttons">
-                <g-link
-                  style="text-decoration: none; cursor: pointer"
-                  :to="AeternityTrack.url"
-                >
-                  <button
-                    class="learn"
+                <div class="buttons">
+                  <g-link
                     style="text-decoration: none; cursor: pointer"
+                    :to="AeternityTrack.url"
                   >
-                    LEARN MORE
-                    <g-image
-                      style="width: 12px; height: 12px; margin-left: 8px"
-                      width="12"
-                      height="12"
-                      src="~/assets/arrows/purple-arrow.svg"
-                    />
-                  </button>
-                </g-link>
-                <div class="sponsor" v-if="track && track.sponsor">
-                  <div>Sponsors:</div>
-                  <div>
-                    <img :src="track.sponsor" />
-                  </div>
-                </div>
-                <div class="prize">
-                  <div class="prizeAndMedal">
-                    <div>
-                      {{ AeternityTrack.prize }}
-                    </div>
-                    <div>
+                    <button
+                      class="learn"
+                      style="text-decoration: none; cursor: pointer"
+                    >
+                      LEARN MORE
                       <g-image
-                        style="width: 15px; height: 15px; margin-left: 8px"
+                        style="width: 12px; height: 12px; margin-left: 8px"
                         width="12"
                         height="12"
-                        src="~/assets/third/medal.png"
+                        src="~/assets/arrows/purple-arrow.svg"
                       />
+                    </button>
+                  </g-link>
+                  <div class="sponsor" v-if="track && track.sponsor">
+                    <div>Sponsors:</div>
+                    <div>
+                      <img :src="track.sponsor" />
+                    </div>
+                  </div>
+                  <div class="prize">
+                    <div class="prizeAndMedal">
+                      <div>
+                        {{ AeternityTrack.prize }}
+                      </div>
+                      <div>
+                        <g-image
+                          style="width: 15px; height: 15px; margin-left: 8px"
+                          width="12"
+                          height="12"
+                          src="~/assets/third/medal.png"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
@@ -204,43 +204,44 @@
               <div class="details">
                 {{ Dfinity.content }}
               </div>
-
-              <div class="buttons">
-                <g-link
-                  style="text-decoration: none; cursor: pointer"
-                  :to="Dfinity.url"
-                >
-                  <button
-                    class="learn"
+              <div class="buttonMedal">
+                <div class="buttons">
+                  <g-link
                     style="text-decoration: none; cursor: pointer"
+                    :to="Dfinity.url"
                   >
-                    LEARN MORE
-                    <g-image
-                      style="width: 12px; height: 12px; margin-left: 8px"
-                      width="12"
-                      height="12"
-                      src="~/assets/arrows/purple-arrow.svg"
-                    />
-                  </button>
-                </g-link>
-                <div class="sponsor" v-if="track && track.sponsor">
-                  <div>Sponsors:</div>
-                  <div>
-                    <img :src="track.sponsor" />
-                  </div>
-                </div>
-                <div class="prize">
-                  <div class="prizeAndMedal">
-                    <div>
-                      {{ Dfinity.prize }}
-                    </div>
-                    <div>
+                    <button
+                      class="learn"
+                      style="text-decoration: none; cursor: pointer"
+                    >
+                      LEARN MORE
                       <g-image
-                        style="width: 15px; height: 15px; margin-left: 8px"
+                        style="width: 12px; height: 12px; margin-left: 8px"
                         width="12"
                         height="12"
-                        src="~/assets/third/medal.png"
+                        src="~/assets/arrows/purple-arrow.svg"
                       />
+                    </button>
+                  </g-link>
+                  <div class="sponsor" v-if="track && track.sponsor">
+                    <div>Sponsors:</div>
+                    <div>
+                      <img :src="track.sponsor" />
+                    </div>
+                  </div>
+                  <div class="prize">
+                    <div class="prizeAndMedal">
+                      <div>
+                        {{ Dfinity.prize }}
+                      </div>
+                      <div>
+                        <g-image
+                          style="width: 15px; height: 15px; margin-left: 8px"
+                          width="12"
+                          height="12"
+                          src="~/assets/third/medal.png"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1256,7 +1257,7 @@ export default {
           align-items: center;
           font-family: "Brinnan";
           font-style: normal;
-          flex-direction: row;
+          flex-direction: column;
           font-weight: 400;
           font-size: 15px;
           line-height: 145.9%;
@@ -1564,6 +1565,7 @@ export default {
 </style>
 <style lang="scss" scoped>
 @media (max-width: 750px) {
+  
   .prizeAndMedal{
     margin-left: 45px;
     margin-top:10px;
@@ -1591,6 +1593,9 @@ export default {
         margin-left: 100px;
         .inner-card {
           .name {
+            flex-direction:column;
+
+
             .t {
               font-size: 21px;
             }
