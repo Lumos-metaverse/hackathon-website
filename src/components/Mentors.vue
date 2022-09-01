@@ -138,6 +138,12 @@ data () {
          companyLogo: require('~/assets/mentors/logo/vanderbilt.png'),
        },
        {
+         name:'Marco Walz',
+         position:'Lead Developer Relations, æternity',
+         image: require('~/assets/mentors/final/marco.png'),
+         companyLogo: require('~/assets/third/aeternity-ae-logo.svg'),
+       },
+       {
          name:'Chunda McCain',
          position:'President, Pen Blockchain',
          image: require('~/assets/mentors/final/chundan.png'),
