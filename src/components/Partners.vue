@@ -232,7 +232,7 @@
             padding-left:32px;
             margin-bottom: 25px;
         }
-        .sub-title{
+        .subtitle{ 
             font-family: 'Brinnan';
             font-style: normal;
             font-weight: 700;
