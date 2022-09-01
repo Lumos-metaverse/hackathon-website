@@ -32,9 +32,9 @@
           <div>
             <g-image
               v-if="isMobile"
-              src="~/assets/third/polygon-matic-logo.svg"
+              src="~/assets/sponsors/logos/Polygon.png"
             />
-            <g-image v-else src="~/assets/third/polygon-matic-logo.svg" />
+            <g-image v-else src="~/assets/sponsors/logos/Polygon.png" />
           </div>
           <div>Polygon Track</div>
         </div>
@@ -530,7 +530,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "The onset of DeFi is changing FinTech as we know it! Identify problem statements that are plaguing the DeFi space and leverage Polygon to change the way consumers transact. ",
-          icon: require("~/assets/third/polygon-matic-logo.svg"),
+          icon: require("~/assets/sponsors/logos/Polygon.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
         },
@@ -542,7 +542,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "NFTs are taking digital assets to a whole new level by opening the proverbial Web3 doors to the general public. Show us how you will revolutionize this space with the support of Polygon and win big!",
-          icon: require("~~/assets/third/polygon-matic-logo.svg"),
+          icon: require("~/assets/sponsors/logos/Polygon.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
         },
@@ -554,7 +554,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "Web3 is raising the stakes for incentives within gaming experiences and providing gamers with a whole new experience. Double down and show us how you can elevate gaming experiences with the help of Polygon!",
-          icon: require("~/assets/third/polygon-matic-logo.svg"),
+          icon: require("~/assets/sponsors/logos/Polygon.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
         },

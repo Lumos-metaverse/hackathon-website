@@ -8,7 +8,7 @@ const c7 = () => import(/* webpackChunkName: "page--src--pages--entertainment-ce
 const c8 = () => import(/* webpackChunkName: "page--src--pages--difinity-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/difinity.vue")
 const c9 = () => import(/* webpackChunkName: "page--src--pages--builders-toolbox-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/builders-toolbox.vue")
 const c10 = () => import(/* webpackChunkName: "page--src--pages--all-tracks-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/all-tracks.vue")
-const c11 = () => import(/* webpackChunkName: "page--src--pages--aternity-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/aternity.vue")
+const c11 = () => import(/* webpackChunkName: "page--src--pages--aeternity-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/aeternity.vue")
 const c12 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/node_modules/gridsome/app/pages/404.vue")
 const c13 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/Index.vue")
 
@@ -54,7 +54,7 @@ export default [
     component: c10
   },
   {
-    path: "/aternity/",
+    path: "/aeternity/",
     component: c11
   },
   {
