@@ -34,7 +34,7 @@
               v-if="isMobile"
               src="~/assets/sponsors/logos/Polygon.png"
             />
-            <g-image v-else src="~/assets/sponsors/logos/Polygon.png" />
+            <!-- <g-image v-else src="~/assets/sponsors/logos/polygon-matic-logo.svg" /> -->
           </div>
           <div>Polygon Track</div>
         </div>
