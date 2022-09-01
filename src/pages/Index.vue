@@ -35,7 +35,7 @@ import Footer from '~/components/Footer.vue'
 import VueGtag from "vue-gtag";
 
 // Vue.use(VueGtag, {
-//   config: { id: "UA-238485203-1" }
+//   config: { id: "G-ZRJWHRCZ18" }
 // });
 export default {
   name:'Index',
