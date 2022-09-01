@@ -573,7 +573,7 @@ export default {
           url: "/aeternity/",
         },
         {
-          name: "NFTs everywhere!",
+          name: "NFTs-NFTs everywhere!",
           prize: "$5,000",
           level: "Intermediate",
           participants: "324",
@@ -1574,7 +1574,7 @@ export default {
       font-family: "Brinnan";
       font-style: normal;
       font-weight: 700;
-      font-size: 35px;
+      font-size: 30px;
       line-height: 145.9%;
       letter-spacing: -0.015em;
       color: #ffffff;
