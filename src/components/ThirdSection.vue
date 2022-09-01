@@ -570,7 +570,7 @@ export default {
             "By using the native Oracle system we want you to build a powerful price feed alternative to ChainLink that can power all DeFi æpps built on æternity in a decentralized and efficient way!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/aternity/",
+          url: "/aeternity/",
         },
         {
           name: "NFTs everywhere!",
@@ -582,7 +582,7 @@ export default {
             "Take the unique opportunity to build one of the first NFT solutions that are built around our brand new AEX-141 NFT standard. We're looking for minting solutions, launchpads, auction platforms and marketplaces. Check out our Graffiti æpp and think of innovative ways to NFT-ise the artworks!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/aternity/",
+          url: "/aeternity/",
         },
         {
           name: "DAOs - the future of our society!",
@@ -594,7 +594,7 @@ export default {
             "The future of society will be powered by DAOs. Think about innovative solutions that empower our future society to fundraise, to make the right decisions & to empower the people!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/aternity",
+          url: "/aeternity",
         },
       ],
       Dfinity: [
