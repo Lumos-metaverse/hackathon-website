@@ -183,6 +183,13 @@ data () {
          companyLogo: require('~/assets/sponsors/logos/thedapplist.svg'),
          
        },
+       {
+        name: 'Anil Dukkipatty',
+        position: 'CoFounder, revise', 
+        image: require('~/assets/mentors/final/AnilDukkipatty.png'),
+         companyLogo: require('~/assets/sponsors/logos/revise.png'),
+         
+       }
 
      ],
      //Slider configuration [obj]
