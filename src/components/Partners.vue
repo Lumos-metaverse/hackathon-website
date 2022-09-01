@@ -24,6 +24,32 @@
             </div>
         </div>
         </div>
+
+<!-- Media Partners-->
+        <div> 
+              <div class="subtitle">
+           Media Partners
+        </div>
+        <div class="wrapper">
+            <div style="cursor:pointer" class="tile" v-for="(mediapartners,i) in mediapartners" :key="i" @click="openPage(mediapartners.url)">
+                <g-image class="bg" src="~/assets/sponsors/tile.svg"></g-image>
+                <div class="sponsor">
+                    <g-image :src="mediapartners.logo"></g-image>
+                </div>
+            </div>
+        </div>
+
+         <div class="wrapper-desktop">
+            <div style="cursor:pointer" class="tile" v-for="(mediapartners,i) in mediapartners" :key="i" @click="openPage(mediapartners.url)">
+                <g-image class="bg" src="~/assets/sponsors/tile-desktop.svg"></g-image>
+                <div class="sponsor">
+                    <g-image :src="mediapartners.logo"></g-image>
+                    <div>{{mediapartners.name}}</div>
+                </div>
+            </div>
+        </div>
+
+        </div>
         
         <div class="title">
           Community Partners
@@ -171,7 +197,13 @@
                         url:'https://standards.ieee.org/'
                     },
 
-                ]
+                ],
+                mediapartners: [{
+                    name: 'The Decrypting Story',
+                        logo: require('~/assets/sponsors/logos/tds.png'),
+                        url:'https://yourstory.com/the-decrypting-story'
+
+                }]
             }
         }
     }

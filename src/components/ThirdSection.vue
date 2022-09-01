@@ -28,339 +28,389 @@
       </div> -->
       <!-- Polygon Track-->
       <div>
-        
-         <div class="altttile">
-             <div>
-          <g-image v-if="isMobile" src="~/assets/third/polygon-matic-logo.svg" />
-          <g-image v-else src="~/assets/third/polygon-matic-logo.svg" />
+        <div class="altttile">
+          <div>
+            <g-image
+              v-if="isMobile"
+              src="~/assets/third/polygon-matic-logo.svg"
+            />
+            <g-image v-else src="~/assets/third/polygon-matic-logo.svg" />
+          </div>
+          <div>Polygon Track</div>
         </div>
-        <div>Polygon Track</div>
-       
-      </div>
         <div class="tracks">
-        <div class="card" v-for="(polygontrack, i) in polygontrack" :key="i">
-          <div class="inner-card">
-            <div class="name">
-              <div class="icon">
-                <div class="layer">
-                  <img :src="polygontrack.icon" />
+          <div class="card" v-for="(polygontrack, i) in polygontrack" :key="i">
+            <div class="inner-card">
+              <div class="name">
+                <div class="icon">
+                  <div class="layer">
+                    <img :src="polygontrack.icon" />
+                  </div>
                 </div>
+                <div class="t">{{ polygontrack.name }}</div>
               </div>
-              <div class="t">{{ polygontrack.name }}</div>
-            </div>
-            <div class="details">
-              {{ polygontrack.content }}
-            </div>
-            
-            <div class="buttons">
-              <g-link
-                style="text-decoration: none; cursor: pointer"
-                :to="polygontrack.url"
-              >
-                <button class="learn" style="text-decoration: none; cursor: pointer">
-                  LEARN MORE
-                  <g-image
-                    style="width: 12px; height: 12px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/arrows/purple-arrow.svg"
-                  />
-                </button>
-                
-              </g-link>
-              <div class="sponsor" v-if="track && track.sponsor">
-                <div>Sponsors:</div>
-                <div>
-                  <img :src="track.sponsor" />
-                </div>
+              <div class="details">
+                {{ polygontrack.content }}
               </div>
-              <div class="prize">
-            <div class="prizeAndMedal">
-                <div>
-                {{polygontrack.prize}}
+              <div class="buttonMedal">
+                <div class="buttons">
+                  <g-link
+                    style="text-decoration: none; cursor: pointer"
+                    :to="polygontrack.url"
+                  >
+                    <button
+                      class="learn"
+                      style="text-decoration: none; cursor: pointer"
+                    >
+                      LEARN MORE
+                      <g-image
+                        style="width: 12px; height: 12px; margin-left: 8px"
+                        width="12"
+                        height="12"
+                        src="~/assets/arrows/purple-arrow.svg"
+                      />
+                    </button>
+                  </g-link>
+                  <div class="sponsor" v-if="track && track.sponsor">
+                    <div>Sponsors:</div>
+                    <div>
+                      <img :src="track.sponsor" />
+                    </div>
+                  </div>
                 </div>
-                <div>
-                <g-image
-                    style="width: 15px; height: 15px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/third/medal.png" />
-                </div>
-                </div>
-            </div>
+                  <div class="prize">
+                    <div class="prizeAndMedal">
+                      <div>
+                        {{ polygontrack.prize }}
+                      </div>
+                      <div>
+                        <g-image
+                          style="width: 15px; height: 15px; margin-left: 8px"
+                          width="12"
+                          height="12"
+                          src="~/assets/third/medal.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
 
       <!--AeternityTrack-->
       <div>
-        
-         <div class="altttile">
-             <div>
-          <g-image v-if="isMobile" src="~/assets/third/aeternity-ae-logo.svg" />
-          <g-image v-else src="~/assets/third/aeternity-ae-logo.svg" />
+        <div class="altttile">
+          <div>
+            <g-image
+              v-if="isMobile"
+              src="~/assets/third/aeternity-ae-logo.svg"
+            />
+            <g-image v-else src="~/assets/third/aeternity-ae-logo.svg" />
+          </div>
+          <div>æternity Track</div>
         </div>
-        <div>æternity Track</div>
-       
-      </div>
         <div class="tracks">
-        <div class="card" v-for="(AeternityTrack, i) in AeternityTrack" :key="i">
-          <div class="inner-card">
-            <div class="name">
-              <div class="icon">
-                <div class="layer">
-                  <img :src="AeternityTrack.icon" />
+          <div
+            class="card"
+            v-for="(AeternityTrack, i) in AeternityTrack"
+            :key="i"
+          >
+            <div class="inner-card">
+              <div class="name">
+                <div class="icon">
+                  <div class="layer">
+                    <img :src="AeternityTrack.icon" />
+                  </div>
+                </div>
+                <div class="t">{{ AeternityTrack.name }}</div>
+              </div>
+              <div class="details">
+                {{ AeternityTrack.content }}
+              </div>
+              <div class="buttonMedal">
+              <div class="buttons">
+                <g-link
+                  style="text-decoration: none; cursor: pointer"
+                  :to="AeternityTrack.url"
+                >
+                  <button
+                    class="learn"
+                    style="text-decoration: none; cursor: pointer"
+                  >
+                    LEARN MORE
+                    <g-image
+                      style="width: 12px; height: 12px; margin-left: 8px"
+                      width="12"
+                      height="12"
+                      src="~/assets/arrows/purple-arrow.svg"
+                    />
+                  </button>
+                </g-link>
+                <div class="sponsor" v-if="track && track.sponsor">
+                  <div>Sponsors:</div>
+                  <div>
+                    <img :src="track.sponsor" />
+                  </div>
+                </div>
+                <div class="prize">
+                  <div class="prizeAndMedal">
+                    <div>
+                      {{ AeternityTrack.prize }}
+                    </div>
+                    <div>
+                      <g-image
+                        style="width: 15px; height: 15px; margin-left: 8px"
+                        width="12"
+                        height="12"
+                        src="~/assets/third/medal.png"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="t">{{ AeternityTrack.name }}</div>
-            </div>
-            <div class="details">
-              {{ AeternityTrack.content }}
-            </div>
-            
-            <div class="buttons">
-              <g-link
-                style="text-decoration: none; cursor: pointer"
-                :to="AeternityTrack.url"
-              >
-                <button class="learn" style="text-decoration: none; cursor: pointer">
-                  LEARN MORE
-                  <g-image
-                    style="width: 12px; height: 12px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/arrows/purple-arrow.svg"
-                  />
-                </button>
-
-              </g-link>
-              <div class="sponsor" v-if="track && track.sponsor">
-                <div>Sponsors:</div>
-                <div>
-                  <img :src="track.sponsor" />
-                </div>
               </div>
-              <div class="prize">
-            <div class="prizeAndMedal">
-                <div>
-                {{AeternityTrack.prize}}
-                </div>
-                <div>
-                <g-image
-                    style="width: 15px; height: 15px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/third/medal.png" />
-                </div>
-                </div>
-            </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
 
       <!-- Dfinity Tracks -->
 
       <!--AeternityTrack-->
       <div>
-        
-         <div class="altttile">
-             <div>
-          <g-image v-if="isMobile" src="~/assets/third/dfinity-logo-vector.png" />
-          <g-image v-else src="~/assets/third/dfinity-logo-vector.png" />
+        <div class="altttile">
+          <div>
+            <g-image
+              v-if="isMobile"
+              src="~/assets/third/dfinity-logo-vector.png"
+            />
+            <g-image v-else src="~/assets/third/dfinity-logo-vector.png" />
+          </div>
+          <div>Dfinity Track</div>
         </div>
-        <div>Dfinity Track</div>
-       
-      </div>
         <div class="tracks">
-        <div class="card" v-for="(Dfinity, i) in Dfinity" :key="i">
-          <div class="inner-card">
-            <div class="name">
-              <div class="icon">
-                <div class="layer">
-                  <img :src="Dfinity.icon" />
+          <div class="card" v-for="(Dfinity, i) in Dfinity" :key="i">
+            <div class="inner-card">
+              <div class="name">
+                <div class="icon">
+                  <div class="layer">
+                    <img :src="Dfinity.icon" />
+                  </div>
                 </div>
+                <div class="t">{{ Dfinity.name }}</div>
               </div>
-              <div class="t">{{ Dfinity.name }}</div>
-            </div>
-            <div class="details">
-              {{ Dfinity.content }}
-            </div>
-            
-            <div class="buttons">
-              <g-link
-                style="text-decoration: none; cursor: pointer"
-                :to="Dfinity.url"
-              >
-                <button class="learn" style="text-decoration: none; cursor: pointer">
-                  LEARN MORE
-                  <g-image
-                    style="width: 12px; height: 12px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/arrows/purple-arrow.svg"
-                  />
-                </button>
+              <div class="details">
+                {{ Dfinity.content }}
+              </div>
 
-              </g-link>
-              <div class="sponsor" v-if="track && track.sponsor">
-                <div>Sponsors:</div>
-                <div>
-                  <img :src="track.sponsor" />
+              <div class="buttons">
+                <g-link
+                  style="text-decoration: none; cursor: pointer"
+                  :to="Dfinity.url"
+                >
+                  <button
+                    class="learn"
+                    style="text-decoration: none; cursor: pointer"
+                  >
+                    LEARN MORE
+                    <g-image
+                      style="width: 12px; height: 12px; margin-left: 8px"
+                      width="12"
+                      height="12"
+                      src="~/assets/arrows/purple-arrow.svg"
+                    />
+                  </button>
+                </g-link>
+                <div class="sponsor" v-if="track && track.sponsor">
+                  <div>Sponsors:</div>
+                  <div>
+                    <img :src="track.sponsor" />
+                  </div>
+                </div>
+                <div class="prize">
+                  <div class="prizeAndMedal">
+                    <div>
+                      {{ Dfinity.prize }}
+                    </div>
+                    <div>
+                      <g-image
+                        style="width: 15px; height: 15px; margin-left: 8px"
+                        width="12"
+                        height="12"
+                        src="~/assets/third/medal.png"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="prize">
-            <div class="prizeAndMedal">
-                <div>
-                {{Dfinity.prize}}
-                </div>
-                <div>
-                <g-image
-                    style="width: 15px; height: 15px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/third/medal.png" />
-                </div>
-                </div>
-            </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
 
+      <!-- Associate Tracks -->
 
-     <!-- Associate Tracks -->
-     
-    <div class="title">Associate Tracks</div>
+      <div class="title">Associate Tracks</div>
 
-
-     <!-- Router Protocol-->
-     <div>
+      <!-- Router Protocol-->
+      <div>
         <div class="bounty">
-        <div class="cardforbounty" v-for="(RouterProtocol, i) in RouterProtocol" :key="i">
-          <div class="inner-card">
-            <div class="name">
-              <div class="icon">
-                <div class="layer">
-                  <img :src="RouterProtocol.icon" />
+          <div
+            class="cardforbounty"
+            v-for="(RouterProtocol, i) in RouterProtocol"
+            :key="i"
+          >
+            <div class="inner-card">
+              <div class="name">
+                <div class="icon">
+                  <div class="layer">
+                    <img :src="RouterProtocol.icon" />
+                  </div>
+                </div>
+                <div class="t">{{ RouterProtocol.name }}</div>
+                <div class="prize">
+                  <div class="prizeAndMedal">
+                    <div>
+                      {{ RouterProtocol.prize }}
+                    </div>
+                    <div>
+                      <g-image
+                        style="width: 15px; height: 15px; margin-left: 8px"
+                        width="12"
+                        height="12"
+                        src="~/assets/third/medal.png"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="t">{{ RouterProtocol.name }}</div>
-              <div class="prize">
-            <div class="prizeAndMedal">
-                <div>
-                {{RouterProtocol.prize}}
-                </div>
-                <div>
-                <g-image
-                    style="width: 15px; height: 15px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/third/medal.png" />
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="details">
-              {{ RouterProtocol.content }}
-            </div>
-            <div class="buttons">
-              
+              <div class="details">
+                {{ RouterProtocol.content }}
+              </div>
+              <div class="buttons"></div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      
+
       <!-- Arcana Network Track-->
       <div>
         <div class="bounty">
-        <div class="cardforbounty" v-for="(ArcanaNetwork, i) in ArcanaNetwork" :key="i">
-          <div class="inner-card">
-            <div class="name">
-              <div class="icon">
-                <div class="layer">
-                  <img :src="ArcanaNetwork.icon" />
+          <div
+            class="cardforbounty"
+            v-for="(ArcanaNetwork, i) in ArcanaNetwork"
+            :key="i"
+          >
+            <div class="inner-card">
+              <div class="name">
+                <div class="icon">
+                  <div class="layer">
+                    <img :src="ArcanaNetwork.icon" />
+                  </div>
+                </div>
+                <div class="t">{{ ArcanaNetwork.name }}</div>
+                <div class="prize">
+                  <div class="prizeAndMedal">
+                    <div>
+                      {{ ArcanaNetwork.prize }}
+                    </div>
+                    <div>
+                      <g-image
+                        style="width: 15px; height: 15px; margin-left: 8px"
+                        width="12"
+                        height="12"
+                        src="~/assets/third/medal.png"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="t">{{ ArcanaNetwork.name }}</div>
-              <div class="prize">
-            <div class="prizeAndMedal">
-                <div>
-                {{ArcanaNetwork.prize}}
-                </div>
-                <div>
-                <g-image
-                    style="width: 15px; height: 15px; margin-left: 8px"
-                    width="12"
-                    height="12"
-                    src="~/assets/third/medal.png" />
-                </div>
-                </div>
+              <div class="details">
+                {{ ArcanaNetwork.content }}
+              </div>
+              <div class="buttons"></div>
+              <!-- <div class="prize"> -->
+              <!-- {{ArcanaNetwork.prize}} -->
+              <!-- </div> -->
             </div>
-            </div>
-            <div class="details">
-              {{ ArcanaNetwork.content }}
-            </div>
-            <div class="buttons">
-            </div>
-             <!-- <div class="prize"> -->
-                <!-- {{ArcanaNetwork.prize}} -->
-            <!-- </div> -->
           </div>
-          
         </div>
       </div>
+
+      <!-- Othe Tracks-->
+
+      <div class="title">Open Tracks</div>
+      <div>
+        <div class="bounty">
+          <div
+            class="cardforbounty"
+            v-for="(othertrack, i) in othertrack"
+            :key="i"
+          >
+            <div class="inner-card">
+              <div class="name">
+                <div class="icon">
+                  <div class="layer">
+                    <img :src="othertrack.icon" />
+                  </div>
+                </div>
+                <div class="t">{{ othertrack.name }}</div>
+              </div>
+              <div class="details">
+                {{ othertrack.content }}
+              </div>
+              <div class="buttons"></div>
+            </div>
+          </div>
+        </div>
       </div>
-      
+
       <!-- All other Tracks-->
 
       <!--  <div class="altttile"> All Tracks</div> -->
-     <!--   <div class="bounty"> -->
-       <!-- <div class="cardforbounty" v-for="(track, i) in tracks" :key="i">   -->
-       <!--   <div class="inner-card">   -->
-        <!--    <div class="name">  -->
-        <!--      <div class="icon">  -->
-        <!--        <div class="layer">  -->
-        <!--          <img :src="track.icon" />  -->
-        <!--        </div>  -->
-        <!--      </div>  -->
-        <!--      <div class="t">{{ track.name }}</div>  -->
-        <!--    </div>  -->
-        <!--    <div class="details">  -->
-        <!--      {{ track.content }}  -->
-        <!--    </div>  -->
-        <!--    <div class="buttons">  -->
-        <!--      <g-link  -->
-        <!--        style="text-decoration: none; cursor: pointer"  -->
-        <!--        :to="track.url"  -->
-        <!--      >  -->
-        <!--        <button class="learn">  -->
-        <!--          LEARN MORE  -->
-        <!--          <g-image  -->
-        <!--            style="width: 12px; height: 12px; margin-left: 8px"  -->
-        <!--            width="12"  -->
-        <!--            height="12"  -->
-        <!--            src="~/assets/arrows/purple-arrow.svg"  -->
-        <!--          />  -->
-        <!--        </button>  -->
-        <!--      </g-link>  -->
-        <!--      <div class="sponsor" v-if="track && track.sponsor">  -->
-        <!--        <div>Sponsors:</div>  -->
-        <!--        <div>  -->
-        <!--          <img :src="track.sponsor" />  -->
-        <!--        </div>  -->
-       <!--       </div>  -->
-        <!--    </div>  -->
-        <!--  </div>  -->
-     <!--   </div>  -->
-    <!--  </div>  -->
-    <div> 
-    <!-- <g-link to="/all-tracks/">
+      <!--   <div class="bounty"> -->
+      <!-- <div class="cardforbounty" v-for="(track, i) in tracks" :key="i">   -->
+      <!--   <div class="inner-card">   -->
+      <!--    <div class="name">  -->
+      <!--      <div class="icon">  -->
+      <!--        <div class="layer">  -->
+      <!--          <img :src="track.icon" />  -->
+      <!--        </div>  -->
+      <!--      </div>  -->
+      <!--      <div class="t">{{ track.name }}</div>  -->
+      <!--    </div>  -->
+      <!--    <div class="details">  -->
+      <!--      {{ track.content }}  -->
+      <!--    </div>  -->
+      <!--    <div class="buttons">  -->
+      <!--      <g-link  -->
+      <!--        style="text-decoration: none; cursor: pointer"  -->
+      <!--        :to="track.url"  -->
+      <!--      >  -->
+      <!--        <button class="learn">  -->
+      <!--          LEARN MORE  -->
+      <!--          <g-image  -->
+      <!--            style="width: 12px; height: 12px; margin-left: 8px"  -->
+      <!--            width="12"  -->
+      <!--            height="12"  -->
+      <!--            src="~/assets/arrows/purple-arrow.svg"  -->
+      <!--          />  -->
+      <!--        </button>  -->
+      <!--      </g-link>  -->
+      <!--      <div class="sponsor" v-if="track && track.sponsor">  -->
+      <!--        <div>Sponsors:</div>  -->
+      <!--        <div>  -->
+      <!--          <img :src="track.sponsor" />  -->
+      <!--        </div>  -->
+      <!--       </div>  -->
+      <!--    </div>  -->
+      <!--  </div>  -->
+      <!--   </div>  -->
+      <!--  </div>  -->
+      <div>
+        <!-- <g-link to="/all-tracks/">
               
       <button class="rotating-button">
         VIEW ALL
@@ -440,80 +490,85 @@ export default {
   },
   data() {
     return {
-
-        polygontrack: [
-            {
+      polygontrack: [
+        {
           name: "Best DeFi App built on Polygon ",
           prize: "$5000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "The onset of DeFi is changing FinTech as we know it! Identify problem statements that are plaguing the DeFi space and leverage Polygon to change the way consumers transact. ",
+          content:
+            "The onset of DeFi is changing FinTech as we know it! Identify problem statements that are plaguing the DeFi space and leverage Polygon to change the way consumers transact. ",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
         },
         {
-            name: "Best NFT App built on Polygon ",
+          name: "Best NFT App built on Polygon ",
           prize: "$5000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "NFTs are taking digital assets to a whole new level by opening the proverbial Web3 doors to the general public. Show us how you will revolutionize this space with the support of Polygon and win big!",
+          content:
+            "NFTs are taking digital assets to a whole new level by opening the proverbial Web3 doors to the general public. Show us how you will revolutionize this space with the support of Polygon and win big!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
-
         },
         {
-                name: "Best Gaming/ Metaverse Track ",
+          name: "Best Gaming/ Metaverse Track ",
           prize: "$5000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "Web3 is raising the stakes for incentives within gaming experiences and providing gamers with a whole new experience. Double down and show us how you can elevate gaming experiences with the help of Polygon!",
+          content:
+            "Web3 is raising the stakes for incentives within gaming experiences and providing gamers with a whole new experience. Double down and show us how you can elevate gaming experiences with the help of Polygon!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
-        }
-        ],
-        AeternityTrack: [
-             {
+        },
+      ],
+      AeternityTrack: [
+        {
           name: "DeFi powered by Oracles",
           prize: "$8000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "By using the native Oracle system we want you to build a powerful price feed alternative to ChainLink that can power all DeFi æpps built on æternity in a decentralized and efficient way!",
+          content:
+            "By using the native Oracle system we want you to build a powerful price feed alternative to ChainLink that can power all DeFi æpps built on æternity in a decentralized and efficient way!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aternity/",
         },
         {
-            name: "NFTs everywhere!",
+          name: "NFTs everywhere!",
           prize: "$5000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "Take the unique opportunity to build one of the first NFT solutions that are built around our brand new AEX-141 NFT standard. We're looking for minting solutions, launchpads, auction platforms and marketplaces. Check out our Graffiti æpp and think of innovative ways to NFT-ise the artworks!",
+          content:
+            "Take the unique opportunity to build one of the first NFT solutions that are built around our brand new AEX-141 NFT standard. We're looking for minting solutions, launchpads, auction platforms and marketplaces. Check out our Graffiti æpp and think of innovative ways to NFT-ise the artworks!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aternity/",
-
         },
         {
-                name: "DAOs - the future of our society!",
+          name: "DAOs - the future of our society!",
           prize: "$7000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "The future of society will be powered by DAOs. Think about innovative solutions that empower our future society to fundraise, to make the right decisions & to empower the people!",
+          content:
+            "The future of society will be powered by DAOs. Think about innovative solutions that empower our future society to fundraise, to make the right decisions & to empower the people!",
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aternity",
-        }] ,
-        Dfinity: [{
-                   name: "Coming Soon! ",
+        },
+      ],
+      Dfinity: [
+        {
+          name: "Coming Soon! ",
           prize: "$10,000",
           level: "Intermediate",
           participants: "324",
@@ -522,13 +577,12 @@ export default {
           icon: require("~/assets/third/cards/logo1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/difinity/",
+        },
+      ],
 
-        }
-        ] ,
-
-        RouterProtocol: [
-            {
-            name: "Create a Cross chain Yield Aggregator using Router CrossTalk Library. ",
+      RouterProtocol: [
+        {
+          name: "Create a Cross chain Yield Aggregator using Router CrossTalk Library. ",
           prize: "$5,000",
           level: "Intermediate",
           participants: "324",
@@ -537,58 +591,61 @@ export default {
           icon: require("~/assets/sponsors/logos/router.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
-        }
+        },
+      ],
 
-        ],
-        
-        ArcanaNetwork: [
-          {
-            name: "BUIDL Privacy Preserving Apps. ",
+      ArcanaNetwork: [
+        {
+          name: "BUIDL Privacy Preserving Apps. ",
           prize: "$5,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "Use your imagination and feel free to build any DApp that excites you! Show us how best you can leverage Arcana’s access control feature to store data and Social/Magic links to create wallets. We do not want to limit your imagination but here are some topics for your team to consider as reference: Marketplaces, Games, social apps, NFT based apps.",
+          content:
+            "Use your imagination and feel free to build any DApp that excites you! Show us how best you can leverage Arcana’s access control feature to store data and Social/Magic links to create wallets. We do not want to limit your imagination but here are some topics for your team to consider as reference: Marketplaces, Games, social apps, NFT based apps.",
           icon: require("~/assets/sponsors/logos/arcana.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
         },
-          {
-            name: "Upgrade the Buidlers Toolbox",
+        {
+          name: "Upgrade the Buidlers Toolbox",
           prize: "$5,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "Build Best tooling, API, SDK, services, or patterns that make it easier for Web3 devs to build with Fluence and Aqua. The easiest way to get started is to go swing by the developer's docs and then build a small Fluence project or try one of the examples, identify tooling deficits, and kick off your hackathon project.",
+          content:
+            "Build Best tooling, API, SDK, services, or patterns that make it easier for Web3 devs to build with Fluence and Aqua. The easiest way to get started is to go swing by the developer's docs and then build a small Fluence project or try one of the examples, identify tooling deficits, and kick off your hackathon project.",
           icon: require("~/assets/sponsors/logos/fluence.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
         },
-          {
-            name: "Fight climate change with NFTs",
+        {
+          name: "Fight climate change with NFTs",
           prize: "$5,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "Climate change is a reality - and *the time to act is now.* The first step of action is Awareness. We rely on you to make your fellow citizens aware of it. Create an NFT using Revise SDK and climate/weather data to showcase the impact it has on humanity.",
+          content:
+            "Climate change is a reality - and *the time to act is now.* The first step of action is Awareness. We rely on you to make your fellow citizens aware of it. Create an NFT using Revise SDK and climate/weather data to showcase the impact it has on humanity.",
           icon: require("~/assets/sponsors/logos/revise.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
         },
-          {
-            name: "Build on Tezos tokens and solve real world problems",
+        {
+          name: "Build on Tezos tokens and solve real world problems",
           prize: "$2,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "Build a platform using which users can go long and short on Tezos based tokens, or Tokens bridged to Tezos. The project should use https://kolibri.finance/ (for borrowing against Tez) and a Dex like PlentyDeFi.com (for trading tokens).",
+          content:
+            "Build a platform using which users can go long and short on Tezos based tokens, or Tokens bridged to Tezos. The project should use https://kolibri.finance/ (for borrowing against Tez) and a Dex like PlentyDeFi.com (for trading tokens).",
           icon: require("~/assets/sponsors/logos/tezoz.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
         },
-          {
-            name: "Coming Soon!",
-          prize: "$5,000",
+        {
+          name: "To build a web3 application on Tatum using Tatum Node Infrastructure and/or Software Development Kit",
+          prize: "$10,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
@@ -597,29 +654,69 @@ export default {
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
         },
-          {
-            name: " Design a cross-chain identity aggregator for Web3:",
+        {
+          name: " Design a cross-chain identity aggregator for Web3:",
           prize: "$5,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "User1 can send assets to User2 by knowing their DID (It could be Vedant.Komet or KID Vedant)",
+          content:
+            "User1 can send assets to User2 by knowing their DID (It could be Vedant.Komet or KID Vedant)",
           icon: require("~/assets/sponsors/logos/komet.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
         },
-          {
-            name: "Keep Calm and NFT-ise!",
+        {
+          name: "Keep Calm and NFT-ise!",
           prize: "$ 7,777 worth $MNTL tokens",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          content: "NFT based event ticketing platform, that facilitates easy NFT event ticket issuing and easy check-ins using AssetMantle blockchain and MantleWallet. The process should be abstract user friendly such that the tickets should be verifiable by scanning a QR code on mobile. A mobile application with a simple username-based SignUp mechanism would be interesting.",
+          content:
+            "NFT based event ticketing platform, that facilitates easy NFT event ticket issuing and easy check-ins using AssetMantle blockchain and MantleWallet. The process should be abstract user friendly such that the tickets should be verifiable by scanning a QR code on mobile. A mobile application with a simple username-based SignUp mechanism would be interesting.",
           icon: require("~/assets/sponsors/logos/assetmantle.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
         },
-        ],
+      ],
+
+      othertrack: [
+        {
+          name: "Operation Sustainability ",
+          //prize: "$10,000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content:
+            "One of the biggest problem statements in human history is solving for sustainability in today’s world. Web3’s circular, participatory economy that is decentralised and incentivised, hosts a treasure trove of potential to ma...",
+          icon: require("~/assets/third/cards/logo6.png"),
+          //url: "/operation-sustainability",
+        },
+
+        {
+          name: "#BUIDL the Pillars of Governance",
+          // prize: "$10,000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content:
+            "The offerings that Web3 brings through Governance as a use case is tremendous. We challenge you to be inspired by Participation, Transparency, Consensus, Equity and Inclusiveness, Effectiveness and Efficiency, and Ac...",
+          icon: require("~/assets/third/cards/logo7.png"),
+          // url: "/pillar-of-governance",
+        },
+
+        {
+          name: "Entertainment Central",
+          //prize: "$10,000",
+          level: "Intermediate",
+          participants: "324",
+          deadline: "Jul 10, 2020",
+          content:
+            "Web3 has a strong entertainment offering when it comes to pushing the boundaries of its innovation index. With digital media consumption finding a perfect fit globally, it has opened up several avenues for innovation and ...",
+          icon: require("~/assets/third/cards/logo3.png"),
+          // url: "/entertainment-central",
+        },
+      ],
 
       tracks: [
         {
@@ -721,40 +818,46 @@ export default {
 
       //bounty for the hackathon
       bounty: [
-      //   {
-      //   name: "Arcana",
-      //     prize: "200000 USD",
-      //     level: "Beginner",
-      //     participants: "324",
-      //     //deadline: "Jul 10, 2020",
-      //     content:
-      //       "One the most popular problem statements that #BUIDLers are solving for in the Web3 space - Developer Tooling and infrastructure. Make the work a better place for developers and solve for one of the problem s...",
-      //     icon: require("~/assets/third/cards/arcana.png"),
-      //     url: "/builders-toolbox",
-
-      // },
-      // {
-      //     name: "Arcana",
-      //     prize: "200000 USD",
-      //     level: "Beginner",
-      //     participants: "324",
-      //     //deadline: "Jul 10, 2020",
-      //     content:
-      //       "One the most popular problem statements that #BUIDLers are solving for in the Web3 space - Developer Tooling and infrastructure. Make the work a better place for developers and solve for one of the problem s...",
-      //     icon: require("~/assets/third/cards/arcana.png"),
-      //     url: "/builders-toolbox",
-      // }
-      
+        //   {
+        //   name: "Arcana",
+        //     prize: "200000 USD",
+        //     level: "Beginner",
+        //     participants: "324",
+        //     //deadline: "Jul 10, 2020",
+        //     content:
+        //       "One the most popular problem statements that #BUIDLers are solving for in the Web3 space - Developer Tooling and infrastructure. Make the work a better place for developers and solve for one of the problem s...",
+        //     icon: require("~/assets/third/cards/arcana.png"),
+        //     url: "/builders-toolbox",
+        // },
+        // {
+        //     name: "Arcana",
+        //     prize: "200000 USD",
+        //     level: "Beginner",
+        //     participants: "324",
+        //     //deadline: "Jul 10, 2020",
+        //     content:
+        //       "One the most popular problem statements that #BUIDLers are solving for in the Web3 space - Developer Tooling and infrastructure. Make the work a better place for developers and solve for one of the problem s...",
+        //     icon: require("~/assets/third/cards/arcana.png"),
+        //     url: "/builders-toolbox",
+        // }
       ],
     };
   },
 };
 </script>
 <style lang="scss" scoped>
-.prizeAndMedal{
+.buttonMedal{
+  display:flex;
+  flex-direction:row;
+
+  
+}
+.prizeAndMedal {
   display: flex;
   flex-direction: row;
+
 }
+
 .sponsor {
   font-family: "Brinnan";
   font-style: normal;
@@ -799,18 +902,18 @@ export default {
   padding-bottom: 30px;
 }
 .bounty {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    max-width: 1200px;
-     margin: 0 auto;
-      display: flex;
-     flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
-.bountyHeader{
+.bountyHeader {
   display: flex;
   flex-direction: row;
 }
@@ -845,8 +948,7 @@ export default {
       display: flex;
       flex-direction: row;
       gap: 9px;
-      justify-content:center;
-
+      justify-content: center;
     }
 
     .rotating-button {
@@ -869,28 +971,28 @@ export default {
       margin-top: 100px;
       cursor: pointer;
       transition: transform 2s ease-in-out;
-      display:flex;
+      display: flex;
     }
     .rotating-button:hover {
       transform: rotate(-360deg);
     }
     .card {
-        //place three cards in a row
-        display: flex;
-        width: 50%;
-        flex-direction: row;
-        gap: 7px;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      
+      //place three cards in a row
+      display: flex;
+      width: 50%;
+      flex-direction: row;
+      gap: 7px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
       min-height: 250px;
       width: 70%;
       // margin:0 auto;
-     
+
       max-width: 440px;
-      
+
       align-items: center;
       justify-content: center;
       // background: linear-gradient(180deg, rgba(90, 62, 158, 0.9) 0%, rgba(60, 41, 116, 0.9) 0.01%, rgba(111, 47, 153, 0.9) 100%);
@@ -926,7 +1028,7 @@ export default {
           font-size: 24px;
           line-height: 145.9%;
           letter-spacing: -0.015em;
-          
+
           justify-content: space-between;
           margin-bottom: 23px;
           .t {
@@ -949,7 +1051,7 @@ export default {
               width: 100%;
               height: 100%;
               border-radius: 6.0263px;
-              background-color:none;
+              background-color: none;
               transform: translate3d(-3.59px, -3.59px, -3.59px);
               img {
                 width: 100%;
@@ -1115,7 +1217,7 @@ export default {
         }
       }
     }
-    .cardforbounty{
+    .cardforbounty {
       min-height: 200px;
       width: 70%;
       // margin:0 auto;
@@ -1161,7 +1263,7 @@ export default {
           letter-spacing: -0.015em;
           color: #ffffff;
           margin-bottom: 23px;
-          justify-content:space-between;
+          justify-content: space-between;
           .t {
             max-width: 80%;
             font-family: "Brinnan";
@@ -1174,26 +1276,26 @@ export default {
             margin-right: 30px;
           }
           .prize {
-            font-family: 'Inter';
-            margin-top:0.9375rem;
+            font-family: "Inter";
+            margin-top: 0.9375rem;
             padding-top: 0.3rem;
             height: 20px;
-      //text-align: center;
+            //text-align: center;
             font-style: normal;
-            
+
             font-weight: 400;
-         
+
             line-height: 145.9%;
             letter-spacing: -0.015em;
             color: #ffffff;
           }
           .levelbounty {
-            font-family: 'Inter';
+            font-family: "Inter";
             width: 126px;
             //margin-top:0.1375rem;
             //padding-top: 0.3rem;
             height: 20px;
-      text-align: center;
+            text-align: center;
             font-style: normal;
             //background: #7506ac;
             font-weight: 400;
@@ -1203,7 +1305,7 @@ export default {
             color: #ffffff;
           }
           .hr {
-            border: 0.773455px solid #8650A6;
+            border: 0.773455px solid #8650a6;
           }
           .icon {
             width: 150px;
@@ -1214,10 +1316,10 @@ export default {
             .layer {
               width: 80%;
               height: 80%;
-              padding:5px;
+              padding: 5px;
               border-radius: 6.0263px;
               // background: white;
-             // transform: translate3d(-3.59px, -3.59px, -3.59px);
+              // transform: translate3d(-3.59px, -3.59px, -3.59px);
               img {
                 width: 100%;
                 height: 100%;
@@ -1283,7 +1385,7 @@ export default {
           justify-content: space-between;
           align-items: flex-end;
           width: 100%;
-          margin-top: auto;
+          //margin-top: auto;
           .learn {
             background: linear-gradient(
               95.7deg,
@@ -1385,7 +1487,6 @@ export default {
       }
     }
 
-
     .title {
       display: flex;
       flex-direction: row;
@@ -1404,7 +1505,7 @@ export default {
       }
     }
     .altttile {
-     display: flex;
+      display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
@@ -1422,7 +1523,7 @@ export default {
         padding-right: 10px;
       }
     }
-    
+
     .sub-title {
       width: 80%;
       margin: 0 auto;
@@ -1463,6 +1564,14 @@ export default {
 </style>
 <style lang="scss" scoped>
 @media (max-width: 750px) {
+  .prizeAndMedal{
+    margin-left: 45px;
+    margin-top:10px;
+  }
+  .buttonMedal {
+    flex-direction: column;
+    
+  }
   .third {
     .content {
       .rotating-button {
@@ -1471,29 +1580,32 @@ export default {
       .tracks {
         margin: 0 0;
         //max-width: 1200px;
-        justify-content:center;
-        flex-direction:column;
+        justify-content: center;
+        flex-direction: column;
         align-content: center;
-        
       }
       .card {
         margin-right: 0px;
         width: 50%;
         margin-bottom: 40px;
-        margin-left: 0;
+        margin-left: 100px;
         .inner-card {
           .name {
             .t {
               font-size: 21px;
             }
           }
+          .prize {
+            font-size: 20px;
+          }
         }
       }
-     
+
       .title {
         font-size: 20px;
         margin-top: 169px;
       }
+
       .sub-title {
         font-size: 16px;
         margin-top: 8px;
@@ -1507,6 +1619,11 @@ export default {
         padding: 16px 28px !important;
         width: 45%;
       }
+    }
+    .prize {
+      font-size: 20px;
+      flex-direction: column;
+      //display: none;
     }
   }
 }
