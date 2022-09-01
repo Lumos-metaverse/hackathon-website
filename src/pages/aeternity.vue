@@ -13,7 +13,7 @@ export default {
                 title:'About æternity ',
                 url: 'https://aeternity.com/',
                 description:'A Blockchain for the Masses: Engineered to scale and last, æternity is an easily accessible blockchain platform for the global public. With numerous innovative functionalities and performance far ahead of earlier blockchains, æternity allows its users and community to seamlessly venture into the new era of society, economy, and digital interactions.',
-                icon:require('~/assets/third/cards/logo3.png'),
+                icon:require('~/assets/third/aeternity-ae-logo.svg'),
                 points:[
                     {
                         heading: 'DeFi powered by Oracles',
