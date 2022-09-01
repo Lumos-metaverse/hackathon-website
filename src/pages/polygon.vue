@@ -13,7 +13,7 @@ export default {
                 title:'About Polygon',
                 url: 'http://polygon.technology',
                 description:'Polygon is the leading platform for Ethereum scaling and infrastructure development. Its growing suite of products offers developers easy access to all major scaling and infrastructure solutions: L2 solutions (ZK Rollups and Optimistic Rollups), sidechains, hybrid solutions, stand-alone and enterprise chains, data availability solutions, and more. Polygon’s scaling solutions have seen widespread adoption with 37000+ applications hosted, 1B+ total transactions processed, ~160M+ unique user addresses, and $5B+ in assets secured.',
-                icon:require('~/assets/sponsors/logos/Polygon.png'),
+                icon:require('~/assets/third/polygon-matic-logo.svg'),
                 points:[
                     {
                         heading: 'Best DeFi App built on Polygon',
