@@ -30,7 +30,7 @@ export default {
                     },
                     {
                         heading:'Some Tools and Resources to get you started',
-                        copy: 'https://github.com/aeternity'
+                        href: 'https://github.com/aeternity'
             
                     }
                         
