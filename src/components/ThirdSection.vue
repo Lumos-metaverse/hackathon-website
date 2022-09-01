@@ -1105,6 +1105,7 @@ export default {
             border: 0.60263px solid #ffffff;
             border-radius: 6.0263px;
             margin-right: 8px;
+            padding: 10px;
             .layer {
               width: 100%;
               height: 100%;
@@ -1573,12 +1574,13 @@ export default {
       font-family: "Brinnan";
       font-style: normal;
       font-weight: 700;
-      font-size: 27px;
+      font-size: 35px;
       line-height: 145.9%;
       letter-spacing: -0.015em;
       color: #ffffff;
       img {
         margin-left: 5px;
+        margin-top: 10px;
         padding-right: 10px;
       }
     }
