@@ -85,7 +85,7 @@
                       </div>
                       <div>
                         <g-image
-                          style="width: 15px; height: 15px; margin-left: 8px"
+                          style="width: 20px; height: 20px; margin-left: 8px"
                           width="12"
                           height="12"
                           src="~/assets/third/medal.png"
@@ -162,7 +162,7 @@
                       </div>
                       <div>
                         <g-image
-                          style="width: 15px; height: 15px; margin-left: 8px"
+                          style="width: 20px; height: 20px; margin-left: 8px"
                           width="12"
                           height="12"
                           src="~/assets/third/medal.png"
@@ -237,7 +237,7 @@
                       </div>
                       <div>
                         <g-image
-                          style="width: 15px; height: 15px; margin-left: 8px"
+                          style="width: 20px; height: 20px; margin-left: 8px"
                           width="12"
                           height="12"
                           src="~/assets/third/medal.png"
@@ -287,7 +287,7 @@
                         </div>
                         <div>
                           <g-image
-                            style="width: 15px; height: 15px; margin-left: 8px"
+                            style="width: 20px; height: 20px; margin-left: 8px"
                             width="12"
                             height="12"
                             src="~/assets/third/medal.png"
@@ -334,7 +334,7 @@
                         </div>
                         <div>
                           <g-image
-                            style="width: 15px; height: 15px; margin-left: 8px"
+                            style="width: 20px; height: 20px; margin-left: 8px"
                             width="12"
                             height="12"
                             src="~/assets/third/medal.png"
@@ -349,7 +349,7 @@
         </div>
       </div>
 
-      <!-- Othe Tracks-->
+      <!-- Other Tracks-->
 
       <div class="title">Open Tracks</div>
       <div>
@@ -383,7 +383,7 @@
                         </div>
                         <div>
                           <!-- <g-image
-                            style="width: 15px; height: 15px; margin-left: 8px"
+                            style="width: 20px; height: 20px; margin-left: 8px"
                             width="12"
                             height="12"
                             src="~/assets/third/medal.png"
@@ -524,37 +524,37 @@ export default {
       polygontrack: [
         {
           name: "Best DeFi App built on Polygon ",
-          prize: "$5000",
+          prize: "$5,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
             "The onset of DeFi is changing FinTech as we know it! Identify problem statements that are plaguing the DeFi space and leverage Polygon to change the way consumers transact. ",
-          icon: require("~/assets/third/cards/logo1.png"),
+          icon: require("~/assets/third/polygon-matic-logo.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
         },
         {
           name: "Best NFT App built on Polygon ",
-          prize: "$5000",
+          prize: "$5,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
             "NFTs are taking digital assets to a whole new level by opening the proverbial Web3 doors to the general public. Show us how you will revolutionize this space with the support of Polygon and win big!",
-          icon: require("~/assets/third/cards/logo1.png"),
+          icon: require("~~/assets/third/polygon-matic-logo.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
         },
         {
           name: "Best Gaming/ Metaverse Track ",
-          prize: "$5000",
+          prize: "$5,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
             "Web3 is raising the stakes for incentives within gaming experiences and providing gamers with a whole new experience. Double down and show us how you can elevate gaming experiences with the help of Polygon!",
-          icon: require("~/assets/third/cards/logo1.png"),
+          icon: require("~/assets/third/polygon-matic-logo.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
         },
@@ -562,37 +562,37 @@ export default {
       AeternityTrack: [
         {
           name: "DeFi powered by Oracles",
-          prize: "$8000",
+          prize: "$8,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
             "By using the native Oracle system we want you to build a powerful price feed alternative to ChainLink that can power all DeFi æpps built on æternity in a decentralized and efficient way!",
-          icon: require("~/assets/third/cards/logo1.png"),
+          icon: require("~/assets/third/aeternity-ae-logo.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aeternity/",
         },
         {
           name: "NFTs everywhere!",
-          prize: "$5000",
+          prize: "$5,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
             "Take the unique opportunity to build one of the first NFT solutions that are built around our brand new AEX-141 NFT standard. We're looking for minting solutions, launchpads, auction platforms and marketplaces. Check out our Graffiti æpp and think of innovative ways to NFT-ise the artworks!",
-          icon: require("~/assets/third/cards/logo1.png"),
+          icon: require("~/assets/third/aeternity-ae-logo.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aeternity/",
         },
         {
           name: "DAOs - the future of our society!",
-          prize: "$7000",
+          prize: "$7,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
             "The future of society will be powered by DAOs. Think about innovative solutions that empower our future society to fundraise, to make the right decisions & to empower the people!",
-          icon: require("~/assets/third/cards/logo1.png"),
+          icon: require("~/assets/third/aeternity-ae-logo.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aeternity",
         },
@@ -605,7 +605,7 @@ export default {
           participants: "324",
           deadline: "Jul 10, 2020",
           //content: "Our mission is to develop and contribute technology that enables the Internet Computer (IC) blockchain and its ecosystem. It is powered by new chain key cryptography that allows it to run at web speed with an efficiency that is many orders of magnitude improved, for smart contracts to serve the web directly to end users, and for on-chain compute to scale without bound-allowing mass market web3 services to run entirely on-chain, and for blockchain to become an alternative to traditional IT, such as cloud services. The IC is governed and updated by the Network Nervous System (NNS), a protocol-integrated DAO that decides to use liquid democracy.",
-          icon: require("~/assets/third/cards/logo1.png"),
+          icon: require("~/assets/third/dfinity-logo-vector.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/difinity/",
         },
