@@ -30,7 +30,8 @@ export default {
                     },
                     {
                         heading:'Some Tools and Resources to get you started',
-                        href: 'https://github.com/aeternity'
+                        href: 'https://github.com/aeternity',
+                        href2: 'https://github.com/aeternity/.github/blob/master/profile/README.md'
             
                     }
                         
