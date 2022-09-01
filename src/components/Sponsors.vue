@@ -48,7 +48,7 @@
                         url:'https://www.polygon.network/'
                     },
                     {
-                        name: 'Aeternity',
+                        name: 'æternity',
                         logo: require('~/assets/sponsors/logos/Aeternity.png'),
                         url:'https://aeternity.com/'
                     },
@@ -73,7 +73,7 @@
                         url:'http://www.routerprotocol.com/'
                     },
                     {
-                        name: 'tatum',
+                        name: 'Tatum',
                         logo: require('~/assets/sponsors/logos/tatum.png'),
                         url:'https://tatum.io/'
                     },
