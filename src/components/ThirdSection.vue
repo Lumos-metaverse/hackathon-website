@@ -705,7 +705,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "NFT based event ticketing platform, that facilitates easy NFT event ticket issuing and easy check-ins using AssetMantle blockchain and MantleWallet. The process should be abstract user friendly such that the tickets should be verifiable by scanning a QR code on mobile. A mobile application with a simple username-based SignUp mechanism would be interesting.",
-          icon: require("~/assets/sponsors/logos/assetmantle.svg"),
+          icon: require("~/assets/sponsors/logos/assetmantle.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
         },
