@@ -169,7 +169,15 @@ data () {
         image: require('~/assets/mentors/final/gyan.png'),
          companyLogo: require('~/assets/mentors/logo/pguild.png'),
          
-       }
+       },
+       {
+        name: 'Nirbhik Jangid',
+        position: 'Founder, The Dapp List ', 
+        image: require('~/assets/mentors/final/nirbhik.jpg'),
+         companyLogo: require('~/assets/sponsors/logos/thedapplist.svg'),
+         
+       },
+
      ],
      //Slider configuration [obj]
      options: {

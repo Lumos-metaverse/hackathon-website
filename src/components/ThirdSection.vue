@@ -154,7 +154,8 @@
                       <img :src="track.sponsor" />
                     </div>
                   </div>
-                  <div class="prize">
+                </div>
+                <div class="prize">
                     <div class="prizeAndMedal">
                       <div>
                         {{ AeternityTrack.prize }}
@@ -169,7 +170,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -229,7 +229,8 @@
                       <img :src="track.sponsor" />
                     </div>
                   </div>
-                  <div class="prize">
+                </div>
+                <div class="prize">
                     <div class="prizeAndMedal">
                       <div>
                         {{ Dfinity.prize }}
@@ -244,7 +245,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -263,34 +263,40 @@
             v-for="(RouterProtocol, i) in RouterProtocol"
             :key="i"
           >
-            <div class="inner-card">
+          <div class="inner-card">
               <div class="name">
-                <div class="icon">
-                  <div class="layer">
-                    <img :src="RouterProtocol.icon" />
-                  </div>
-                </div>
-                <div class="t">{{ RouterProtocol.name }}</div>
-                <div class="prize">
-                  <div class="prizeAndMedal">
-                    <div>
-                      {{ RouterProtocol.prize }}
+                <div class="a-w">
+                  <div class="as-wrapper">
+                      <div class="timid">
+                          
+                          <div class="icon">
+                          <div class="layer">
+                            <img :src="RouterProtocol.icon" />
+                          </div>
+                          </div>
+                          <div class="t">{{ RouterProtocol.name }}</div>
+                      </div>
+                        <div class="details">
+                          {{ RouterProtocol.content }}
+                        </div>
                     </div>
-                    <div>
-                      <g-image
-                        style="width: 15px; height: 15px; margin-left: 8px"
-                        width="12"
-                        height="12"
-                        src="~/assets/third/medal.png"
-                      />
+                    <div class="prize">
+                      <div class="prizeAndMedal">
+                        <div>
+                          {{ RouterProtocol.prize }}
+                        </div>
+                        <div>
+                          <g-image
+                            style="width: 15px; height: 15px; margin-left: 8px"
+                            width="12"
+                            height="12"
+                            src="~/assets/third/medal.png"
+                          />
+                        </div>
+                      </div>
                     </div>
-                  </div>
                 </div>
               </div>
-              <div class="details">
-                {{ RouterProtocol.content }}
-              </div>
-              <div class="buttons"></div>
             </div>
           </div>
         </div>
@@ -306,35 +312,38 @@
           >
             <div class="inner-card">
               <div class="name">
-                <div class="icon">
-                  <div class="layer">
-                    <img :src="ArcanaNetwork.icon" />
-                  </div>
-                </div>
-                <div class="t">{{ ArcanaNetwork.name }}</div>
-                <div class="prize">
-                  <div class="prizeAndMedal">
-                    <div>
-                      {{ ArcanaNetwork.prize }}
+                <div class="a-w">
+                  <div class="as-wrapper">
+                      <div class="timid">
+                          
+                          <div class="icon">
+                          <div class="layer">
+                            <img :src="ArcanaNetwork.icon" />
+                          </div>
+                          </div>
+                          <div class="t">{{ ArcanaNetwork.name }}</div>
+                      </div>
+                        <div class="details">
+                          {{ ArcanaNetwork.content }}
+                        </div>
                     </div>
-                    <div>
-                      <g-image
-                        style="width: 15px; height: 15px; margin-left: 8px"
-                        width="12"
-                        height="12"
-                        src="~/assets/third/medal.png"
-                      />
+                    <div class="prize">
+                      <div class="prizeAndMedal">
+                        <div>
+                          {{ ArcanaNetwork.prize }}
+                        </div>
+                        <div>
+                          <g-image
+                            style="width: 15px; height: 15px; margin-left: 8px"
+                            width="12"
+                            height="12"
+                            src="~/assets/third/medal.png"
+                          />
+                        </div>
+                      </div>
                     </div>
-                  </div>
                 </div>
               </div>
-              <div class="details">
-                {{ ArcanaNetwork.content }}
-              </div>
-              <div class="buttons"></div>
-              <!-- <div class="prize"> -->
-              <!-- {{ArcanaNetwork.prize}} -->
-              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -350,19 +359,40 @@
             v-for="(othertrack, i) in othertrack"
             :key="i"
           >
-            <div class="inner-card">
+          <div class="inner-card">
               <div class="name">
-                <div class="icon">
-                  <div class="layer">
-                    <img :src="othertrack.icon" />
-                  </div>
+                <div class="a-w">
+                  <div class="as-wrapper">
+                      <div class="timid">
+                          
+                          <div class="icon">
+                          <div class="layer">
+                            <img :src="othertrack.icon" />
+                          </div>
+                          </div>
+                          <div class="t">{{ othertrack.name }}</div>
+                      </div>
+                        <div class="details">
+                          {{ othertrack.content }}
+                        </div>
+                    </div>
+                    <div class="prize">
+                      <div class="prizeAndMedal">
+                        <div>
+                          {{ othertrack.prize }}
+                        </div>
+                        <div>
+                          <!-- <g-image
+                            style="width: 15px; height: 15px; margin-left: 8px"
+                            width="12"
+                            height="12"
+                            src="~/assets/third/medal.png"
+                          /> -->
+                        </div>
+                      </div>
+                    </div>
                 </div>
-                <div class="t">{{ othertrack.name }}</div>
               </div>
-              <div class="details">
-                {{ othertrack.content }}
-              </div>
-              <div class="buttons"></div>
             </div>
           </div>
         </div>
@@ -847,16 +877,43 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+  .timid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .a-w{
+    display: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    .as-wrapper{
+      .icon{
+        margin-bottom: 16px;
+        margin-top: 32px;
+      }
+      .details{
+        width:80%;
+      }
+
+    }
+  }
 .buttonMedal{
   display:flex;
   flex-direction:row;
-
+  align-items: center;
+  justify-content: space-between;
+  .buttons{
+    flex-direction: column;
+  }
   
 }
 .prizeAndMedal {
   display: flex;
   flex-direction: row;
-
+  min-width:20%;
+  margin-left: 4px;
 }
 
 .sponsor {
@@ -1047,7 +1104,7 @@ export default {
             height: 64.39px;
             border: 0.60263px solid #ffffff;
             border-radius: 6.0263px;
-            margin-right: 23.59px;
+            margin-right: 8px;
             .layer {
               width: 100%;
               height: 100%;
@@ -1115,7 +1172,7 @@ export default {
           font-size: 14px;
           display: flex;
           justify-content: space-between;
-          align-items: flex-end;
+          // align-items: flex-end;
           width: 100%;
           margin-top: auto;
           .learn {
@@ -1127,7 +1184,7 @@ export default {
             border-radius: 6px;
             height: 40px;
             width: 100%;
-            max-width: 235px;
+            max-width: 160px;
             border: none;
             padding: 16px 8px;
             color: rgba(54, 16, 76, 1);
@@ -1219,13 +1276,14 @@ export default {
       }
     }
     .cardforbounty {
-      min-height: 200px;
+      min-height: 150px;
       width: 70%;
       // margin:0 auto;
       margin-right: auto;
       margin-left: auto;
       //max-width: 448px;
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
+      margin-top: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1239,7 +1297,7 @@ export default {
       .inner-card {
         display: flex;
         flex-direction: column;
-        padding: 41px 24px;
+        padding: 0px 24px;
         width: calc(100%);
         height: calc(100% - 84px);
         // background: linear-gradient(
@@ -1309,8 +1367,8 @@ export default {
             border: 0.773455px solid #8650a6;
           }
           .icon {
-            width: 150px;
-            height: 70px;
+            // width: 80px;
+            height: 80px;
             border: 0.60263px solid #ffffff63;
             border-radius: 6.0263px;
             margin-right: 23.59px;
@@ -1324,7 +1382,7 @@ export default {
               img {
                 width: 100%;
                 height: 100%;
-                object-fit: scale-down;
+                object-fit: fit;
               }
             }
           }
@@ -1566,12 +1624,20 @@ export default {
 <style lang="scss" scoped>
 @media (max-width: 750px) {
   
-  .prizeAndMedal{
-    margin-left: 45px;
-    margin-top:10px;
+  // .prizeAndMedal{
+  //   margin-left: 45px;
+  //   margin-top:10px;
+  // }
+  .a-w{
+    flex-direction: column;
+    .as-wrapper{
+      .details{
+        width:100%;
+      }
+    }
   }
   .buttonMedal {
-    flex-direction: column;
+    // flex-direction: column;
     
   }
   .third {
@@ -1588,12 +1654,14 @@ export default {
       }
       .card {
         margin-right: 0px;
-        width: 50%;
+        width: 80%;
         margin-bottom: 40px;
-        margin-left: 100px;
+        // margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
         .inner-card {
           .name {
-            flex-direction:column;
+            // flex-direction:column;
 
 
             .t {
@@ -1617,11 +1685,18 @@ export default {
         margin-bottom: 68px;
       }
     }
+    .buttonMedal{
+      .buttons{
+
+        flex-direction: column;
+      }
+    }
     .buttons {
+      flex-direction: column;
       .learn {
         height: 45px !important;
         width: 168px !important;
-        padding: 16px 28px !important;
+        padding: 16px 16px !important;
         width: 45%;
       }
     }
