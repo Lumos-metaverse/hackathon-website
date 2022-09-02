@@ -16,17 +16,12 @@ export default {
                 icon:require('~/assets/third/dfinity-logo-vector.png'),
                 points:[
                     {
-                        heading: 'Coming Soon!!',
-                       // copy:  'Can you build a reliable and useful price feed alternative to ChainLink on æternity?'
+                        heading: 'Blue Sky',
+                        copy:  'Want to build the next-generation DeFi protocol? Or say a decentralized game that incorporates tokenization? Maybe a metaverse to sell online real estate as NFTs? Don't feel constrained by any category. Build any end-to-end application that incorporates tokenization on Internet Computer! 
+                        *Only the projects built on Internet Computer will be eligible for this track'
+
                     },
-                    {
-                        heading: 'Coming Soon!!',
-                        //copy: 'We are searching for innovative minting solutions / NFT launchpad. Can æternity Oracles be used to host social NFT giveaway campaigns to verify participation and entries. How creative is the community. Check out the Graffiti dApp on æternity and think of ways to NFT-ise the artworks!'
-                    },
-                    {
-                        heading:'Coming Soon!!',
-                        //copy: 'DAOs are the potential future of organizations led by a community and you’re tasked with building solutions for DAOS. Show us how you can solve problems of governance and community and reap the rewards!'
-                    },
+                    
                 ],      
             }   
         }
