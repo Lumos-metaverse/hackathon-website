@@ -80,7 +80,7 @@
                     icon:require('~/assets/reach/logo/medium.svg'),
                 },
                 {
-                    link:'https://bit.ly/3zB3lxA',
+                    link:'https://instagram.com/buidlforweb3',
                     icon:require('~/assets/reach/logo/instagram.svg'),
 
                 },

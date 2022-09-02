@@ -53,8 +53,8 @@
                         url:'https://aeternity.com/'
                     },
                     {
-                        name: 'Dfinity',
-                        logo: require('~/assets/sponsors/logos/dfinity.png'),
+                        name: 'Internet Computer',
+                        logo: require('~/assets/sponsors/logos/dfinity-logo-vector.png'),
                         url:'https://dfinity.org/'
                     },
                     {
