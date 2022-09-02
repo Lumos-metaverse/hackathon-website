@@ -607,7 +607,7 @@ export default {
           content: "Want to build the next-generation DeFi protocol? Or say a decentralized game that incorporates tokenization? Maybe a metaverse to sell online real estate as NFTs? Don't feel constrained by any category. Build any end-to-end application that incorporates tokenization on Internet Computer! Only the projects built on Internet Computer will be eligible for this track",
          icon: require("~/assets/sponsors/logos/dfinity-logo-vector.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/difinity/",
+          url: "/internetcomputer/",
         },
       ],
 
