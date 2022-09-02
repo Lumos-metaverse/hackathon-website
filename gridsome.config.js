@@ -10,7 +10,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-gtm',
       options: {
-        id: 'G-ZRJWHRCZ18',
+        id: 'UA-238825085-2',
         enabled: true,
         debug: true
       }
