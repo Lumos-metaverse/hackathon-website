@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Lumos Hackathon',
+  siteName: 'Buidl for Web3 | Lumos Labs',
   plugins: [
     {
       use: 'gridsome-plugin-gtm',

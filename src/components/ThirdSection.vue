@@ -188,7 +188,7 @@
             />
             <g-image v-else src="~/assets/third/dfinity-logo-vector.png" />
           </div>
-          <div>Dfinity Track</div>
+          <div>Internet Computer Track</div>
         </div>
         <div class="tracks">
           <div class="card" v-for="(Dfinity, i) in Dfinity" :key="i">
@@ -599,13 +599,13 @@ export default {
       ],
       Dfinity: [
         {
-          name: "Coming Soon! ",
+          name: "Blue Sky ",
           prize: "$10,000",
           level: "Intermediate",
           participants: "324",
           deadline: "Jul 10, 2020",
-          //content: "Our mission is to develop and contribute technology that enables the Internet Computer (IC) blockchain and its ecosystem. It is powered by new chain key cryptography that allows it to run at web speed with an efficiency that is many orders of magnitude improved, for smart contracts to serve the web directly to end users, and for on-chain compute to scale without bound-allowing mass market web3 services to run entirely on-chain, and for blockchain to become an alternative to traditional IT, such as cloud services. The IC is governed and updated by the Network Nervous System (NNS), a protocol-integrated DAO that decides to use liquid democracy.",
-          icon: require("~/assets/third/dfinity-logo-vector.png"),
+          content: "Want to build the next-generation DeFi protocol? Or say a decentralized game that incorporates tokenization? Maybe a metaverse to sell online real estate as NFTs? Don't feel constrained by any category. Build any end-to-end application that incorporates tokenization on Internet Computer! Only the projects built on Internet Computer will be eligible for this track",
+         icon: require("~/assets/sponsors/logos/dfinity-logo-vector.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/difinity/",
         },
@@ -1087,7 +1087,7 @@ export default {
           line-height: 145.9%;
           letter-spacing: -0.015em;
 
-          justify-content: space-between;
+          //justify-content: space-between;
           margin-bottom: 23px;
           .t {
             max-width: 300px;

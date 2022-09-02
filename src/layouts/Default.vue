@@ -16,7 +16,7 @@ export default {
     Header
   },
   metaInfo: {
-    title:"", titleTemplate: "Lumos Hackathon",
+    title:"", titleTemplate: "Buidl for Web3 | Lumos Labs",
     meta:[
       {
         name: 'description',

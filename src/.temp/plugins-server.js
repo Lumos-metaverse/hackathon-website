@@ -3,6 +3,6 @@ import plugin_gridsome_plugin_gtm_5 from "/Users/thecoderpanda/Desktop/lumos/hac
 export default [
   {
     run: plugin_gridsome_plugin_gtm_5,
-    options: {"id":"G-ZRJWHRCZ18","enabled":true,"debug":true}
+    options: {"id":"UA-238825085-2","enabled":true,"debug":true}
   }
 ]

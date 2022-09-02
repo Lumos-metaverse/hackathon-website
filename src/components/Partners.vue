@@ -199,11 +199,25 @@
 
                 ],
                 mediapartners: [{
-                    name: 'The Decrypting Story',
-                        logo: require('~/assets/sponsors/logos/tds.png'),
-                        url:'https://yourstory.com/the-decrypting-story'
+                    name: 'Digital Notice',
+                        logo: require('~/assets/sponsors/logos/dn.svg'),
+                        url:'https://www.digitalnotice.in/'
 
-                }]
+                },
+                {
+                    name: 'Digital Notice',
+                        logo: require('~/assets/sponsors/logos/dn.svg'),
+                        url:'https://www.digitalnotice.in/'
+
+                },
+                {
+                    name: 'Crypto Newspoint',
+                        logo: require('~/assets/sponsors/logos/cnp.svg'),
+                        url:'https://www.cryptonewspoint.com/'
+
+                }
+                
+                ]
             }
         }
     }
