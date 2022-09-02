@@ -55,7 +55,7 @@
                     {
                         name: 'Internet Computer',
                         logo: require('~/assets/sponsors/logos/dfinity-logo-vector.png'),
-                        url:'https://dfinity.org/'
+                        url:'https://internetcomputer.org/'
                     },
                     {
                         name: 'Tezos',
