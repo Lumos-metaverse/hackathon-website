@@ -17,7 +17,7 @@ export default {
                 points:[
                     {
                         heading: 'Blue Sky',
-                        copy:  'Want to build the next-generation DeFi protocol? Or say a decentralized game that incorporates tokenization? Maybe a metaverse to sell online real estate as NFTs? Don't feel constrained by any category. Build any end-to-end application that incorporates tokenization on Internet Computer! '
+                        copy:  'Want to build the next-generation DeFi protocol? Or say a decentralized game that incorporates tokenization? Maybe a metaverse to sell online real estate as NFTs? Do not feel constrained by any category. Build any end-to-end application that incorporates tokenization on Internet Computer! '
                         
 
                     },
