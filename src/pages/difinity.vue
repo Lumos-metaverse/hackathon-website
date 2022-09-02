@@ -10,8 +10,8 @@ export default {
     data() {
         return {
          trackObj:{
-                title:'About Dfinity',
-                url: 'https://dfinity.org/',
+                title:'About Internet Computer',
+                url: 'https://internetcomputer.org/',
                 description:'Internet Computer (ICP) enables developers to completely reimagine the potential of smart contracts. The "canister smart contracts" on the Internet Computer are expressive enough to build any web application directly on chain and powerful enough to serve these apps at web speed. The end users interact with the application in a browser very similar to how they would browse any traditional website without any intermediary centralized cloud infrastructure. The Internet Computer community is redesigning everything from web3 social media dapps, metaverses, and video streaming dapps to powerful games all built end-to-end (front end, backend, asset storage) that are served from the blockchain. Since every aspect of your dapp is on-chain you can imagine things like minting your gameplay instance as an NFT or building a DEX bot inside your p2p chat app. Check out some code inspirations that can help you get started.',
                 icon:require('~/assets/third/dfinity-logo-vector.png'),
                 points:[
