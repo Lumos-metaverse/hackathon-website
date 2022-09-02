@@ -45,7 +45,7 @@
                     {
                         name: 'Polygon',
                         logo: require('~/assets/sponsors/logos/Polygon.png'),
-                        url:'https://www.polygon.network/'
+                        url:'https://polygon.technology/'
                     },
                     {
                         name: 'æternity',
