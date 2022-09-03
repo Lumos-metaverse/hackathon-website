@@ -194,28 +194,28 @@ data () {
         name: 'Etisha Garg',
         position: 'Developer Relations, Arcana', 
         image: require('~/assets/mentors/final/etisha.png'),
-         companyLogo: require('~/assets/mentors/logo/arcana.png'),
+         companyLogo: require('~/assets/sponsors/logos/arcana.png'),
          
        },
        {
         name: 'Aravindh Kumar',
         position: 'CoFounder, Arcana', 
         image: require('~/assets/mentors/final/aravindh.png'),
-         companyLogo: require('~/assets/mentors/logo/arcana.png'),
+         companyLogo: require('~/assets/sponsors/logos/arcana.png'),
          
        },
        {
         name: 'Abhinav Kumar',
         position: 'CoFounder, AssetMantle', 
         image: require('~/assets/mentors/final/abhinavAM.png'),
-         companyLogo: require('~/assets/mentors/logo/assetmantle.png'),
+         companyLogo: require('~/assets/sponsors/logos/assetmantle.png'),
          
        },
        {
         name: 'Naman Kabra',
         position: 'Core - Business Development and Growth, AssetMantle', 
         image: require('~/assets/mentors/final/namanAM.png'),
-         companyLogo: require('~/assets/mentors/logo/assetmantle.png'),
+         companyLogo: require('~/assets/sponsors/logos/assetmantle.png'),
          
        },
        {
