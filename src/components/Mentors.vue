@@ -177,6 +177,48 @@ data () {
          
        },
        {
+        name: 'Smit Khakhkhar',
+        position: 'Tech Diligence, Delta Fund', 
+        image: require('~/assets/mentors/final/gyan.png'),
+         companyLogo: require('~/assets/mentors/logo/smit.png'),
+         
+       },
+       {
+        name: 'Om Malviya',
+        position: ' CoFounder, Tezsure', 
+        image: require('~/assets/mentors/final/gyan.png'),
+         companyLogo: require('~/assets/mentors/logo/om.png'),
+         
+       },
+       {
+        name: 'Etisha Garg',
+        position: 'Developer Relations, Arcana', 
+        image: require('~/assets/mentors/final/gyan.png'),
+         companyLogo: require('~/assets/mentors/logo/etisha.png'),
+         
+       },
+       {
+        name: 'Aravindh Kumar',
+        position: 'CoFounder, Arcana', 
+        image: require('~/assets/mentors/final/gyan.png'),
+         companyLogo: require('~/assets/mentors/logo/aravindh.png'),
+         
+       },
+       {
+        name: 'Abhinav Kumar',
+        position: 'CoFounder, AssetMantle', 
+        image: require('~/assets/mentors/final/gyan.png'),
+         companyLogo: require('~/assets/mentors/logo/abhinavAM.png'),
+         
+       },
+       {
+        name: 'Naman Kabra',
+        position: 'Core - Business Development and Growth, AssetMantle', 
+        image: require('~/assets/mentors/final/gyan.png'),
+         companyLogo: require('~/assets/mentors/logo/namanAM.png'),
+         
+       },
+       {
         name: 'Nirbhik Jangid',
         position: 'Founder, The Dapp List ', 
         image: require('~/assets/mentors/final/nirbhik.jpg'),
