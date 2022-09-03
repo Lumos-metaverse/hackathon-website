@@ -16,16 +16,16 @@ export default {
                 icon:require('~/assets/third/aeternity-ae-logo.svg'),
                 points:[
                     {
-                        heading: 'DeFi powered by Oracles',
-                        copy:  'By using the native Oracle system we want you to build a powerful price feed alternative to ChainLink that can power all DeFi æpps built on æternity in a decentralized and efficient way!'
+                        heading: 'DeFi on steroids!',
+                        copy:  'Explore the power of æternity core features and show the world how powerful State Channels and the native Oracle system are. Build meaningful applications around our AEX-9 Fungible Token Standard that interface with our Superhero DEX.'
                     },
                     {
-                        heading: 'DAOs - the future of our society!',
-                        copy: 'The future of society will be powered by DAOs. Think about innovative solutions that empower our future society to fundraise, to make the right decisions & to empower the people!'
+                        heading: 'DAO - power to the community!',
+                        copy: 'The future of society will be powered by community driven DAOs running on public blockchains. With the Governance æpp and Superhero.com we kickstarted this shift in society. These examples should inspire you to come up with a cool solution that empowers communities!'
                     },
                     {
-                        heading:'NFTs everywhere!',
-                        copy: 'Take the unique opportunity to build one of the first NFT solutions that are built around our brand new AEX-141 NFT standard. Were looking for minting solutions, launchpads, auction platforms and marketplaces. Check out our Graffiti æpp and think of innovative ways to NFT-ise the artworks!'
+                        heading:'AENS & NFTs - claim, collect & trade!',
+                        copy: 'The æternity naming system (AENS) is very powerful. The community deserves an AENS marketplace to trade the names and we are waiting for you to build it! You can also check out the brand new AEX-141 NFT Standard - be among the first to use it!'
             
                     },
                     {
