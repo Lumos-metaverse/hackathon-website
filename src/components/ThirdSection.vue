@@ -646,7 +646,7 @@ export default {
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
-            "One of the biggest problem statements in human history is solving for sustainability in today’s world. Web3’s circular, participatory economy that is decentralised and incentivised, hosts a treasure trove of potential to ma...",
+            "One of the biggest problem statements in human history is solving for sustainability in today’s world. Web3’s circular, participatory economy that is decentralized and incentivized, hosts a treasure trove of potential to make some serious strides in Sustainability! Show us how you can revolutionize sustainability-based solutions by picking one of the problem statements shared.",
           icon: require("~/assets/third/cards/logo6.png"),
           //url: "/operation-sustainability",
         },
@@ -658,7 +658,7 @@ export default {
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
-            "The offerings that Web3 brings through Governance as a use case is tremendous. We challenge you to be inspired by Participation, Transparency, Consensus, Equity and Inclusiveness, Effectiveness and Efficiency, and Ac...",
+            "The offerings that Web3 brings through Governance as a use case is tremendous. We challenge you to be inspired by Participation, Transparency, Consensus, Equity and Inclusiveness, Effectiveness and Efficiency, and Accountability. ",
           icon: require("~/assets/third/cards/logo7.png"),
           // url: "/pillar-of-governance",
         },
@@ -670,7 +670,7 @@ export default {
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
-            "Web3 has a strong entertainment offering when it comes to pushing the boundaries of its innovation index. With digital media consumption finding a perfect fit globally, it has opened up several avenues for innovation and ...",
+            "Web3 has a strong entertainment offering to push the boundaries of its innovation index. With digital media consumption finding a perfect fit globally, it has opened up several avenues for innovation and problem-solving. Take up this challenge and show us how decentralization can enrich entertainment as we know it.",
           icon: require("~/assets/third/cards/logo3.png"),
           // url: "/entertainment-central",
         },
