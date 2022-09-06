@@ -136,6 +136,62 @@ data () {
         image: require('~/assets/mentors/final/gyan.png'),
          companyLogo: require('~/assets/mentors/logo/pguild.png'),
          
+       },
+       {
+        name: 'Smit Khakhkhar',
+        position: 'Tech Diligence, Delta Fund', 
+        image: require('~/assets/mentors/final/smit.png'),
+         // companyLogo: require('~/assets/mentors/logo/ieee-blockchain.png'),
+         
+       },
+       {
+        name: 'Om Malviya',
+        position: ' CoFounder, Tezsure', 
+        image: require('~/assets/mentors/final/om.png'),
+        // companyLogo: require('~/assets/mentors/logo/ieee-blockchain.png'),
+         
+       },
+       {
+        name: 'Etisha Garg',
+        position: 'Developer Relations, Arcana', 
+        image: require('~/assets/mentors/final/etisha.png'),
+         companyLogo: require('~/assets/sponsors/logos/arcana.png'),
+         
+       },
+       {
+        name: 'Aravindh Kumar',
+        position: 'CoFounder, Arcana', 
+        image: require('~/assets/mentors/final/aravindh.png'),
+         companyLogo: require('~/assets/sponsors/logos/arcana.png'),
+         
+       },
+       {
+        name: 'Abhinav Kumar',
+        position: 'CoFounder, AssetMantle', 
+        image: require('~/assets/mentors/final/abhinavAM.png'),
+         companyLogo: require('~/assets/sponsors/logos/assetmantle.png'),
+         
+       },
+       {
+        name: 'Naman Kabra',
+        position: 'Core - Business Development and Growth, AssetMantle', 
+        image: require('~/assets/mentors/final/namanAM.png'),
+         companyLogo: require('~/assets/sponsors/logos/assetmantle.png'),
+         
+       },
+       {
+        name: 'Nirbhik Jangid',
+        position: 'Founder, The Dapp List ', 
+        image: require('~/assets/mentors/final/nirbhik.jpg'),
+         companyLogo: require('~/assets/sponsors/logos/thedapplist.svg'),
+         
+       },
+       {
+        name: 'Anil Dukkipatty',
+        position: 'CoFounder, revise', 
+        image: require('~/assets/mentors/final/AnilDukkipatty.png'),
+         companyLogo: require('~/assets/sponsors/logos/revise.png'),
+         
        }
      ],
    }
