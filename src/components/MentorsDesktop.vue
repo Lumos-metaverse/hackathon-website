@@ -88,6 +88,12 @@ data () {
          companyLogo: require('~/assets/sponsors/logos/Polygon.png'),
        },
        {
+         name:'Marco Walz',
+         position:'Lead Developer Relations, æternity',
+         image: require('~/assets/mentors/final/marco.png'),
+         companyLogo: require('~/assets/third/aeternity-ae-logo.svg'),
+       },
+       {
          name:'Raj Karia',
          position:'Founder, Truts',
          image: require('~/assets/mentors/final/raj.png'),
