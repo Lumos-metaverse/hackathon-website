@@ -141,14 +141,14 @@ data () {
         name: 'Smit Khakhkhar',
         position: 'Tech Diligence, Delta Fund', 
         image: require('~/assets/mentors/final/smit.png'),
-         // companyLogo: require('~/assets/mentors/logo/ieee-blockchain.png'),
+         companyLogo: require('~/assets/mentors/logo/deltafund.jpg'),
          
        },
        {
         name: 'Om Malviya',
         position: ' CoFounder, Tezsure', 
         image: require('~/assets/mentors/final/om.png'),
-        // companyLogo: require('~/assets/mentors/logo/ieee-blockchain.png'),
+        companyLogo: require('~/assets/mentors/logo/tezsure.jpg'),
          
        },
        {
@@ -182,8 +182,8 @@ data () {
        {
         name: 'Nirbhik Jangid',
         position: 'Founder, The Dapp List ', 
-        image: require('~/assets/mentors/final/nirbhik.jpg'),
-         companyLogo: require('~/assets/sponsors/logos/thedapplist.svg'),
+        image: require('~/assets/mentors/final/nirbhik.png'),
+         companyLogo: require('~/assets/sponsors/logos/thedapplist1.jpeg'),
          
        },
        {
