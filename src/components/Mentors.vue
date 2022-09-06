@@ -152,7 +152,7 @@ data () {
        {
          name:'Rahat Chowdhary',
          position:'Lead Developer Relations Engineer, Polygon',
-         // image: require('~/assets/mentors/final/chundan.png'),
+         image: require('~/assets/mentors/final/rahat.jpeg'),
          companyLogo: require('~/assets/sponsors/logos/Polygon.png'),
        },
        {
