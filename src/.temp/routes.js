@@ -1,16 +1,16 @@
-const c1 = () => import(/* webpackChunkName: "page--src--pages--pillar-of-governance-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/pillar-of-governance.vue")
-const c2 = () => import(/* webpackChunkName: "page--src--pages--operation-sustainability-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/operation-sustainability.vue")
-const c3 = () => import(/* webpackChunkName: "page--src--pages--polygon-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/polygon.vue")
-const c4 = () => import(/* webpackChunkName: "page--src--pages--keep-calm-nft-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/keep-calm-nft.vue")
-const c5 = () => import(/* webpackChunkName: "page--src--pages--can-you-dao-it-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/can-you-dao-it.vue")
-const c6 = () => import(/* webpackChunkName: "page--src--pages--defi-the-odds-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/defi-the-odds.vue")
-const c7 = () => import(/* webpackChunkName: "page--src--pages--entertainment-central-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/entertainment-central.vue")
-const c8 = () => import(/* webpackChunkName: "page--src--pages--difinity-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/difinity.vue")
-const c9 = () => import(/* webpackChunkName: "page--src--pages--builders-toolbox-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/builders-toolbox.vue")
-const c10 = () => import(/* webpackChunkName: "page--src--pages--all-tracks-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/all-tracks.vue")
-const c11 = () => import(/* webpackChunkName: "page--src--pages--aeternity-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/aeternity.vue")
-const c12 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/node_modules/gridsome/app/pages/404.vue")
-const c13 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/thecoderpanda/Desktop/lumos/hackathon-website/src/pages/Index.vue")
+const c1 = () => import(/* webpackChunkName: "page--src--pages--pillar-of-governance-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/pillar-of-governance.vue")
+const c2 = () => import(/* webpackChunkName: "page--src--pages--operation-sustainability-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/operation-sustainability.vue")
+const c3 = () => import(/* webpackChunkName: "page--src--pages--polygon-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/polygon.vue")
+const c4 = () => import(/* webpackChunkName: "page--src--pages--keep-calm-nft-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/keep-calm-nft.vue")
+const c5 = () => import(/* webpackChunkName: "page--src--pages--internetcomputer-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/internetcomputer.vue")
+const c6 = () => import(/* webpackChunkName: "page--src--pages--can-you-dao-it-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/can-you-dao-it.vue")
+const c7 = () => import(/* webpackChunkName: "page--src--pages--defi-the-odds-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/defi-the-odds.vue")
+const c8 = () => import(/* webpackChunkName: "page--src--pages--entertainment-central-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/entertainment-central.vue")
+const c9 = () => import(/* webpackChunkName: "page--src--pages--builders-toolbox-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/builders-toolbox.vue")
+const c10 = () => import(/* webpackChunkName: "page--src--pages--all-tracks-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/all-tracks.vue")
+const c11 = () => import(/* webpackChunkName: "page--src--pages--aeternity-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/aeternity.vue")
+const c12 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/akashsachan/Documents/hackathon-website/node_modules/gridsome/app/pages/404.vue")
+const c13 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/akashsachan/Documents/hackathon-website/src/pages/Index.vue")
 
 export default [
   {
@@ -30,19 +30,19 @@ export default [
     component: c4
   },
   {
-    path: "/can-you-dao-it/",
+    path: "/internetcomputer/",
     component: c5
   },
   {
-    path: "/defi-the-odds/",
+    path: "/can-you-dao-it/",
     component: c6
   },
   {
-    path: "/entertainment-central/",
+    path: "/defi-the-odds/",
     component: c7
   },
   {
-    path: "/difinity/",
+    path: "/entertainment-central/",
     component: c8
   },
   {

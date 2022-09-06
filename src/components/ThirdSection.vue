@@ -30,11 +30,8 @@
       <div>
         <div class="altttile">
           <div>
-            <g-image
-              v-if="isMobile"
-              src="~/assets/sponsors/logos/Polygon.png"
-            />
-            <g-image v-else src="~/assets/third/polygon-matic-logo.svg" /> 
+            <g-image v-if="isMobile" src="~/assets/third/polygon-matic-logo.svg" />
+            <g-image v-else src="~/assets/third/polygon-matic-logo.svg" />
           </div>
           <div>Polygon Track</div>
         </div>
@@ -54,21 +51,11 @@
               </div>
               <div class="buttonMedal">
                 <div class="buttons">
-                  <g-link
-                    style="text-decoration: none; cursor: pointer"
-                    :to="polygontrack.url"
-                  >
-                    <button
-                      class="learn"
-                      style="text-decoration: none; cursor: pointer"
-                    >
+                  <g-link style="text-decoration: none; cursor: pointer" :to="polygontrack.url">
+                    <button class="learn" style="text-decoration: none; cursor: pointer">
                       LEARN MORE
-                      <g-image
-                        style="width: 12px; height: 12px; margin-left: 8px"
-                        width="12"
-                        height="12"
-                        src="~/assets/arrows/purple-arrow.svg"
-                      />
+                      <g-image style="width: 12px; height: 12px; margin-left: 8px" width="12" height="12"
+                        src="~/assets/arrows/purple-arrow.svg" />
                     </button>
                   </g-link>
                   <div class="sponsor" v-if="track && track.sponsor">
@@ -78,21 +65,17 @@
                     </div>
                   </div>
                 </div>
-                  <div class="prize">
-                    <div class="prizeAndMedal">
-                      <div>
-                        {{ polygontrack.prize }}
-                      </div>
-                      <div>
-                        <g-image
-                          style="width: 20px; height: 20px; margin-left: 8px"
-                          width="12"
-                          height="12"
-                          src="~/assets/third/medal.png"
-                        />
-                      </div>
+                <div class="prize">
+                  <div class="prizeAndMedal">
+                    <div>
+                      {{ polygontrack.prize }}
+                    </div>
+                    <div>
+                      <g-image style="width: 20px; height: 20px; margin-left: 8px" width="12" height="12"
+                        src="~/assets/third/medal.png" />
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
@@ -103,20 +86,13 @@
       <div>
         <div class="altttile">
           <div>
-            <g-image
-              v-if="isMobile"
-              src="~/assets/third/aeternity-ae-logo.svg"
-            />
+            <g-image v-if="isMobile" src="~/assets/third/aeternity-ae-logo.svg" />
             <g-image v-else src="~/assets/third/aeternity-ae-logo.svg" />
           </div>
           <div>æternity Track</div>
         </div>
         <div class="tracks">
-          <div
-            class="card"
-            v-for="(AeternityTrack, i) in AeternityTrack"
-            :key="i"
-          >
+          <div class="card" v-for="(AeternityTrack, i) in AeternityTrack" :key="i">
             <div class="inner-card">
               <div class="name">
                 <div class="icon">
@@ -131,21 +107,11 @@
               </div>
               <div class="buttonMedal">
                 <div class="buttons">
-                  <g-link
-                    style="text-decoration: none; cursor: pointer"
-                    :to="AeternityTrack.url"
-                  >
-                    <button
-                      class="learn"
-                      style="text-decoration: none; cursor: pointer"
-                    >
+                  <g-link style="text-decoration: none; cursor: pointer" :to="AeternityTrack.url">
+                    <button class="learn" style="text-decoration: none; cursor: pointer">
                       LEARN MORE
-                      <g-image
-                        style="width: 12px; height: 12px; margin-left: 8px"
-                        width="12"
-                        height="12"
-                        src="~/assets/arrows/purple-arrow.svg"
-                      />
+                      <g-image style="width: 12px; height: 12px; margin-left: 8px" width="12" height="12"
+                        src="~/assets/arrows/purple-arrow.svg" />
                     </button>
                   </g-link>
                   <div class="sponsor" v-if="track && track.sponsor">
@@ -156,20 +122,16 @@
                   </div>
                 </div>
                 <div class="prize">
-                    <div class="prizeAndMedal">
-                      <div>
-                        {{ AeternityTrack.prize }}
-                      </div>
-                      <div>
-                        <g-image
-                          style="width: 20px; height: 20px; margin-left: 8px"
-                          width="12"
-                          height="12"
-                          src="~/assets/third/medal.png"
-                        />
-                      </div>
+                  <div class="prizeAndMedal">
+                    <div>
+                      {{ AeternityTrack.prize }}
+                    </div>
+                    <div>
+                      <g-image style="width: 20px; height: 20px; margin-left: 8px" width="12" height="12"
+                        src="~/assets/third/medal.png" />
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
@@ -181,11 +143,8 @@
       <!--AeternityTrack-->
       <div>
         <div class="altttile">
-          <div>
-            <g-image
-              v-if="isMobile"
-              src="~/assets/third/dfinity-logo-vector.png"
-            />
+          <div class="dfinity-logo-title-fix">
+            <g-image v-if="isMobile" src="~/assets/third/dfinity-logo-vector.png" />
             <g-image v-else src="~/assets/third/dfinity-logo-vector.png" />
           </div>
           <div>Internet Computer Track</div>
@@ -196,7 +155,9 @@
               <div class="name">
                 <div class="icon">
                   <div class="layer">
-                    <img :src="Dfinity.icon" />
+                    <div class="dfinity-logo-fix">
+                      <img :src="Dfinity.icon" />
+                    </div>
                   </div>
                 </div>
                 <div class="t">{{ Dfinity.name }}</div>
@@ -206,21 +167,11 @@
               </div>
               <div class="buttonMedal">
                 <div class="buttons">
-                  <g-link
-                    style="text-decoration: none; cursor: pointer"
-                    :to="Dfinity.url"
-                  >
-                    <button
-                      class="learn"
-                      style="text-decoration: none; cursor: pointer"
-                    >
+                  <g-link style="text-decoration: none; cursor: pointer" :to="Dfinity.url">
+                    <button class="learn" style="text-decoration: none; cursor: pointer">
                       LEARN MORE
-                      <g-image
-                        style="width: 12px; height: 12px; margin-left: 8px"
-                        width="12"
-                        height="12"
-                        src="~/assets/arrows/purple-arrow.svg"
-                      />
+                      <g-image style="width: 12px; height: 12px; margin-left: 8px" width="12" height="12"
+                        src="~/assets/arrows/purple-arrow.svg" />
                     </button>
                   </g-link>
                   <div class="sponsor" v-if="track && track.sponsor">
@@ -231,20 +182,16 @@
                   </div>
                 </div>
                 <div class="prize">
-                    <div class="prizeAndMedal">
-                      <div>
-                        {{ Dfinity.prize }}
-                      </div>
-                      <div>
-                        <g-image
-                          style="width: 20px; height: 20px; margin-left: 8px"
-                          width="12"
-                          height="12"
-                          src="~/assets/third/medal.png"
-                        />
-                      </div>
+                  <div class="prizeAndMedal">
+                    <div>
+                      {{ Dfinity.prize }}
+                    </div>
+                    <div>
+                      <g-image style="width: 20px; height: 20px; margin-left: 8px" width="12" height="12"
+                        src="~/assets/third/medal.png" />
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
@@ -258,43 +205,35 @@
       <!-- Router Protocol-->
       <div>
         <div class="bounty">
-          <div
-            class="cardforbounty"
-            v-for="(RouterProtocol, i) in RouterProtocol"
-            :key="i"
-          >
-          <div class="inner-card">
+          <div class="cardforbounty" v-for="(RouterProtocol, i) in RouterProtocol" :key="i">
+            <div class="inner-card">
               <div class="name">
                 <div class="a-w">
                   <div class="as-wrapper">
-                      <div class="timid">
-                          
-                          <div class="icon">
-                          <div class="layer">
-                            <img :src="RouterProtocol.icon" />
-                          </div>
-                          </div>
-                          <div class="t">{{ RouterProtocol.name }}</div>
-                      </div>
-                        <div class="details">
-                          {{ RouterProtocol.content }}
-                        </div>
-                    </div>
-                    <div class="prize">
-                      <div class="prizeAndMedal">
-                        <div>
-                          {{ RouterProtocol.prize }}
-                        </div>
-                        <div>
-                          <g-image
-                            style="width: 20px; height: 20px; margin-left: 8px"
-                            width="12"
-                            height="12"
-                            src="~/assets/third/medal.png"
-                          />
+                    <div class="timid">
+
+                      <div class="icon">
+                        <div class="layer">
+                          <img :src="RouterProtocol.icon" />
                         </div>
                       </div>
+                      <div class="t">{{ RouterProtocol.name }}</div>
                     </div>
+                    <div class="details">
+                      {{ RouterProtocol.content }}
+                    </div>
+                  </div>
+                  <div class="prize">
+                    <div class="prizeAndMedal">
+                      <div>
+                        {{ RouterProtocol.prize }}
+                      </div>
+                      <div>
+                        <g-image style="width: 20px; height: 20px; margin-left: 8px" width="12" height="12"
+                          src="~/assets/third/medal.png" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -305,43 +244,35 @@
       <!-- Arcana Network Track-->
       <div>
         <div class="bounty">
-          <div
-            class="cardforbounty"
-            v-for="(ArcanaNetwork, i) in ArcanaNetwork"
-            :key="i"
-          >
+          <div class="cardforbounty" v-for="(ArcanaNetwork, i) in ArcanaNetwork" :key="i">
             <div class="inner-card">
               <div class="name">
                 <div class="a-w">
                   <div class="as-wrapper">
-                      <div class="timid">
-                          
-                          <div class="icon">
-                          <div class="layer">
-                            <img :src="ArcanaNetwork.icon" />
-                          </div>
-                          </div>
-                          <div class="t">{{ ArcanaNetwork.name }}</div>
-                      </div>
-                        <div class="details">
-                          {{ ArcanaNetwork.content }}
-                        </div>
-                    </div>
-                    <div class="prize">
-                      <div class="prizeAndMedal">
-                        <div>
-                          {{ ArcanaNetwork.prize }}
-                        </div>
-                        <div>
-                          <g-image
-                            style="width: 20px; height: 20px; margin-left: 8px"
-                            width="12"
-                            height="12"
-                            src="~/assets/third/medal.png"
-                          />
+                    <div class="timid">
+
+                      <div class="icon">
+                        <div class="layer">
+                          <img :src="ArcanaNetwork.icon" />
                         </div>
                       </div>
+                      <div class="t">{{ ArcanaNetwork.name }}</div>
                     </div>
+                    <div class="details">
+                      {{ ArcanaNetwork.content }}
+                    </div>
+                  </div>
+                  <div class="prize">
+                    <div class="prizeAndMedal">
+                      <div>
+                        {{ ArcanaNetwork.prize }}
+                      </div>
+                      <div>
+                        <g-image style="width: 20px; height: 20px; margin-left: 8px" width="12" height="12"
+                          src="~/assets/third/medal.png" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -354,43 +285,39 @@
       <div class="title">Open Tracks</div>
       <div>
         <div class="bounty">
-          <div
-            class="cardforbounty"
-            v-for="(othertrack, i) in othertrack"
-            :key="i"
-          >
-          <div class="inner-card">
+          <div class="cardforbounty" v-for="(othertrack, i) in othertrack" :key="i">
+            <div class="inner-card">
               <div class="name">
                 <div class="a-w">
                   <div class="as-wrapper">
-                      <div class="timid">
-                          
-                          <div class="icon">
-                          <div class="layer">
-                            <img :src="othertrack.icon" />
-                          </div>
-                          </div>
-                          <div class="t">{{ othertrack.name }}</div>
+                    <div class="timid">
+
+                      <div class="icon">
+                        <div class="layer">
+                          <img :src="othertrack.icon" />
+                        </div>
                       </div>
-                        <div class="details">
-                          {{ othertrack.content }}
-                        </div>
+                      <div class="t">{{ othertrack.name }}</div>
                     </div>
-                    <div class="prize">
-                      <div class="prizeAndMedal">
-                        <div>
-                          {{ othertrack.prize }}
-                        </div>
-                        <div>
-                          <!-- <g-image
+                    <div class="details">
+                      {{ othertrack.content }}
+                    </div>
+                  </div>
+                  <div class="prize">
+                    <div class="prizeAndMedal">
+                      <div>
+                        {{ othertrack.prize }}
+                      </div>
+                      <div>
+                        <!-- <g-image
                             style="width: 20px; height: 20px; margin-left: 8px"
                             width="12"
                             height="12"
                             src="~/assets/third/medal.png"
                           /> -->
-                        </div>
                       </div>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -605,7 +532,7 @@ export default {
           participants: "324",
           deadline: "Jul 10, 2020",
           content: "Want to build the next-generation DeFi protocol? Or say a decentralized game that incorporates tokenization? Maybe a metaverse to sell online real estate as NFTs? Don't feel constrained by any category. Build any end-to-end application that incorporates tokenization on Internet Computer! Only the projects built on Internet Computer will be eligible for this track",
-         icon: require("~/assets/sponsors/logos/dfinity-logo-vector.png"),
+          icon: require("~/assets/sponsors/logos/dfinity-logo-vector.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/internetcomputer/",
         },
@@ -877,43 +804,51 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-  .timid{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .a-w{
-    display: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
-    .as-wrapper{
-      .icon{
-        margin-bottom: 16px;
-        margin-top: 32px;
-      }
-      .details{
-        width:80%;
-      }
+.timid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-    }
-  }
-.buttonMedal{
-  display:flex;
-  flex-direction:row;
+.a-w {
+  display: row;
   align-items: center;
   justify-content: space-between;
-  .buttons{
+  flex-direction: column;
+  width: 100%;
+
+  .as-wrapper {
+    .icon {
+      margin-bottom: 16px;
+      margin-top: 32px;
+    }
+
+    .details {
+      width: 80%;
+    }
+
+  }
+}
+
+.buttonMedal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .buttons {
     flex-direction: column;
   }
-  
+
 }
+
 .prizeAndMedal {
   display: flex;
   flex-direction: row;
-  min-width:20%;
+  min-width: 20%;
   margin-left: 4px;
+  font-family: "Brinnan";
+  font-weight: 700;
 }
 
 .sponsor {
@@ -930,10 +865,12 @@ export default {
   flex-direction: column;
   letter-spacing: 0.1em;
   color: #ffffff;
+
   div:nth-child(1) {
     margin-bottom: 10px;
   }
 }
+
 .nav-button {
   font-family: "Brinnan";
   font-style: normal;
@@ -951,6 +888,7 @@ export default {
   height: 45px;
   text-transform: uppercase;
 }
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -959,6 +897,7 @@ export default {
   margin-top: 10px;
   padding-bottom: 30px;
 }
+
 .bounty {
   display: flex;
   align-items: center;
@@ -971,10 +910,12 @@ export default {
   display: flex;
   flex-wrap: wrap;
 }
+
 .bountyHeader {
   display: flex;
   flex-direction: row;
 }
+
 .third {
   position: relative;
   min-height: 100vh;
@@ -984,6 +925,7 @@ export default {
   background-repeat: repeat;
   background-size: contain;
   padding-top: 70px;
+
   .grid {
     position: absolute;
     width: 100%;
@@ -991,6 +933,7 @@ export default {
     object-fit: cover;
     z-index: -1;
   }
+
   .content {
     top: 0;
     left: 0;
@@ -1002,6 +945,7 @@ export default {
     // align-items:center;
     // justify-content:center;
     z-index: 1;
+
     .tracks {
       display: flex;
       flex-direction: row;
@@ -1031,9 +975,11 @@ export default {
       transition: transform 2s ease-in-out;
       display: flex;
     }
+
     .rotating-button:hover {
       transform: rotate(-360deg);
     }
+
     .card {
       //place three cards in a row
       display: flex;
@@ -1060,22 +1006,22 @@ export default {
       // backdrop-filter: blur(9.75104px);
       border-radius: 9.75104px;
       cursor: pointer;
+
       .inner-card {
         display: flex;
         flex-direction: column;
         padding: 41px 24px;
         width: calc(100%);
         height: calc(100% - 84px);
-        background: linear-gradient(
-          180deg,
-          rgba(90, 62, 158, 0.9) 0%,
-          rgba(60, 41, 116, 0.9) 0.01%,
-          rgba(111, 47, 153, 0.9) 100%
-        );
+        background: linear-gradient(180deg,
+            rgba(90, 62, 158, 0.9) 0%,
+            rgba(60, 41, 116, 0.9) 0.01%,
+            rgba(111, 47, 153, 0.9) 100%);
         backdrop-filter: blur(9.75104px);
         border-radius: 9.75104px;
         transition: all 0.3s ease-in-out;
         will-change: transform;
+
         .name {
           display: flex;
           align-items: center;
@@ -1089,6 +1035,7 @@ export default {
 
           //justify-content: space-between;
           margin-bottom: 23px;
+
           .t {
             max-width: 300px;
             font-family: "Brinnan";
@@ -1098,7 +1045,9 @@ export default {
             line-height: 145.9%;
             letter-spacing: -0.015em;
             color: #ffffff;
+            overflow-wrap: break-word;
           }
+
           .icon {
             min-width: 64.39px;
             height: 64.39px;
@@ -1106,20 +1055,28 @@ export default {
             border-radius: 6.0263px;
             margin-right: 8px;
             padding: 10px;
+
             .layer {
               width: 100%;
               height: 100%;
               border-radius: 6.0263px;
               background-color: none;
               transform: translate3d(-3.59px, -3.59px, -3.59px);
+
               img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
               }
+
+              .dfinity-logo-fix {
+                height: 100%;
+                width: 100%;
+              }
             }
           }
         }
+
         .details {
           font-family: "Inter";
           font-style: normal;
@@ -1130,6 +1087,7 @@ export default {
           color: rgba(255, 255, 255, 0.8);
           margin-bottom: 28px;
         }
+
         .prize {
           align-items: right;
           font-family: "Inter";
@@ -1139,6 +1097,7 @@ export default {
           line-height: 145.9%;
           letter-spacing: -0.015em;
           color: rgb(255, 255, 255);
+
           .head {
             font-family: "Inter";
             font-style: italic;
@@ -1148,6 +1107,7 @@ export default {
             letter-spacing: -0.015em;
             color: #ffffff;
           }
+
           .amount {
             font-family: "Brinnan";
             font-style: normal;
@@ -1155,17 +1115,16 @@ export default {
             font-size: 45.0484px;
             line-height: 145.9%;
             letter-spacing: -0.015em;
-            background: linear-gradient(
-              89.97deg,
-              #fdc506 1.39%,
-              #fd9a06 86.07%
-            );
+            background: linear-gradient(89.97deg,
+                #fdc506 1.39%,
+                #fd9a06 86.07%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
           }
         }
+
         .buttons {
           font-family: "Brinnan";
           font-style: normal;
@@ -1176,12 +1135,13 @@ export default {
           // align-items: flex-end;
           width: 100%;
           margin-top: auto;
+
           .learn {
-            background: linear-gradient(
-              95.7deg,
-              #2bf2ff 0.32%,
-              #01c3f1 100.26%
-            );
+            background: linear-gradient(95.7deg,
+                #2bf2ff 0.32%,
+                #01c3f1 100.26%);
+            font-family: "Brinnan";
+            font-weight: 700;
             border-radius: 6px;
             height: 40px;
             width: 100%;
@@ -1193,6 +1153,7 @@ export default {
             justify-content: space-between;
             align-items: center;
           }
+
           .discord {
             background: none;
             border-radius: 6px;
@@ -1205,6 +1166,7 @@ export default {
             color: rgba(255, 255, 255, 1);
           }
         }
+
         .level {
           height: 36.68px;
           background: rgba(163, 94, 255, 0.6);
@@ -1222,6 +1184,7 @@ export default {
           justify-content: center;
           margin-bottom: 23px;
         }
+
         .action {
           font-family: "Inter";
           font-style: normal;
@@ -1232,19 +1195,23 @@ export default {
           color: #ffffff;
           display: flex;
           margin-bottom: 21px;
+
           img {
             margin-right: 9px;
           }
+
           .participants {
             display: flex;
             align-items: center;
             margin-right: 23px;
           }
+
           .deadline {
             display: flex;
             align-items: center;
           }
         }
+
         .cta {
           width: 100%;
           max-width: 322px;
@@ -1262,6 +1229,7 @@ export default {
           color: #2bf1ff;
         }
       }
+
       .inner-card:hover {
         transform: translate3d(-15px, -17.52px, -16.69px);
         background: #882eff;
@@ -1269,6 +1237,7 @@ export default {
         -webkit-transition: background backdrop-filter 300ms linear;
         -ms-transition: background backdrop-filter 300ms linear;
         transition: background backdrop-filter 300ms linear;
+
         .cta {
           background: linear-gradient(91.86deg, #2bf1ff 0.22%, #03c5f3 99.78%);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -1276,6 +1245,7 @@ export default {
         }
       }
     }
+
     .cardforbounty {
       min-height: 150px;
       width: 70%;
@@ -1295,6 +1265,7 @@ export default {
       // backdrop-filter: blur(9.75104px);
       border-radius: 9.75104px;
       cursor: pointer;
+
       .inner-card {
         display: flex;
         flex-direction: column;
@@ -1311,6 +1282,7 @@ export default {
         border-radius: 9.75104px;
         //transition: all 0.3s ease-in-out;
         will-change: transform;
+
         .name {
           display: flex;
           align-items: center;
@@ -1324,17 +1296,19 @@ export default {
           color: #ffffff;
           margin-bottom: 23px;
           justify-content: space-between;
+
           .t {
             max-width: 80%;
             font-family: "Brinnan";
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 18px;
             line-height: 145.9%;
             letter-spacing: -0.015em;
             color: #ffffff;
             margin-right: 30px;
           }
+
           .prize {
             font-family: "Inter";
             margin-top: 0.9375rem;
@@ -1349,6 +1323,7 @@ export default {
             letter-spacing: -0.015em;
             color: #ffffff;
           }
+
           .levelbounty {
             font-family: "Inter";
             width: 126px;
@@ -1364,20 +1339,24 @@ export default {
             letter-spacing: -0.015em;
             color: #ffffff;
           }
+
           .hr {
             border: 0.773455px solid #8650a6;
           }
+
           .icon {
             // width: 80px;
             height: 80px;
             border: 0.60263px solid #ffffff63;
             border-radius: 6.0263px;
             margin-right: 23.59px;
+
             .layer {
               width: 80%;
               height: 80%;
               padding: 5px;
               border-radius: 6.0263px;
+
               // background: white;
               // transform: translate3d(-3.59px, -3.59px, -3.59px);
               img {
@@ -1388,6 +1367,7 @@ export default {
             }
           }
         }
+
         .details {
           font-family: "Inter";
           font-style: normal;
@@ -1398,6 +1378,7 @@ export default {
           color: rgba(255, 255, 255, 0.8);
           margin-bottom: 28px;
         }
+
         .prize {
           margin-bottom: 18px;
           //padding-left: 3.125rem;
@@ -1409,6 +1390,7 @@ export default {
           letter-spacing: -0.015em;
           color: rgba(255, 255, 255, 0.8);
           margin-bottom: 28px;
+
           .head {
             font-family: "Inter";
             font-style: italic;
@@ -1418,6 +1400,7 @@ export default {
             letter-spacing: -0.015em;
             color: #ffffff;
           }
+
           .amount {
             font-family: "Brinnan";
             font-style: normal;
@@ -1425,17 +1408,16 @@ export default {
             font-size: 45.0484px;
             line-height: 145.9%;
             letter-spacing: -0.015em;
-            background: linear-gradient(
-              89.97deg,
-              #fdc506 1.39%,
-              #fd9a06 86.07%
-            );
+            background: linear-gradient(89.97deg,
+                #fdc506 1.39%,
+                #fd9a06 86.07%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
           }
         }
+
         .buttons {
           font-family: "Brinnan";
           font-style: normal;
@@ -1445,13 +1427,12 @@ export default {
           justify-content: space-between;
           align-items: flex-end;
           width: 100%;
+
           //margin-top: auto;
           .learn {
-            background: linear-gradient(
-              95.7deg,
-              #2bf2ff 0.32%,
-              #01c3f1 100.26%
-            );
+            background: linear-gradient(95.7deg,
+                #2bf2ff 0.32%,
+                #01c3f1 100.26%);
             border-radius: 6px;
             height: 40px;
             width: 100%;
@@ -1463,6 +1444,7 @@ export default {
             justify-content: space-between;
             align-items: center;
           }
+
           .discord {
             background: none;
             border-radius: 6px;
@@ -1475,6 +1457,7 @@ export default {
             color: rgba(255, 255, 255, 1);
           }
         }
+
         .level {
           height: 36.68px;
           background: rgba(163, 94, 255, 0.6);
@@ -1492,6 +1475,7 @@ export default {
           justify-content: center;
           margin-bottom: 23px;
         }
+
         .action {
           font-family: "Inter";
           font-style: normal;
@@ -1502,19 +1486,23 @@ export default {
           color: #ffffff;
           display: flex;
           margin-bottom: 21px;
+
           img {
             margin-right: 9px;
           }
+
           .participants {
             display: flex;
             align-items: center;
             margin-right: 23px;
           }
+
           .deadline {
             display: flex;
             align-items: center;
           }
         }
+
         .cta {
           width: 100%;
           max-width: 322px;
@@ -1532,6 +1520,7 @@ export default {
           color: #2bf1ff;
         }
       }
+
       .inner-card:hover {
         //transform: translate3d(-15px, -17.52px, -16.69px);
         background: #882eff;
@@ -1539,6 +1528,7 @@ export default {
         -webkit-transition: background backdrop-filter 300ms linear;
         -ms-transition: background backdrop-filter 300ms linear;
         transition: background backdrop-filter 300ms linear;
+
         .cta {
           background: linear-gradient(91.86deg, #2bf1ff 0.22%, #03c5f3 99.78%);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -1560,10 +1550,12 @@ export default {
       line-height: 145.9%;
       letter-spacing: -0.015em;
       color: #ffffff;
+
       img {
         margin-left: 5px;
       }
     }
+
     .altttile {
       display: flex;
       flex-direction: row;
@@ -1578,6 +1570,7 @@ export default {
       line-height: 145.9%;
       letter-spacing: -0.015em;
       color: #ffffff;
+
       img {
         margin-left: 5px;
         margin-top: 10px;
@@ -1603,6 +1596,7 @@ export default {
       color: rgba(255, 255, 255, 0.8);
       margin-top: 10px;
     }
+
     .nav-sub {
       width: 80%;
       margin: 0 auto;
@@ -1625,28 +1619,39 @@ export default {
 </style>
 <style lang="scss" scoped>
 @media (max-width: 750px) {
-  
+
   // .prizeAndMedal{
   //   margin-left: 45px;
   //   margin-top:10px;
   // }
-  .a-w{
+  .a-w {
     flex-direction: column;
-    .as-wrapper{
-      .details{
-        width:100%;
+
+    .as-wrapper {
+      .details {
+        width: 100%;
       }
     }
   }
+
   .buttonMedal {
     // flex-direction: column;
-    
+
   }
+
+  .dfinity-logo-title-fix{
+    height: 90%;
+    width: 90%;
+    margin-right: -30px;
+    margin-left: 30px;
+  }
+
   .third {
     .content {
       .rotating-button {
         display: flex;
       }
+
       .tracks {
         margin: 0 0;
         //max-width: 1200px;
@@ -1654,6 +1659,7 @@ export default {
         flex-direction: column;
         align-content: center;
       }
+
       .card {
         margin-right: 0px;
         width: 80%;
@@ -1661,6 +1667,7 @@ export default {
         // margin-left: 0px;
         margin-left: auto;
         margin-right: auto;
+
         .inner-card {
           .name {
             // flex-direction:column;
@@ -1670,6 +1677,7 @@ export default {
               font-size: 21px;
             }
           }
+
           .prize {
             font-size: 20px;
           }
@@ -1687,14 +1695,17 @@ export default {
         margin-bottom: 68px;
       }
     }
-    .buttonMedal{
-      .buttons{
+
+    .buttonMedal {
+      .buttons {
 
         flex-direction: column;
       }
     }
+
     .buttons {
       flex-direction: column;
+
       .learn {
         height: 45px !important;
         width: 168px !important;
@@ -1702,6 +1713,7 @@ export default {
         width: 45%;
       }
     }
+
     .prize {
       font-size: 20px;
       flex-direction: column;
