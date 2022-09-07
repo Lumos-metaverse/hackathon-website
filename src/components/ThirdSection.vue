@@ -293,7 +293,7 @@
                     <div class="timid">
 
                       <div class="icon">
-                        <div class="layer">
+                        <div class="open-layer">
                           <img :src="othertrack.icon" />
                         </div>
                       </div>
@@ -1355,6 +1355,20 @@ export default {
               width: 95%;
               height: 80%;
               padding: 5px;
+              border-radius: 6.0263px;
+
+              // background: white;
+              // transform: translate3d(-3.59px, -3.59px, -3.59px);
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: fit;
+              }
+            }
+            .open-layer {
+              width: 80%;
+              height: 80%;
+              padding: 8px;
               border-radius: 6.0263px;
 
               // background: white;
