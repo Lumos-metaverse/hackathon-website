@@ -195,7 +195,7 @@
                         url:'https://www.lirn.io/'
                     },
                     {
-                        name: 'Superwoman DAO',
+                        name: 'Superwomen DAO',
                         logo: require('~/assets/sponsors/logos/superwomendao.jpg'),
                         url:'https://twitter.com/superwomendao?lang=en'
                     },
