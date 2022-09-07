@@ -271,8 +271,8 @@
                         src="~/assets/arrows/purple-arrow.svg" />
                     </button>
                   </g-link>
-                  </div>
-                </div> -->
+                  </div> -->
+                </div> 
                   <div class="prize">
                     <div class="prizeAndMedal">
                       <div class="prizeAndMedalFont">
