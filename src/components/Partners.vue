@@ -180,6 +180,11 @@
                         url:'https://twitter.com/PhoenixGuildHQ'
                     },
                     {
+                        name: 'The Dapp List',
+                        logo: require('~/assets/sponsors/logos/thedapplist1.jpeg'),
+                        url:'https://thedapplist.com/'
+                    },
+                    {
                         name: 'Web3 Learn',
                         logo: require('~/assets/sponsors/logos/web3learn.svg'),
                         url:'https://www.web3learn.io/#vision'
