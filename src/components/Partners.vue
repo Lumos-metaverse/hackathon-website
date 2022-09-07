@@ -221,7 +221,7 @@
                 },
                 {
                     name: 'The Decrypting Story',
-                        logo: require('~/assets/sponsors/logos/dn.svg'),
+                        logo: require('~/assets/sponsors/logos/decrypting.png'),
                         url:'https://yourstory.com/the-decrypting-story'
 
                 },
