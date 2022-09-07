@@ -21,6 +21,10 @@ export default {
                         
 
                     },
+                    {
+                        heading: 'Some resources to get you started!',
+                        href: 'https://support.dfinity.org/hc/en-us/articles/4965948618772-Supernova-Hackathon-2022-Developer-Resources'
+                    },
                     
                 ],      
             }   
