@@ -206,7 +206,7 @@
       <div>
         <div class="bounty">
           <div class="cardforbounty" v-for="(RouterProtocol, i) in RouterProtocol" :key="i">
-            <div class="inner-card">
+            <div class="inner-card router-card">
               <div class="name">
                 <div class="a-w">
                   <div class="as-wrapper">
@@ -245,7 +245,7 @@
       <div>
         <div class="bounty">
           <div class="cardforbounty" v-for="(ArcanaNetwork, i) in ArcanaNetwork" :key="i">
-            <div class="inner-card">
+            <div class="inner-card router-card">
               <div class="name">
                 <div class="a-w">
                   <div class="as-wrapper">
@@ -286,13 +286,13 @@
       <div>
         <div class="bounty">
           <div class="cardforbounty" v-for="(othertrack, i) in othertrack" :key="i">
-            <div class="inner-card">
+            <div class="inner-card router-card">
               <div class="name">
                 <div class="a-w">
                   <div class="as-wrapper">
-                    <div class="timid">
+                    <div class="open-timid">
 
-                      <div class="icon">
+                      <div class="icon-open">
                         <div class="open-layer">
                           <img :src="othertrack.icon" />
                         </div>
@@ -303,21 +303,21 @@
                       {{ othertrack.content }}
                     </div>
                   </div>
-                  <div class="prize">
+                  <!-- <div class="prize">
                     <div class="prizeAndMedal">
                       <div>
                         {{ othertrack.prize }}
                       </div>
                       <div>
-                        <!-- <g-image
+                         <g-image
                             style="width: 20px; height: 20px; margin-left: 8px"
                             width="12"
                             height="12"
                             src="~/assets/third/medal.png"
-                          /> -->
+                          />
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -456,8 +456,8 @@ export default {
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
-            "The onset of DeFi is changing FinTech as we know it! Identify problem statements that are plaguing the DeFi space and leverage Polygon to change the way consumers transact. ",
-          icon: require("~/assets/third/polygon-matic-logo.svg"),
+            "The onset of DeFi is changing FinTech as we know it! With multiple use cases to explore, Identify problem statements that are plaguing the DeFi space and leverage Polygon to change the way consumers transact.",
+          icon: require("~/assets/third/polygon.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
         },
@@ -469,7 +469,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "NFTs are taking digital assets to a whole new level by opening the proverbial Web3 doors to the general public. Show us how you will revolutionize this space with the support of Polygon and win big!",
-          icon: require("~/assets/third/polygon-matic-logo.svg"),
+          icon: require("~/assets/third/polygon.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
         },
@@ -481,7 +481,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "Web3 is raising the stakes for incentives within gaming experiences and providing gamers with a whole new experience. Double down and show us how you can elevate gaming experiences with the help of Polygon!",
-          icon: require("~/assets/third/polygon-matic-logo.svg"),
+          icon: require("~/assets/third/polygon.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/polygon/",
         },
@@ -495,7 +495,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "Explore the power of æternity core features and show the world how powerful State Channels and the native Oracle system are. Build meaningful applications around our AEX-9 Fungible Token Standard that interface with our Superhero DEX.",
-          icon: require("~/assets/third/aeternity-ae-logo.svg"),
+          icon: require("~/assets/third/aeternity.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aeternity/",
         },
@@ -507,7 +507,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "The æternity naming system (AENS) is very powerful. The community deserves an AENS marketplace to trade the names and we are waiting for you to build it! You can also check out the brand new AEX-141 NFT Standard - be among the first to use it!",
-          icon: require("~/assets/third/aeternity-ae-logo.svg"),
+          icon: require("~/assets/third/aeternity.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aeternity/",
         },
@@ -519,7 +519,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "The future of society will be powered by community driven DAOs running on public blockchains. With the Governance æpp and Superhero.com we kickstarted this shift in society. These examples should inspire you to come up with a cool solution that empowers communities!",
-          icon: require("~/assets/third/aeternity-ae-logo.svg"),
+          icon: require("~/assets/third/aeternity.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/aeternity",
         },
@@ -532,7 +532,7 @@ export default {
           participants: "324",
           deadline: "Jul 10, 2020",
           content: "Want to build the next-generation DeFi protocol? Or say a decentralized game that incorporates tokenization? Maybe a metaverse to sell online real estate as NFTs? Don't feel constrained by any category. Build any end-to-end application that incorporates tokenization on Internet Computer! Only the projects built on Internet Computer will be eligible for this track",
-          icon: require("~/assets/sponsors/logos/dfinity-logo-vector.png"),
+          icon: require("~/assets/third/internet_computer.svg"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/internetcomputer/",
         },
@@ -647,7 +647,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "One of the biggest problem statements in human history is solving for sustainability in today’s world. Web3’s circular, participatory economy that is decentralized and incentivized, hosts a treasure trove of potential to make some serious strides in Sustainability! Show us how you can revolutionize sustainability-based solutions by picking one of the problem statements shared.",
-          icon: require("~/assets/third/cards/logo6.png"),
+          icon: require("~/assets/third/cards/operation_sus.svg"),
           //url: "/operation-sustainability",
         },
 
@@ -659,7 +659,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "The offerings that Web3 brings through Governance as a use case is tremendous. We challenge you to be inspired by Participation, Transparency, Consensus, Equity and Inclusiveness, Effectiveness and Efficiency, and Accountability. ",
-          icon: require("~/assets/third/cards/logo7.png"),
+          icon: require("~/assets/third/cards/pillars_of_governance.svg"),
           // url: "/pillar-of-governance",
         },
 
@@ -671,7 +671,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "Web3 has a strong entertainment offering to push the boundaries of its innovation index. With digital media consumption finding a perfect fit globally, it has opened up several avenues for innovation and problem-solving. Take up this challenge and show us how decentralization can enrich entertainment as we know it.",
-          icon: require("~/assets/third/cards/logo3.png"),
+          icon: require("~/assets/third/cards/entertainment_central.svg"),
           // url: "/entertainment-central",
         },
       ],
@@ -804,6 +804,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.router-card {
+  border: 0.60263px solid #ffffff;
+}
+
 .timid {
   display: flex;
   flex-wrap: wrap;
@@ -847,6 +851,7 @@ export default {
   flex-direction: row;
   min-width: 20%;
   margin-left: 4px;
+  font-size: 30px;
   font-family: "Brinnan";
   font-weight: 700;
 }
@@ -1034,27 +1039,28 @@ export default {
           letter-spacing: -0.015em;
 
           //justify-content: space-between;
-          margin-bottom: 23px;
+          margin-bottom: 18px;
 
           .t {
             max-width: 300px;
             font-family: "Brinnan";
             font-style: normal;
             font-weight: 700;
-            font-size: 24px;
+            font-size: 22px;
             line-height: 145.9%;
             letter-spacing: -0.015em;
+            margin-left: 12px;
             color: #ffffff;
             overflow-wrap: break-word;
           }
 
           .icon {
-            min-width: 64.39px;
-            height: 64.39px;
-            border: 0.60263px solid #ffffff;
+            min-width: 84.39px;
+            height: 84.39px;
+            /* border: 0.60263px solid #ffffff; */
             border-radius: 6.0263px;
-            margin-right: 8px;
-            padding: 10px;
+            /* margin-right: 8px; */
+            padding: 4px;
 
             .layer {
               width: 100%;
@@ -1062,6 +1068,8 @@ export default {
               border-radius: 6.0263px;
               background-color: none;
               transform: translate3d(-3.59px, -3.59px, -3.59px);
+              /* padding-left: 4px;
+              padding-top: 4px; */
 
               img {
                 width: 100%;
@@ -1140,17 +1148,19 @@ export default {
             background: linear-gradient(95.7deg,
                 #2bf2ff 0.32%,
                 #01c3f1 100.26%);
+            font-size: 11px;
             font-family: "Brinnan";
             font-weight: 700;
+            letter-spacing: 1px;
             border-radius: 6px;
-            height: 40px;
+            height: 50px;
             width: 100%;
             max-width: 160px;
             border: none;
             padding: 16px 8px;
             color: rgba(54, 16, 76, 1);
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
           }
 
@@ -1365,18 +1375,31 @@ export default {
                 object-fit: fit;
               }
             }
-            .open-layer {
-              width: 80%;
-              height: 80%;
-              padding: 8px;
-              border-radius: 6.0263px;
+          }
 
-              // background: white;
-              // transform: translate3d(-3.59px, -3.59px, -3.59px);
-              img {
-                width: 100%;
-                height: 100%;
-                object-fit: fit;
+          .open-timid {
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 20px;
+
+            .icon-open {
+              height: 80px;
+
+              .open-layer {
+                width: 80%;
+                height: 80%;
+                padding: 8px;
+                border-radius: 6.0263px;
+
+                // background: white;
+                // transform: translate3d(-3.59px, -3.59px, -3.59px);
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: fit;
+                }
               }
             }
           }
@@ -1653,7 +1676,7 @@ export default {
 
   }
 
-  .dfinity-logo-title-fix{
+  .dfinity-logo-title-fix {
     height: 90%;
     width: 90%;
     margin-right: -30px;
@@ -1676,7 +1699,7 @@ export default {
 
       .card {
         margin-right: 0px;
-        width: 80%;
+        width: 90%;
         margin-bottom: 40px;
         // margin-left: 0px;
         margin-left: auto;
@@ -1694,6 +1717,11 @@ export default {
 
           .prize {
             font-size: 20px;
+
+            .prizeAndMedal {
+              font-size: 20px;
+              padding-left: 4px;
+            }
           }
         }
       }
