@@ -263,7 +263,7 @@
                     </div>
                   </div>
                 <div class="buttonMedal">
-                <div class="buttons">
+               <!-- <div class="buttons">
                   <g-link style="text-decoration: none; cursor: pointer" :to="ArcanaNetwork.url">
                     <button class="learn" style="text-decoration: none; cursor: pointer">
                       LEARN MORE
@@ -272,7 +272,7 @@
                     </button>
                   </g-link>
                   </div>
-                </div>
+                </div> -->
                   <div class="prize">
                     <div class="prizeAndMedal">
                       <div class="prizeAndMedalFont">
