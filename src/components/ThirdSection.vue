@@ -572,7 +572,7 @@ export default {
           participants: "324",
           deadline: "Jul 10, 2020",
           content:
-            "Build Best tooling, API, SDK, services, or patterns that make it easier for Web3 devs to build with Fluence and Aqua. The easiest way to get started is to go swing by the developer's docs and then build a small Fluence project or try one of the examples, identify tooling deficits, and kick off your hackathon project.",
+            "Build best Web3 tooling, API, SDK, services, or patterns built with Fluence and Aqua. The easiest way to get started is to go swing by the developer's docs and then build a small Fluence project or try one of the examples, identify tooling deficits, and kick off your hackathon project.",
           icon: require("~/assets/third/fluence1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "/",
@@ -1390,7 +1390,7 @@ export default {
               .open-layer {
                 width: 80%;
                 height: 80%;
-                padding: 8px;
+                padding: 4px;
                 border-radius: 6.0263px;
 
                 // background: white;
@@ -1579,7 +1579,8 @@ export default {
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      padding-top: 10px;
+      padding-top: 30px;
+      padding-bottom: 40px;
       font-family: "Brinnan";
       font-style: normal;
       font-weight: 700;
