@@ -263,7 +263,7 @@
                     </div>
                   </div>
                 <div class="buttonMedal">
-               <!-- <div class="buttons">
+               <div class="buttons">
                   <g-link style="text-decoration: none; cursor: pointer" :to="ArcanaNetwork.url">
                     <button class="learn" style="text-decoration: none; cursor: pointer">
                       LEARN MORE
@@ -271,7 +271,7 @@
                         src="~/assets/arrows/purple-arrow.svg" />
                     </button>
                   </g-link>
-                  </div> -->
+                  </div> 
                 </div> 
                   <div class="prize">
                     <div class="prizeAndMedal">
@@ -621,7 +621,7 @@ export default {
             "Build a platform using which users can go long and short on Tezos based tokens, or Tokens bridged to Tezos. The project should use https://kolibri.finance/ (for borrowing against Tez) and a Dex like PlentyDeFi.com (for trading tokens).",
           icon: require("~/assets/third/tezos1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "https://docs.google.com/document/d/1MtY73Kk8Gj_N90OgM4m3KM27ihrC6DcN9KgqH1nuon0/edit?usp=sharing",
+          url: "https://destiny-seeder-c0b.notion.site/A-Dashboard-for-Leveraged-Trading-on-Tezos-da8036ff5c864b7b984f2ef9cfd8928c",
         },
         {
           name: "To build a web3 application on Tatum using Tatum Node Infrastructure and/or Software Development Kit",
@@ -632,7 +632,7 @@ export default {
           content: "",
           icon: require("~/assets/third/tatum1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/",
+          url: "https://apidoc.tatum.io/",
         },
         {
           name: " Design a cross-chain identity aggregator for Web3:",
