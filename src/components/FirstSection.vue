@@ -102,6 +102,7 @@ export default {
         justify-content: center;
         letter-spacing: 0.1em;
         color: #36104C;
+        cursor: pointer;
       }
       .or{
         font-family: 'Brinnan';
