@@ -203,7 +203,7 @@
       <div class="title">Associate Tracks</div>
 
       <!-- Router Protocol-->
-      <div>
+      <!-- <div>
         <div class="bounty">
           <div class="cardforbounty" v-for="(RouterProtocol, i) in RouterProtocol" :key="i">
             <div class="inner-card router-card">
@@ -239,7 +239,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Arcana Network Track-->
       <div>
@@ -262,6 +262,17 @@
                       {{ ArcanaNetwork.content }}
                     </div>
                   </div>
+                <div class="buttonMedal">
+                <div class="buttons">
+                  <g-link style="text-decoration: none; cursor: pointer" :to="ArcanaNetwork.url">
+                    <button class="learn" style="text-decoration: none; cursor: pointer">
+                      LEARN MORE
+                      <g-image style="width: 12px; height: 12px; margin-left: 8px" width="12" height="12"
+                        src="~/assets/arrows/purple-arrow.svg" />
+                    </button>
+                  </g-link>
+                  </div>
+                </div>
                   <div class="prize">
                     <div class="prizeAndMedal">
                       <div class="prizeAndMedalFont">
@@ -538,8 +549,22 @@ export default {
         },
       ],
 
-      RouterProtocol: [
-        {
+      // RouterProtocol: [
+      //   {
+      //     name: "Create a Cross chain Yield Aggregator using Router CrossTalk Library. ",
+      //     prize: "$5,000",
+      //     level: "Intermediate",
+      //     participants: "324",
+      //     deadline: "Jul 10, 2020",
+      //     content: "",
+      //     icon: require("~/assets/third/router1.png"),
+      //     // sponsor: require('~/assets/third/sponsors/solana.png'),
+      //     url: "/",
+      //   },
+      // ],
+
+      ArcanaNetwork: [
+      {
           name: "Create a Cross chain Yield Aggregator using Router CrossTalk Library. ",
           prize: "$5,000",
           level: "Intermediate",
@@ -548,11 +573,8 @@ export default {
           content: "",
           icon: require("~/assets/third/router1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/",
+          url: "https://dev.routerprotocol.com/crosstalk-library/overview",
         },
-      ],
-
-      ArcanaNetwork: [
         {
           name: "BUIDL Privacy Preserving Apps. ",
           prize: "$5,000",
@@ -563,7 +585,7 @@ export default {
             "Use your imagination and feel free to build any DApp that excites you! Show us how best you can leverage Arcana’s access control feature to store data and Social/Magic links to create wallets. We do not want to limit your imagination but here are some topics for your team to consider as reference: Marketplaces, Games, social apps, NFT based apps.",
           icon: require("~/assets/third/arcana1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/",
+          url: "https://docs.beta.arcana.network/docs",
         },
         {
           name: "Upgrade the Buidlers Toolbox",
@@ -575,7 +597,7 @@ export default {
             "Build best Web3 tooling, API, SDK, services, or patterns built with Fluence and Aqua. The easiest way to get started is to go swing by the developer's docs and then build a small Fluence project or try one of the examples, identify tooling deficits, and kick off your hackathon project.",
           icon: require("~/assets/third/fluence1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/",
+          url: "https://github.com/fluencelabs/lumos-hackathon",
         },
         {
           name: "Fight climate change with NFTs",
@@ -587,7 +609,7 @@ export default {
             "Climate change is a reality - and *the time to act is now.* The first step of action is Awareness. We rely on you to make your fellow citizens aware of it. Create an NFT using Revise SDK and climate/weather data to showcase the impact it has on humanity.",
           icon: require("~/assets/third/revise1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/",
+          url: "https://www.npmjs.com/package/revise-sdk",
         },
         {
           name: "Build on Tezos tokens and solve real world problems",
@@ -599,7 +621,7 @@ export default {
             "Build a platform using which users can go long and short on Tezos based tokens, or Tokens bridged to Tezos. The project should use https://kolibri.finance/ (for borrowing against Tez) and a Dex like PlentyDeFi.com (for trading tokens).",
           icon: require("~/assets/third/tezos1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/",
+          url: "https://docs.google.com/document/d/1MtY73Kk8Gj_N90OgM4m3KM27ihrC6DcN9KgqH1nuon0/edit?usp=sharing",
         },
         {
           name: "To build a web3 application on Tatum using Tatum Node Infrastructure and/or Software Development Kit",
@@ -622,7 +644,7 @@ export default {
             "User1 can send assets to User2 by knowing their DID (It could be Vedant.Komet or KID Vedant)",
           icon: require("~/assets/third/komet1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/",
+          url: "https://substrate.io/",
         },
         {
           name: "Keep Calm and NFT-ise!",
@@ -634,7 +656,7 @@ export default {
             "NFT based event ticketing platform, that facilitates easy NFT event ticket issuing and easy check-ins using AssetMantle blockchain and MantleWallet. The process should be abstract user friendly such that the tickets should be verifiable by scanning a QR code on mobile. A mobile application with a simple username-based SignUp mechanism would be interesting.",
           icon: require("~/assets/third/assetmantle1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "/",
+          url: "https://docs.assetmantle.one/",
         },
       ],
 
@@ -1466,7 +1488,7 @@ export default {
           font-size: 14px;
           display: flex;
           justify-content: space-between;
-          align-items: flex-end;
+          align-items: baseline;
           width: 100%;
 
           //margin-top: auto;
