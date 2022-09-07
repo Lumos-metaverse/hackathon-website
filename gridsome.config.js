@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Buidl for Web3 | Lumos Labs',
+  siteUrl: 'https://hack.lumoslabs.co',
   plugins: [
     {
       use: 'gridsome-plugin-gtm',
@@ -14,6 +15,9 @@ module.exports = {
         enabled: true,
         debug: true
       }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
     }
   ]
 }

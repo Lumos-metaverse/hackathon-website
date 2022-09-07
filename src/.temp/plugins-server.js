@@ -1,4 +1,4 @@
-import plugin_gridsome_plugin_gtm_5 from "/Users/akashsachan/Lumos/hackathon-website/node_modules/gridsome-plugin-gtm/gridsome.client.js"
+import plugin_gridsome_plugin_gtm_5 from "/Users/thecoderpanda/Desktop/lumos/hackathon-website/node_modules/gridsome-plugin-gtm/gridsome.client.js"
 
 export default [
   {
