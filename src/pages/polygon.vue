@@ -27,6 +27,10 @@ export default {
                         heading:'Best Gaming/ Metaverse Track ',
                         copy: 'Web3 is raising the stakes for incentives within gaming experiences and providing gamers with a whole new experience. Double down and show us how you can elevate gaming experiences with the help of Polygon!'
                     },
+                    {
+                        heading: 'Some resources to get you started!',
+                        href: 'https://wiki.polygon.technology'
+                    },
                 ],      
             }   
         }
