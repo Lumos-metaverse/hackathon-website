@@ -220,9 +220,9 @@
 
                 },
                 {
-                    name: 'Digital Notice',
-                        logo: require('~/assets/sponsors/logos/dn.svg'),
-                        url:'https://www.digitalnotice.in/'
+                    name: 'The Decrypting Story',
+                        logo: require('~/assets/sponsors/logos/decrypting.png'),
+                        url:'https://yourstory.com/the-decrypting-story'
 
                 },
                 {
