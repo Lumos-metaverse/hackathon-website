@@ -55,7 +55,7 @@
           Community Partners
         </div> 
         <div class="wrapper">
-            <div style="cursor:pointer" class="tile" v-for="(partners,i) in partners" :key="i" @click="openPage(sponsor.url)">
+            <div style="cursor:pointer" class="tile" v-for="(partners,i) in partners" :key="i" @click="openPage(partners.url)">
                 <g-image class="bg" src="~/assets/sponsors/tile.svg"></g-image>
                 <div class="sponsor">
                     <g-image :src="partners.logo"></g-image>
@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="wrapper-desktop">
-            <div style="cursor:pointer" class="tile" v-for="(partners,i) in partners" :key="i" @click="openPage(sponsor.url)">
+            <div style="cursor:pointer" class="tile" v-for="(partners,i) in partners" :key="i" @click="openPage(partners.url)">
                 <g-image class="bg" src="~/assets/sponsors/tile-desktop.svg"></g-image>
                 <div class="sponsor">
                     <g-image :src="partners.logo"></g-image>
@@ -188,6 +188,16 @@
                         name: 'Web3 Learn',
                         logo: require('~/assets/sponsors/logos/web3learn.svg'),
                         url:'https://www.web3learn.io/#vision'
+                    },
+                    {
+                        name: 'Lirn.io',
+                        logo: require('~/assets/sponsors/logos/lirn.jpg'),
+                        url:'https://www.lirn.io/'
+                    },
+                    {
+                        name: 'Superwoman DAO',
+                        logo: require('~/assets/sponsors/logos/superwomendao.jpg'),
+                        url:'https://twitter.com/superwomendao?lang=en'
                     },
                 ],
                 knowledgesponsors:[

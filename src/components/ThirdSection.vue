@@ -225,7 +225,7 @@
                   </div>
                   <div class="prize">
                     <div class="prizeAndMedal">
-                      <div>
+                      <div class="prizeAndMedalFont">
                         {{ RouterProtocol.prize }}
                       </div>
                       <div>
@@ -264,7 +264,7 @@
                   </div>
                   <div class="prize">
                     <div class="prizeAndMedal">
-                      <div>
+                      <div class="prizeAndMedalFont">
                         {{ ArcanaNetwork.prize }}
                       </div>
                       <div>
@@ -806,6 +806,10 @@ export default {
 <style lang="scss" scoped>
 .router-card {
   border: 0.60263px solid #ffffff;
+}
+
+.prizeAndMedalFont{
+  font-size: 24px;
 }
 
 .timid {
