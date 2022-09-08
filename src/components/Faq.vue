@@ -16,8 +16,8 @@
           <!-- <a class="copy" target="_blank" :href="faqItem.href"> -->
           <p class="ans">
             {{ faqItem.ans }}
-             <g-link style="text-decoration: none; cursor: pointer" :to="faqItem.href">
-              <p> Click here</p>
+             <g-link v-if="faqItem.href" style="text-decoration: none; cursor: pointer" :to="faqItem.href">
+              &nbsp;Click here
             </g-link>
           </p>
           <!-- </a> -->
@@ -64,7 +64,7 @@ export default {
         },
         {
           qus: " What is the selection criteria for #BUIDL for Web3 Hack (2022)?",
-          ans: 'The selection criteria for #BUIDL for Web3 Hack (2022):',
+          ans: "The selection criteria for #BUIDL for Web3 Hack (2022) - ",
           href: "https://www.notion.so/Judging-Criteria-Process-7c309cf9cb8a411ca0f666a5b5c678e0"
         },
         {
