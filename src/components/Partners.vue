@@ -198,6 +198,10 @@
                         name: 'Superwomen DAO',
                         logo: require('~/assets/sponsors/logos/superwomendao.jpg'),
                         url:'https://twitter.com/superwomendao?lang=en'
+                    },{
+                        name: 'States DAO',
+                        logo: require('~/assets/sponsors/logos/statesdao.jpg'),
+                        url:'https://statesdao.club/'
                     },
                 ],
                 knowledgesponsors:[
