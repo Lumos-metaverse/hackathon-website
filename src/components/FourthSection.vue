@@ -8,9 +8,12 @@
                 <div class="s-btn" @click="registerNow">
                     <g-image class="outline" src="~/assets/fourth/btn-outline.svg"></g-image>
                     <g-image id="bg" ref="bg" class="bg" src="~/assets/fourth/btn.svg"/>
-                    <div id="outline" ref="outline">REGISTER NOW
-                        <g-image style="width:9px;height:9px;margin-left:8px;" width="12" height="12" src="~/assets/arrows/purple-arrow.svg"/>
+                    <g-link to="https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149" target="_blank" rel="noopener noreferrer">
+                    <div id="outline" ref="outline">
+                    REGISTER NOW
+                    <g-image style="width:9px;height:9px;margin-left:8px;" width="12" height="12" src="~/assets/arrows/purple-arrow.svg"/>
                     </div>
+                    </g-link>
                 </div>
             </div>
         </div>

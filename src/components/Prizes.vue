@@ -9,14 +9,31 @@
             </div>
         </div>
         <div class="wrap">
-            <div class="row" v-for="(row,idx) in prizes" :key="idx">
+            <div class="row" v-for="(row,idx) in prizes1" :key="idx">
                 <div class="cell" v-for="(cell,idx) in row" :key="idx">
                     <div v-if="cell && cell.icon" style="margin-right:18px">
-                        <g-image :src="cell.icon" width="109px" height="109px"/>
+                        <g-image :src="cell.icon" width="60px" height="89px"/>
                     </div>
                     <div style="text-align:center">
                         <div class="name">{{cell.name}}</div>
                         <div class="cash">${{cell.cash}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="wrap">
+            <div class="row" v-for="(row,idx) in prizes2" :key="idx">
+                <div class="cell" v-for="(cell,idx) in row" :key="idx">
+                    <div v-if="cell && cell.icon" style="margin-right:12px">
+                        <g-image :src="cell.icon" width="60px" height="50px"/>
+                    </div>
+                    <div style="text-align:center">
+                        <div class="name">{{cell.name}}</div>
+                        <div class="cash1">${{cell.cash}}</div>
+                        <div class="description">EACH IN CONVERTIBLE GRANTS FROM BUILDERSTRIBE</div>
+                        <div class="disclamer">*Startups with traction</div>
                     </div>
                 </div>
             </div>
@@ -28,38 +45,26 @@
         name:'Prizes',
         data:function(){
             return{
-                prizes:[
+                prizes1:[
                     [
                         {
-                            name:'Grand Champion',
-                            cash:'50,000',
+                            name:'WIN FROM A LARGE PRIZE POOL OF',
+                            cash:'100,000+',
                             icon:require('~/assets/third/medal.png'),
-                        }
+                        },
+
                     ],
+                ],
+                 prizes2:[
                     [
                         {
-                            name:'Expert Award',
-                            cash:'25,000',
+                            name:'WIN UPTO',
+                            cash:'25,000*',
+                            icon:require('~/assets/third/bd.png'),
+                            //description: "each in Convertible Grants from BuildersTribe"
                         },
-                        {
-                            name:'Intermediate Award',
-                            cash:'15,000',
-                        },
-                        {
-                            name:'Beginner Award',
-                            cash:'10,000',
-                        }
+
                     ],
-                    [
-                        {
-                            name: 'Top 10 Projects',
-                            cash:'1,000',
-                        },
-                        {
-                            name:'Top 20 projects',
-                            cash: '700'
-                        }
-                    ]
                 ]
             }
         }
@@ -131,36 +136,60 @@
                         letter-spacing: -0.015em;
                         color: #FDC506;
                     }
+                    .cash1{
+                        font-family: 'Brinnan';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 26px;
+                        letter-spacing: -0.015em;
+                        color: #B4E32D;
+                    }
+                    .description{
+                        font-family: 'Brinnan';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 10px;
+                        letter-spacing: -0.015em;
+                        color: #FFFFFF;
+                    }
+                    .disclamer{
+                        font-family: 'Brinnan';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        letter-spacing: -0.015em;
+                        color: #FFFFFF;
+                    }
                 }
             }
         }
     }
 </style>
 <style lang="scss" scoped>
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
         .prizes{
             .head{
                 .title{
-                    font-size: 45px;
+                    font-size: 36px;
                     letter-spacing: -0.015em;
                 }
                 .sub-title{
                     max-width: 370px;
-                    font-size: 16px;
+                    font-size: 12px;
                     margin-bottom: 64px;
                 }
             }
             .wrap{
                 .row{
                     .cell{
-                        min-width: 320px;
+                        min-width: 300px;
                         max-height:165.14px;
                         margin-bottom: 29px;
                         .name{
-                            font-size: 20px;
+                            font-size: 12px;
                         }
                         .cash{
-                            font-size: 58.88px;
+                            font-size: 32.88px;
                         }
                     }
                 }

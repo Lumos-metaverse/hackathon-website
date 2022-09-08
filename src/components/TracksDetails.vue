@@ -12,12 +12,16 @@
                     <div class="title">{{trackObj.title}}</div>
                     <div class="description">{{trackObj.description}}</div>
                     <div class="buttons">
+                        <g-link to="https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149">
                         <button class="register-now">
                             REGISTER NOW <g-image style="width:9px;height:9px;margin-left:18px;" width="12" height="12" src="~/assets/arrows/purple-arrow.svg"/>
                         </button>
+                        </g-link>
+                        <g-link to="https://discord.gg/WyfmzJpzZd">
                         <button class="discord">
                             JOIN DISCORD
                         </button>
+                        </g-link>
                     </div>
                 </div>
                 <div class="right">
@@ -33,7 +37,8 @@
                         <g-image src="~/assets/details/diamond.svg"></g-image>
                         <div class="point">
                             <div class="heading">{{point.heading}}</div>
-                            <div class="copy">{{point.copy}}</div>
+                            <div class="copy" v-if="point.copy">{{point.copy}}</div>
+                            <a class="copy" target="_blank" :href="point.href" v-else>{{point.href}}</a>
                         </div>
                     </div>
                 </div>
@@ -70,7 +75,7 @@ export default {
             img{
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
         position: relative;
@@ -114,7 +119,7 @@ export default {
                                 img{
                                     width: 100%;
                                     height: 100%;
-                                    object-fit: cover;
+                                    object-fit: contain;
                                 }
                             }
                         }

@@ -138,23 +138,108 @@ data () {
          companyLogo: require('~/assets/mentors/logo/vanderbilt.png'),
        },
        {
+         name:'Marco Walz',
+         position:'Lead Developer Relations, æternity',
+         image: require('~/assets/mentors/final/marco.png'),
+         companyLogo: require('~/assets/third/aeternity-ae-logo.svg'),
+       },
+       {
          name:'Chunda McCain',
-         position:'Founder, Pen Blockchain',
+         position:'President, Pen Blockchain',
          image: require('~/assets/mentors/final/chundan.png'),
          companyLogo: require('~/assets/mentors/logo/pen.png'),
        },
        {
+         name:'Rahat Chowdhary',
+         position:'Lead Developer Relations Engineer, Polygon',
+         image: require('~/assets/mentors/final/rahat.jpeg'),
+         companyLogo: require('~/assets/sponsors/logos/Polygon.png'),
+       },
+       {
          name:'Kunal Arora',
-         position:'Founder, Blockchain San Diago',
+         position:'Co-Founder, Blockchain San Diago',
          image: require('~/assets/mentors/final/kunal.png'),
          companyLogo: require('~/assets/mentors/logo/san.png'),
        },
+      
        {
-         name:'Ingi Kim',
-         position:'Founder, States DAO',
-         image: require('~/assets/mentors/final/ingi.png'),
-         companyLogo: require('~/assets/mentors/logo/states.png'),
-       }
+        name: 'Ramesh Ramdoss',
+        position: 'Co-Chair, IEEE Blockchain', 
+        image: require('~/assets/mentors/final/ramesh.png'),
+         companyLogo: require('~/assets/mentors/logo/ieee-blockchain.png'),
+         
+       },
+       {
+        name: 'Gnana Lakshmi T C',
+        position: 'Founder, The Phoenix Guild', 
+        image: require('~/assets/mentors/final/gyan.png'),
+         companyLogo: require('~/assets/mentors/logo/pguild.png'),
+         
+       },
+       {
+        name: 'Smit Khakhkhar',
+        position: 'Tech Diligence, Delta Fund', 
+        image: require('~/assets/mentors/final/smit.png'),
+        companyLogo: require('~/assets/mentors/logo/deltafund.jpg'),
+         
+       },
+       {
+        name: 'Om Malviya',
+        position: ' CoFounder, Tezsure', 
+        image: require('~/assets/mentors/final/om.png'),
+        companyLogo: require('~/assets/mentors/logo/tezsure.jpg'),
+         
+       },
+       {
+        name: 'Etisha Garg',
+        position: 'Developer Relations, Arcana', 
+        image: require('~/assets/mentors/final/etisha.png'),
+         companyLogo: require('~/assets/sponsors/logos/arcana.png'),
+         
+       },
+       {
+        name: 'Aravindh Kumar',
+        position: 'CoFounder, Arcana', 
+        image: require('~/assets/mentors/final/aravindh.png'),
+         companyLogo: require('~/assets/sponsors/logos/arcana.png'),
+         
+       },
+       {
+        name: 'Abhinav Kumar',
+        position: 'CoFounder, AssetMantle', 
+        image: require('~/assets/mentors/final/abhinavAM.png'),
+         companyLogo: require('~/assets/sponsors/logos/assetmantle.png'),
+         
+       },
+       {
+        name: 'Naman Kabra',
+        position: 'Core - Business Development and Growth, AssetMantle', 
+        image: require('~/assets/mentors/final/namanAM.png'),
+         companyLogo: require('~/assets/sponsors/logos/assetmantle.png'),
+         
+       },
+       {
+        name: 'Nirbhik Jangid',
+        position: 'Founder, The Dapp List ', 
+        image: require('~/assets/mentors/final/nirbhik.png'),
+         companyLogo: require('~/assets/sponsors/logos/thedapplist1.jpeg'),
+         
+       },
+       {
+        name: 'Anil Dukkipatty',
+        position: 'CoFounder, revise', 
+        image: require('~/assets/mentors/final/AnilDukkipatty.png'),
+         companyLogo: require('~/assets/sponsors/logos/revise.png'),
+         
+       },
+       {
+        name: 'Vedant Pawar',
+        position: 'Co-founder & CTO, Komet', 
+        image: require('~/assets/mentors/final/VedantPawar.jpg'),
+         companyLogo: require('~/assets/sponsors/logos/komet.svg'),
+ 
+       },
+
      ],
      //Slider configuration [obj]
      options: {

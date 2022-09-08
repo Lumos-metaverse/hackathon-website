@@ -1,7 +1,7 @@
 <template>
     <section class="sponsors">
-        <div class="title">
-            Sponsors & Partners
+        <div id="sponsors" class="title">
+            Sponsors
         </div>
 
         <div class="wrapper">
@@ -43,82 +43,59 @@
             return{
                 sponsors:[
                     {
-                        name: 'IEEE',
-                        logo: require('~/assets/sponsors/logos/ieee.png'),
-                        url:'https://www.ieee.org/'
+                        name: 'Polygon',
+                        logo: require('~/assets/sponsors/logos/Polygon.png'),
+                        url:'https://polygon.technology/'
                     },
                     {
-                        name: 'Buildspace',
-                        logo: require('~/assets/sponsors/logos/buildspace.jpeg'),
-                        url:'https://buildspace.so/'
+                        name: 'æternity',
+                        logo: require('~/assets/sponsors/logos/Aeternity.png'),
+                        url:'https://aeternity.com/'
                     },
                     {
-                        name: 'LearnWeb3 DAO',
-                        logo: require('~/assets/sponsors/logos/learn.png'),
+                        name: 'Internet Computer',
+                        logo: require('~/assets/sponsors/logos/dfinity-logo-vector.png'),
+                        url:'https://internetcomputer.org/'
                     },
                     {
-                        name:'Buidlers Tribe',
-                        logo: require('~/assets/sponsors/logos/builders.png'),
-                        url:'https://buidlerstribe.com/'
+                        name: 'Tezos',
+                        logo: require('~/assets/sponsors/logos/tezoz.png'),
+                        url:'https://tezos.com/'
                     },
                     {
-                        name: 'The Product House',
-                        logo: require('~/assets/sponsors/logos/product.png'),
-                        url:'https://www.theproduct.house/'
+                        name: 'Fluence',
+                        logo: require('~/assets/sponsors/logos/fluence.png'),
+                        url:'https://fluence.network/'
                     },
                     {
-                        name: 'EasyA',
-                        logo: require('~/assets/sponsors/logos/easya.png'),
+                        name: 'Router',
+                        logo: require('~/assets/sponsors/logos/router.png'),
+                        url:'http://www.routerprotocol.com/'
                     },
                     {
-                        name: 'CryptoDevHub',
-                        logo: require('~/assets/sponsors/logos/hub.png'),
-                        url:'https://cryptodevhub.io/'
+                        name: 'Tatum',
+                        logo: require('~/assets/sponsors/logos/tatum.png'),
+                        url:'https://tatum.io/'
                     },
                     {
-                        name: 'Vanderbilt University',
-                        logo: require('~/assets/sponsors/logos/vanderbilt.png'),
-                        url:'https://www.vanderbilt.edu/'
+                        name: 'revise',
+                        logo: require('~/assets/sponsors/logos/revise.png'),
+                        url:'https://revise.network/'
                     },
                     {
-                        name: 'Lirn.io',
-                        logo: require('~/assets/sponsors/logos/lirn.png'),
-                        url:'http://lirn.io/'
+                        name: 'Arcana',
+                        logo: require('~/assets/sponsors/logos/arcana.png'),
+                        url:'https://arcana.com/'
                     },
                     {
-                        name: 'States DAO',
-                        logo: require('~/assets/sponsors/logos/states.png'),
-                        url:'https://statesdao.club/'
-                    },
+                        name: 'Komet',
+                        logo: require('~/assets/sponsors/logos/komet.svg'),
+                        url:'https://Komet.me/'
+                    },  
                     {
-                        name: 'Blockchain San Diago',
-                        logo: require('~/assets/sponsors/logos/san.png'),
-                        url:'https://blockchain.ucsd.edu/'
-                    },
-                    {
-                        name: 'WebX DAO',
-                        logo: require('~/assets/sponsors/logos/webx.png'),
-                        url:'https://bio.link/webxdao'
-                    },
-                    {
-                        name: 'Web3 Conf',
-                        logo: require('~/assets/sponsors/logos/web3.png'),
-                        url:'https://web3confindia.xyz/#home'
-                    },
-                    {
-                        name: 'Web3 Bharat',
-                        logo: require('~/assets/sponsors/logos/bharat.png'),
-                        url:'https://web3bharat.xyz/'
-                    },
-                    {
-                        name: 'Truts',
-                        logo: require('~/assets/sponsors/logos/truts.png'),
-                        url:'https://www.truts.xyz/'
-                    },
-                    {
-                        name: 'Penblockchain',
-                        logo: require('~/assets/sponsors/logos/pen.png'),
-                        url:'http://pennblockchain.com/'
+                        name: 'AssetMantle',
+                        logo: require('~/assets/sponsors/logos/assetmantle.svg'),
+                        url:'https://assetmantle.one/'
                     }
                 ]
             }
@@ -172,15 +149,16 @@
                 }
                 .sponsor{
                     position: absolute;
-                    width:36px;
-                    height: 36px;
+                    width:2rem;
+                    height: 2rem;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     img{
-                        width: 100%;
+                        width: 70%;
                         height: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
+                        transform: scale(3.0);
                     }
                 }
             }
@@ -227,8 +205,8 @@
                     line-height: 145.9%;
                     color: #FFFFFF;
                     img{
-                        width:70px !important;
-                        height:70px !important;
+                        width:100px;
+                        height:70px;
                         object-fit: contain;
                         margin-left: 16px;
                     }
@@ -273,7 +251,7 @@
             padding-top: 100px;
             min-height: 100vh;
             position: relative;
-            padding-top: 0;
+            padding-top: 200px;
             background-image: url('../../static/bg-building.png'),linear-gradient(180deg, #030027 0%, #030027 40.05%);
             background-position: center bottom;
             background-repeat: no-repeat;
@@ -309,7 +287,7 @@
                 width: 100%;
                 margin-top: auto;
                 display: block;
-                position: absolute;
+                position: absolute; 
                 bottom: 0;
                 left: 0;
                 max-height: 600px;

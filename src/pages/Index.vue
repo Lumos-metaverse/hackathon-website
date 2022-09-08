@@ -6,6 +6,7 @@
       <ThirdSection  ref="third" :isMobile="isMobile"/>
       <FourthSection id="roadmap" ref="fourth" :isMobile="isMobile"/>
       <Sponsors :isMobile="isMobile"/>
+       <Partners :isMobile="isMobile"/>
       <Mentors class="mb" :isMobile="isMobile"/>
       <MentorsDesktop class="desktop"/>
       <About/>
@@ -16,13 +17,14 @@
     </div>
   </Layout>
 </template>
-<script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
 <script>
+
 import FirstSection from '~/components/FirstSection.vue'
 import SecondSection from '~/components/SecondSection.vue'
 import ThirdSection from '~/components/ThirdSection.vue'
 import FourthSection from '~/components/FourthSection.vue'
 import Sponsors from '~/components/Sponsors.vue'
+import Partners from '~/components/Partners.vue'
 import Mentors from '~/components/Mentors.vue'
 import MentorsDesktop from '~/components/MentorsDesktop.vue'
 import About from '~/components/About.vue'
@@ -30,6 +32,11 @@ import Faq from '~/components/Faq.vue'
 import Discord from '~/components/Discord.vue'
 import Reach from '~/components/Reach.vue'
 import Footer from '~/components/Footer.vue'
+import VueGtag from "vue-gtag";
+
+// Vue.use(VueGtag, {
+//   config: { id: "G-ZRJWHRCZ18" }
+// });
 export default {
   name:'Index',
   components:{
@@ -38,6 +45,7 @@ export default {
     ThirdSection, 
     FourthSection,
     Sponsors,
+    Partners,
     Mentors,
     MentorsDesktop,
     About,
@@ -120,6 +128,10 @@ export default {
   }
 }
 </script>
+
+//google analytics code for vue
+
+
 
 <style lang="scss" scoped>
 .landing{

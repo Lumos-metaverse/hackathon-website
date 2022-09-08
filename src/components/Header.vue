@@ -7,7 +7,7 @@
         <DesktopNav class="desktop-nav" v-if="!isMobile"/>
         <MenuIcon class="mobile-nav" v-if="isMobile" :isDrawerOpen="isDrawerOpen" @toggleDrawer="sendEvent"/>
         <a
-            href="https://discord.gg/XWj3ruPYsN" target="_blank"
+            href=" https://discord.gg/WyfmzJpzZd" target="_blank"
             v-if="!isMobile"
             class="nav-button center"
         >
@@ -17,15 +17,16 @@
     </div>    
 </template>
 <script>
+
 import FadeLine from '~/components/FadeLine.vue'
 import MenuIcon from '~/components/MenuIcon.vue'
 import DesktopNav from '~/components/DesktopNav.vue'
 export default {
     name:'Header',
     components:{
-        FadeLine,
-        MenuIcon,
-        DesktopNav
+    FadeLine,
+    MenuIcon,
+    DesktopNav,
     },
     methods:{
         sendEvent(){
@@ -44,6 +45,8 @@ export default {
     }
 }
 </script>
+<!-- Google tag (gtag.js) - Google Analytics -->
+
 <style lang="scss" scoped>
 @font-face {
     font-family: Inter;

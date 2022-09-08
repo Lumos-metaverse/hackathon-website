@@ -65,7 +65,7 @@ export default {
 
                 },
                 {
-                    link:' https://discord.gg/XWj3ruPYsN',
+                    link:'  https://discord.gg/WyfmzJpzZd',
                     icon:require('~/assets/reach/logo/discord.svg'),
                 }
             ]

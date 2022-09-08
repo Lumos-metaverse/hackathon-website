@@ -1,7 +1,7 @@
 <template>
     <section class="hero">
-        <g-image v-if="isMobile" src="~/assets/home/hero-bg-mb.jpg"/>
-        <g-image v-else src="~/assets/home/hero-bg.jpg"/>
+        <g-image v-if="isMobile" src="~/assets/home/mobile_bg4.jpg"/>
+        <g-image v-else src="~/assets/home/web_bg4.jpg"/>
         <div class="content">
           <div class="title">
             <!-- <div><span>#BUIDL</span> for Web3</div>
@@ -12,12 +12,13 @@
           <div class="sub-title">
             Push the boundaries of the innovation in Web3 and win exciting prizes!
           </div>
+          <a href="https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149" target="_blank" rel="noopener noreferrer" >
           <button class="r-btn">
               REGISTER
               <g-image style="width:9px;height:9px;margin-left:17px;" width="12" height="12" src="~/assets/arrows/purple-arrow.svg"/>
-            </button>
+            </button></a>
           <!-- <div class="or">or</div> -->
-          <a href="https://discord.gg/XWj3ruPYsN" target="_blank" class="j-btn">JOIN OUR DISCORD COMMUNITY</a>
+          <!-- <a href=" https://discord.gg/WyfmzJpzZd" target="_blank" class="j-btn">JOIN OUR DISCORD COMMUNITY</a> -->
         </div>
       </section>
 </template>
@@ -40,6 +41,7 @@ export default {
       width:100%;
       height:100%;
       object-fit: cover;
+      /* margin-top: 128px; */
     }
     .home-hero{
       width: 100%;
@@ -55,7 +57,7 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 128px;
+      padding-top: 128px;
       .title{
         // font-family: 'Brinnan';
         // font-style: normal;
@@ -66,22 +68,22 @@ export default {
         // letter-spacing: -0.015em;
         // color:white;
         width:500px;
-        height: 300px;
+        height: 380px;
       
         span{
           color: #01C3F1;
         }
       }
       .sub-title{
-        margin-top:14px;
-        font-family: 'Inter';
+        margin-top:-7px;
+        font-family: 'Brinnan';
         font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
+        font-weight: 700;
+        font-size: 18px;
         line-height: 145.9%;
         text-align: center;
         letter-spacing: -0.015em;
-        color: rgba(255, 255, 255, 0.8); 
+        color: rgba(255, 255, 255); 
         max-width: 450px;
       }
       .r-btn{
@@ -101,6 +103,7 @@ export default {
         justify-content: center;
         letter-spacing: 0.1em;
         color: #36104C;
+        cursor: pointer;
       }
       .or{
         font-family: 'Brinnan';
@@ -138,6 +141,9 @@ export default {
       .content{
         .title{
           width:400px;
+          img{
+            object-fit: contain;
+          }
         }
         .sub-title{
           font-size: 16px;
@@ -160,6 +166,7 @@ export default {
   @media (max-width: 420px) {
     .landing{
       .hero{
+        
         .content{
           .title{
             width:300px;

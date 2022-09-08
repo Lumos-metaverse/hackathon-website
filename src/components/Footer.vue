@@ -6,6 +6,11 @@
                 <div class="text">
                     Lumos Labs is building a metaverse for builders and Web3 ecosystem enablers to share opportunities to build and scale-up. 
                 </div>
+                <div class="email">
+
+                    corporate@lumoslabs.co
+
+                </div>
             </div>
             <div class="links">
                 <div v-for="(l,idx) in links" :key="idx">
@@ -31,30 +36,30 @@
         data:function(){
             return{
                 links:[
-                    {
-                        name:'About Us',
-                        link:'/#about'
-                    },
-                    {
-                        name:'How it Works',
-                        link:'#how-it-works'
-                    },
-                    {
-                        name:'What We Look For',
-                        link:'#what-we-look-for'
-                    },
-                    {
-                        name:'Contact Us',
-                        link:'#contact-us'
-                    },
-                    {
-                        name:'Careers',
-                        link:'#careers'
-                    },
-                    {
-                        name:'FAQs',
-                        link:'/#faqs'
-                    },
+                    // {
+                    //     name:'About Us',
+                    //     link:'/#about'
+                    // },
+                    // {
+                    //     name:'How it Works',
+                    //     link:'#how-it-works'
+                    // },
+                    // {
+                    //     name:'What We Look For',
+                    //     link:'#what-we-look-for'
+                    // },
+                    // {
+                    //     name:'Contact Us',
+                    //     link:'#contact-us'
+                    // },
+                    // {
+                    //     name:'Careers',
+                    //     link:'#careers'
+                    // },
+                    // {
+                    //     name:'FAQs',
+                    //     link:'/#faqs'
+                    // },
 
                 ],
                 social:[
@@ -75,12 +80,12 @@
                     icon:require('~/assets/reach/logo/medium.svg'),
                 },
                 {
-                    link:'https://bit.ly/3zB3lxA',
+                    link:'https://instagram.com/buidlforweb3',
                     icon:require('~/assets/reach/logo/instagram.svg'),
 
                 },
                 {
-                    link:' https://discord.gg/XWj3ruPYsN',
+                    link:'  https://discord.gg/WyfmzJpzZd',
                     icon:require('~/assets/reach/logo/discord.svg'),
                 }
             ]
@@ -105,9 +110,20 @@
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 145.9%;
+                padding-bottom: 30px;
                 letter-spacing: -0.015em;
                 color: rgba(255, 255, 255, 0.8);
 
+            }
+            .email{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 145.9%;
+                padding-bottom: 30px;
+                letter-spacing: -0.015em;
+                color: rgba(16, 183, 216, 0.8);
             }
         }
         .links{

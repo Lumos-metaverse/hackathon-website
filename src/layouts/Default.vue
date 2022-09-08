@@ -8,13 +8,15 @@
 <script>
 import Header from '~/components/Header.vue'
 import SideDrawer from '~/components/SideDrawer.vue'
+import VueGtag from "vue-gtag";
+
 export default {
   components:{
     SideDrawer,
     Header
   },
   metaInfo: {
-    title:"", titleTemplate: "Lumos Hackathon",
+    title:"", titleTemplate: "Buidl for Web3 | Lumos Labs",
     meta:[
       {
         name: 'description',
@@ -69,6 +71,7 @@ export default {
   }
 }
 </script>
+
 <static-query>
 query {
   metadata {
