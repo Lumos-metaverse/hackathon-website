@@ -231,7 +231,14 @@ data () {
         image: require('~/assets/mentors/final/AnilDukkipatty.png'),
          companyLogo: require('~/assets/sponsors/logos/revise.png'),
          
-       }
+       },
+       {
+        name: 'Vedant Pawar',
+        position: 'Co-founder & CTO, Komet', 
+        image: require('~/assets/mentors/final/VedantPawar.jpg'),
+         companyLogo: require('~/assets/sponsors/logos/komet.svg'),
+ 
+       },
 
      ],
      //Slider configuration [obj]
