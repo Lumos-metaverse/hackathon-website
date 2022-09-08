@@ -16,9 +16,7 @@
           <!-- <a class="copy" target="_blank" :href="faqItem.href"> -->
           <p class="ans">
             {{ faqItem.ans }}
-          </p>
-          <p class="ans">
-            <g-link style="text-decoration: none; cursor: pointer" :to="faqList.href">
+             <g-link style="text-decoration: none; cursor: pointer" :to="faqItem.href">
               <p> Click here</p>
             </g-link>
           </p>
