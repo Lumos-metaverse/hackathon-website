@@ -4,8 +4,8 @@
             Upcoming Workshops
         </div>
 
-        <div class="wrap" style="height:620px;width:100%;margin:0 auto;padding-left: 1rem;">
-            <hooper ref="carousel" style="width:100%;height:610px;" :settings="hopperSettings">
+        <div class="wrap" style="height:560px;width:100%;margin:0 auto;padding-left: 1rem;">
+            <hooper ref="carousel" style="width:100%;height:560px;" :settings="hopperSettings">
                 <slide v-for="(item,index) in mentors" :key="index" :style="item.style">
                     <!-- <div
                                 style="width: 100%; max-width: 320px; margin: 0 auto;background-color: aqua;">
@@ -41,11 +41,13 @@
                         <div class="footer">
                             <div class="platform">
                                 <div class="platform-title">Platform</div>
-                                <div>
+                                <div class="platform-img">
                                     <g-image :src="item.platform" fit="contain"></g-image>
                                 </div>
                             </div>
-                            <button class="button-link">Add Reminder</button>
+                            <g-link style="text-decoration: none; cursor: pointer" :to="item.url">
+                                <button class="button-link">Register</button>
+                            </g-link>
                         </div>
                     </div>
                 </slide>
@@ -69,6 +71,10 @@
 import { Hooper, Slide } from 'hooper';
 import 'hooper/dist/hooper.css';
 
+//countdown timer banner over card ?    
+
+//add reminder button?  
+
 // Vue.component('Slider', slider);
 // Vue.component('SliderItem', slideritem);
 export default {
@@ -86,48 +92,48 @@ export default {
         return {
             hopperSettings: {
                 centerMode: false,
-                itemsToShow: 3.5,
+                itemsToShow: 1.5,
                 wheelControl: false,
-                infiniteScroll: false,
+                infiniteScroll: true,
                 pagination: 'yes',
+                breakpoints: {
+                    500: {
+                        centerMode: false,
+                        itemsToShow: 3.5,
+                        wheelControl: false,
+                        infiniteScroll: true,
+                        pagination: 'yes',
+                    }
+                }
             },
             //data list [array]
             mentors: [
                 {
                     image: require('~/assets/workshops/workshops1.png'),
-                    title: "Buidl for Web 3 hackathon",
+                    title: "Build Web3 Solutions for scale using Aeternity",
                     subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
                     date: "12th September",
-                    time: "7PM IST - 8PM IST",
+                    time: "7 - 8 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
-                    url: ""
+                    url: "https://us06web.zoom.us/j/84155956127?pwd=QUlIN3VZa2hqMmlOR1BqZEN0b1hrdz09"
                 },
                 {
-                    image: require('~/assets/workshops/workshops1.png'),
-                    title: "Buidl for Web 3 hackathon",
-                    subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
-                    date: "12th September",
-                    time: "7PM IST - 8PM IST",
+                    image: require('~/assets/workshops/ic1.png'),
+                    title: "Intro to Building on the Internet Computer",
+                    subtitle: "Speaker: Dominic Wörner, Senior Solutions Architect, Dfinity",
+                    date: "14th September",
+                    time: "7:30 - 8:30 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
-                    url: ""
+                    url: "https://us06web.zoom.us/j/81484620385?pwd=enV0Y09IYWt2RUJoV2tQN3B0U1YxUT09"
                 },
                 {
-                    image: require('~/assets/workshops/workshops1.png'),
-                    title: "Buidl for Web 3 hackathon",
-                    subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
-                    date: "12th September",
-                    time: "7PM IST - 8PM IST",
+                    image: require('~/assets/workshops/polygon1.png'),
+                    title: "Building a Full Stack dApp on Polygon",
+                    subtitle: "Speaker: Rahat Chowdhury, Lead Developer Relations Engineer",
+                    date: "16th September",
+                    time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
-                    url: ""
-                },
-                {
-                    image: require('~/assets/workshops/workshops1.png'),
-                    title: "Buidl for Web 3 hackathon",
-                    subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
-                    date: "12th September",
-                    time: "7PM IST - 8PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    url: ""
+                    url: "https://us06web.zoom.us/j/81745813330?pwd=Zk1EY0Z4RHZqY3oxMFZiU29XdjV5dz09"
                 },
             ],
             //Slider configuration [obj]
@@ -158,6 +164,7 @@ export default {
 <style lang="scss" scoped>
 .mentors {
     background: #030027;
+    overflow: hidden;
 
     .title {
         font-family: 'Brinnan';
@@ -177,7 +184,7 @@ export default {
 .button-holder {
     display: flex;
     justify-content: flex-end;
-    margin-top: 55px;
+    /* margin-top: 55px; */
     margin-right: 28px;
     padding-bottom: 65px;
 
@@ -250,7 +257,7 @@ export default {
 .card {
     color: #FFFFFF;
     background: linear-gradient(180deg, rgba(90, 62, 158, 0.9) 0%, rgba(60, 41, 116, 0.9) 0.01%, rgba(111, 47, 153, 0.9) 100%);
-    padding: 2rem;
+    padding: 1rem;
     border: 2px solid gray;
     margin: 0 10px;
     border-radius: 9.21867px;
@@ -261,16 +268,53 @@ export default {
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            border-radius: 9.21867px;
+            object-fit: cover;
         }
+    }
+
+    .header {
+
+        padding-top: 1rem;
+
+        .title-header {
+            font-family: 'Brinnan';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 145.9%;
+
+            letter-spacing: -0.015em;
+        }
+
+        .subtitle {
+            font-family: 'Brinnan';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 145.9%;
+
+            letter-spacing: -0.015em;
+        }
+    }
+
+    .date-time {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 200%;
+
+        letter-spacing: -0.015em;
+        padding-top: 1rem;
     }
 
     .footer {
         display: flex;
         justify-content: space-between;
-        border-top: 2px solid white;
-        padding-top: 2rem;
-        margin-top: 2rem;
+        border-top: 1px solid whitesmoke;
+        padding-top: 1rem;
+        margin-top: 1rem;
 
         .platform {
 
@@ -282,6 +326,16 @@ export default {
                 line-height: 160%;
                 letter-spacing: -0.015em;
                 margin-bottom: 8px;
+            }
+
+            .platform-img {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
             }
         }
 
@@ -301,8 +355,8 @@ export default {
             text-align: center;
             letter-spacing: 0.1em;
         }
-
     }
 }
+
 </style>
     
