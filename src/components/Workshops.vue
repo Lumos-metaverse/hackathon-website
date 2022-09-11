@@ -92,7 +92,7 @@ export default {
         return {
             hopperSettings: {
                 centerMode: false,
-                itemsToShow: 1.5,
+                itemsToShow: 1.25,
                 wheelControl: false,
                 infiniteScroll: true,
                 pagination: 'yes',
@@ -184,8 +184,8 @@ export default {
 .button-holder {
     display: flex;
     justify-content: flex-end;
-    /* margin-top: 55px; */
-    margin-right: 28px;
+    margin-top: 24px;
+    margin-right: 112px;
     padding-bottom: 65px;
 
     button {
@@ -196,63 +196,6 @@ export default {
     }
 }
 
-/* .slider-hooper {
-        margin:0 7px;
-        background:#572873;
-        border-radius: 9.21867px;
-        height:100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;                        
-        padding:0 8px;
-        .image{
-            height:280px;
-            width: 94%;
-            img{
-                width:100%;
-                height:100%;
-                object-fit: contain;
-            }
-        }
-        .copy{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-top: 16px;
-            width:100%;
-            .name{
-                font-family: 'Brinnan';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 145.9%;
-                text-align: left;
-                letter-spacing: -0.015em;
-                max-width:180px;
-    
-                color: #FFFFFF;
-            }
-            .position{
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 145.9%;
-                word-break:break-all;
-                letter-spacing: -0.015em;
-                max-width:115px;
-                color: #21E7FC;
-            }
-            .logo{
-                width:32px;
-                img{
-                    width:100%;
-                    object-fit: cover;
-                }
-            }
-        }
-    } */
 
 .card {
     color: #FFFFFF;
@@ -356,6 +299,46 @@ export default {
             letter-spacing: 0.1em;
         }
     }
+}
+
+@media screen and (max-width: 600px){
+
+    .mentors{
+    .title{
+        font-size: 32px;
+        padding: 2rem 0;
+    }
+
+    
+    .card{
+        .title-header{
+            font-size: 18px;
+        }
+        .subtitle{
+            font-size: 12px;
+        }
+        .date-time{
+            font-size: 12px;
+        }
+
+        .footer{
+            .platform{
+                .platform-title{
+                    font-size: 12px;
+                }
+                .platform-img{
+                    img{
+                        width: 90%;
+                        height: 90%;
+                    }
+                }
+            }
+            .button-link{
+                padding: 14px 20px;
+            }
+        }
+    }
+}
 }
 
 </style>
