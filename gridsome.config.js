@@ -14,6 +14,11 @@ module.exports = {
         id: 'UA-238825085-2',
         enabled: true,
         debug: true
+      },
+      options: {
+        id: 'G-TL6043GDNG',
+        enabled: true,
+        debug: true
       }
     },
     {

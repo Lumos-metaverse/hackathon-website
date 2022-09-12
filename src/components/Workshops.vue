@@ -186,7 +186,7 @@ export default {
     justify-content: flex-end;
     margin-top: 24px;
     margin-right: 112px;
-    padding-bottom: 65px;
+    /* padding-bottom: 65px; */
 
     button {
         background: none;

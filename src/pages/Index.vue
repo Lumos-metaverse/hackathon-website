@@ -130,7 +130,7 @@ export default {
 </script>
 
 //google analytics code for vue
-
+<!-- Google tag (gtag.js) -->
 
 
 <style lang="scss" scoped>
