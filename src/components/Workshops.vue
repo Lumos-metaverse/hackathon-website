@@ -108,15 +108,15 @@ export default {
             },
             //data list [array]
             mentors: [
-                {
-                    image: require('~/assets/workshops/workshops1.png'),
-                    title: "Build Web3 Solutions for scale using Aeternity",
-                    subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
-                    date: "12th September",
-                    time: "7 - 8 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    url: "https://us06web.zoom.us/j/84155956127?pwd=QUlIN3VZa2hqMmlOR1BqZEN0b1hrdz09"
-                },
+                // {
+                //     image: require('~/assets/workshops/workshops1.png'),
+                //     title: "Build Web3 Solutions for scale using Aeternity",
+                //     subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
+                //     date: "12th September",
+                //     time: "7 - 8 PM IST",
+                //     platform: require('~/assets/workshops/platform.png'),
+                //     url: "https://us06web.zoom.us/j/84155956127?pwd=QUlIN3VZa2hqMmlOR1BqZEN0b1hrdz09"
+                // },
                 {
                     image: require('~/assets/workshops/ic1.png'),
                     title: "Intro to Building on the Internet Computer",
