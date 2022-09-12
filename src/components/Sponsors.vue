@@ -269,10 +269,10 @@ export default {
 <style lang="scss" scoped>
 @media (min-width: 786px) {
     .sponsors {
-        padding-top: 100px;
+        /* padding-top: 100px; */
         min-height: 100vh;
         position: relative;
-        padding-top: 200px;
+        /* padding-top: 200px; */
         background-image: url('../../static/bg-building.png'), linear-gradient(180deg, #030027 0%, #030027 40.05%);
         background-position: center bottom;
         background-repeat: no-repeat;
