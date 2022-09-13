@@ -3,6 +3,6 @@ import plugin_gridsome_plugin_gtm_5 from "/Users/akashsachan/Lumos/hackathon-web
 export default [
   {
     run: plugin_gridsome_plugin_gtm_5,
-    options: {"id":"UA-238825085-2","enabled":true,"debug":true}
+    options: {"id":"G-TL6043GDNG","enabled":true,"debug":true}
   }
 ]

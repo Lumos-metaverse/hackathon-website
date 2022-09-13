@@ -4,11 +4,11 @@
             <a
                 class="nav-button"
                 v-for="nav in navs"
-                :key="nav"
-                :href="'/#'+nav"
+                :key="nav.name"
+                :href="'/'+nav.url"
                 @click="closeDrawer"
             >
-                {{ nav }}                
+                {{ nav.name }}                
             </a>
             <a
                 href=" https://discord.gg/WyfmzJpzZd" target="_blank"
@@ -36,7 +36,28 @@
         },
         data(){
             return{
-                navs:['tracks','sponsors','about','faq'] 
+                navs:[
+            {
+                name: 'tracks',
+                url: '#tracks'
+            },
+            {
+                name: 'workshops',
+                url: '#workshops'
+            },
+            {
+                name: 'sponsors',
+                url: '#sponsors'
+            },
+            {
+                name: 'partners',
+                url: '#partners'
+            },
+            {
+                name: 'prizes',
+                url: 'prizes'
+            },
+           ]
             }
         }
     }

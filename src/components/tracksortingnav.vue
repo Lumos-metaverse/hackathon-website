@@ -4,10 +4,10 @@
             <a
                 class="nav-button"
                 v-for="nav in navs"
-                :key="nav"
-                :href="'/#'+nav"
+                :key="nav.name"
+                :href="'/'+nav.url"
             >
-                {{ nav }}                
+                {{ nav.name }}                
             </a>
         </div>
     </div>
@@ -17,7 +17,28 @@ export default {
     name:'tracksortingnav',
     data(){
         return{
-           navs:['tracks','sponsors','about','faq'] 
+            navs:[
+            {
+                name: 'tracks',
+                url: '#tracks'
+            },
+            {
+                name: 'workshops',
+                url: '#workshops'
+            },
+            {
+                name: 'sponsors',
+                url: '#sponsors'
+            },
+            {
+                name: 'partners',
+                url: '#partners'
+            },
+            {
+                name: 'prizes',
+                url: 'prizes'
+            },
+           ] 
         }
     }
 }

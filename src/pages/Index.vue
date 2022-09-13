@@ -5,6 +5,7 @@
       <SecondSection id="about" ref="second" :isMobile="isMobile"/>
       <ThirdSection  ref="third" :isMobile="isMobile"/>
       <FourthSection id="roadmap" ref="fourth" :isMobile="isMobile"/>
+      <Workshops />
       <Sponsors :isMobile="isMobile"/>
        <Partners :isMobile="isMobile"/>
       <Mentors class="mb" :isMobile="isMobile"/>
@@ -33,6 +34,7 @@ import Discord from '~/components/Discord.vue'
 import Reach from '~/components/Reach.vue'
 import Footer from '~/components/Footer.vue'
 import VueGtag from "vue-gtag";
+import Workshops from '../components/Workshops.vue'
 
 // Vue.use(VueGtag, {
 //   config: { id: "G-ZRJWHRCZ18" }
@@ -42,7 +44,7 @@ export default {
   components:{
     FirstSection,
     SecondSection,
-    ThirdSection, 
+    ThirdSection,
     FourthSection,
     Sponsors,
     Partners,
@@ -52,8 +54,9 @@ export default {
     Faq,
     Discord,
     Reach,
-    Footer
-  },
+    Footer,
+    Workshops
+},
   //<meta name="title" content="Lumos Hackathon">
 // <meta name="description" content="The #BUIDL for Web3 Hack (2022) is designed to open up access to the Web3 space for #BUIDLers like you. Based on your skill level, we invite you to ch">
 // <meta name="robots" content="index,follow">
