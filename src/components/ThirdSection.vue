@@ -1497,6 +1497,9 @@ export default {
                 #2bf2ff 0.32%,
                 #01c3f1 100.26%);
             border-radius: 6px;
+            font-size: 11px;
+            font-family: "Brinnan";
+            font-weight: 700;
             height: 40px;
             width: 100%;
             max-width: 235px;
