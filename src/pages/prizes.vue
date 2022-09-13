@@ -1,5 +1,6 @@
 <template>
     <main class="main">
+        <Header />
         <div class="home">
             <h1 class="title">Prizes</h1>
             <p class="subtitle">It's time to ship your project! The best ones will win awards, prizes, and glory.</p>
@@ -74,18 +75,18 @@
 </template>
 
 <script>
+import Header from '../components/Header.vue';
 export default {
-    name: 'Prizes',
+    name: "Prizes",
     data: function () {
         return {
             prizes1: [
                 [
                     {
-                        name: 'WIN FROM A LARGE PRIZE POOL OF',
-                        cash: '100,000+',
-                        icon: require('~/assets/third/medal.png'),
+                        name: "WIN FROM A LARGE PRIZE POOL OF",
+                        cash: "100,000+",
+                        icon: require("~/assets/third/medal.png"),
                     },
-
                 ],
             ],
             tracks: [
@@ -124,17 +125,14 @@ export default {
                         {
                             cardTitle: "DeFi on Steroids",
                             prize1: "Prize Rewards - $ 15,000",
-
                         },
                         {
                             cardTitle: "DAO - Power to the Community!",
                             prize1: "Prize Rewards - $7,000",
-
                         },
                         {
                             cardTitle: "AENS & NFTs!",
                             prize1: "Prize Rewards - $5,000",
-
                         },
                     ],
                     url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
@@ -194,8 +192,9 @@ export default {
                     url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
                 },
             ]
-        }
-    }
+        };
+    },
+    components: { Header }
 }
 </script>
 

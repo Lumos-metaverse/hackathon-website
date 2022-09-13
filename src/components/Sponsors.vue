@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Workshops />
+        <!-- <Workshops /> -->
         <section class="sponsors">
             <div id="sponsors" class="title">
                 Sponsors

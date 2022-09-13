@@ -1,5 +1,5 @@
 <template>
-    <section class="mentors">
+    <section class="workshops" id="workshops">
         <div class="title">
             Upcoming Workshops
         </div>
@@ -162,7 +162,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.mentors {
+.workshops {
     background: #030027;
     overflow: hidden;
 
@@ -303,7 +303,7 @@ export default {
 
 @media screen and (max-width: 600px){
 
-    .mentors{
+    .workshops{
     .title{
         font-size: 32px;
         padding: 2rem 0;
