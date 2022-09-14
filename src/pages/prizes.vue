@@ -310,7 +310,7 @@ main {
     }
 
     .tracks {
-        max-width: 80%;
+        max-width: 60%;
         margin: 0 auto;
 
         hr {
@@ -363,6 +363,7 @@ main {
         }
 
         .headingSection{
+            margin-top: -1em;
         .totalPrizeHead {
             font-family: 'Brinnan';
             font-style: normal;
@@ -379,7 +380,7 @@ main {
             font-family: 'Brinnan';
             font-style: normal;
             font-weight: 700;
-            font-size: 3em;
+            font-size: 2.5em;
             line-height: 145.9%;
             letter-spacing: -0.015em;
             color: #FDC506;
@@ -398,6 +399,7 @@ main {
             align-items: center;
             letter-spacing: -0.015em;
             padding: 0 1em;
+            margin-top: -1em;
         }
     }
 
@@ -461,7 +463,7 @@ main {
 
 
         .otherPrize {
-            margin: 2em 1em;
+            margin: 1em 1em;
             background: #5A2877;
             padding: .2em 0;
             display: flex;
