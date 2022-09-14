@@ -314,11 +314,11 @@ main {
         margin: 0 auto;
 
         hr {
-            margin: 2em 1em;
+            margin: 1em 1em;
         }
 
         .header {
-            padding: 2em 1em;
+            padding: 1em 1em;
 
             .icon-title {
                 display: flex;
@@ -465,7 +465,7 @@ main {
         .otherPrize {
             margin: 1em 1em;
             background: #5A2877;
-            padding: .2em 0;
+            padding: .1em 0;
             display: flex;
             justify-content: center;
 
@@ -587,7 +587,7 @@ main {
 
                     .card {
                         padding: 1em;
-                        width: 88%;
+                        width: 83.5%;
 
                         .card-title {
                             font-size: 20px;
