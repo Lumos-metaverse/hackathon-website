@@ -141,6 +141,12 @@ export default {
                     title: "Internet Computer",
                     icon: require("~/assets/prizes/internet_computer.png"),
                     totalPrize: "$10,000",
+                    card: [
+                        {
+                            cardTitle: "Bluesky",
+                            prize1: "Prize Rewards - $ 10,000",
+                        },
+                    ],
                     url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
                 },
                 {
@@ -171,12 +177,26 @@ export default {
                     title: "Fluence Network",
                     icon: require("~/assets/prizes/fluence.png"),
                     totalPrize: "$5,000",
+                    card: [
+                        {
+                            cardTitle: "",
+                            prize1: "1st Prize - $3,500",
+                            prize2: "2nd Prize - $1,500",
+                        },
+                    ],
                     url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
                 },
                 {
                     title: "Komet",
                     icon: require("~/assets/prizes/komet.png"),
                     totalPrize: "$5,000",
+                    card: [
+                        {
+                            cardTitle: "",
+                            prize1: "1st Prize - $3,500",
+                            prize2: "2nd Prize - $1,500",
+                        },
+                    ],
                     url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
                 },
                 {
@@ -383,12 +403,12 @@ main {
 
         .card-container {
             display: flex;
-            justify-content: space-evenly;
-            /* padding: 1em; */
+            justify-content: space-between;
+            padding: 1em;       
             width: 100%;
 
             .card-layer {
-                /* background: linear-gradient(to right bottom, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99)); */
+                background: linear-gradient(to right bottom, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99));
                 padding: 1px;
                 border-radius: 9.75104px;
                 margin-right: 16px;
