@@ -45,8 +45,11 @@
                                     <g-image :src="item.platform" fit="contain"></g-image>
                                 </div>
                             </div>
-                            <g-link style="text-decoration: none; cursor: pointer" :to="item.url">
+                            <g-link v-if="item.registerUrl" style="text-decoration: none; cursor: pointer" :to="item.registerUrl">
                                 <button class="button-link">Register</button>
+                            </g-link>
+                            <g-link v-if="item.watchUrl" style="text-decoration: none; cursor: pointer" :to="item.watchUrl">
+                                <button class="button-link">Watch Here</button>
                             </g-link>
                         </div>
                     </div>
@@ -70,10 +73,6 @@
 // import { slider, slideritem } from 'vue-concise-slider';
 import { Hooper, Slide } from 'hooper';
 import 'hooper/dist/hooper.css';
-
-//countdown timer banner over card ?    
-
-//add reminder button?  
 
 // Vue.component('Slider', slider);
 // Vue.component('SliderItem', slideritem);
@@ -118,22 +117,64 @@ export default {
                 //     url: "https://us06web.zoom.us/j/84155956127?pwd=QUlIN3VZa2hqMmlOR1BqZEN0b1hrdz09"
                 // },
                 {
-                    image: require('~/assets/workshops/ic1.png'),
-                    title: "Intro to Building on the Internet Computer",
-                    subtitle: "Speaker: Dominic Wörner, Senior Solutions Architect, Dfinity",
-                    date: "14th September",
-                    time: "7:30 - 8:30 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    url: "https://us06web.zoom.us/j/81484620385?pwd=enV0Y09IYWt2RUJoV2tQN3B0U1YxUT09"
-                },
-                {
                     image: require('~/assets/workshops/polygon1.png'),
                     title: "Building a Full Stack dApp on Polygon",
                     subtitle: "Speaker: Rahat Chowdhury, Lead Developer Relations Engineer",
                     date: "16th September",
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
-                    url: "https://us06web.zoom.us/j/81745813330?pwd=Zk1EY0Z4RHZqY3oxMFZiU29XdjV5dz09"
+                    registerUrl: "https://us06web.zoom.us/j/81745813330?pwd=Zk1EY0Z4RHZqY3oxMFZiU29XdjV5dz09",
+                    watchUrl: ""
+                },
+                {
+                    image: require('~/assets/workshops/arcanaBanner.png'),
+                    title: "Build secure & privacy preserving apps using Arcana",
+                    subtitle: "Speaker: Etisha Garg, Developer Relations \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                    date: "19th September",
+                    time: "7 - 8 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "https://us06web.zoom.us/webinar/register/9816631573190/WN_qbL4zm7JTMiSAGQUBI6qnA",
+                    watchUrl: ""
+                },
+                {
+                    image: require('~/assets/workshops/tatumYoutube.png'),
+                    title: "Tatum Framework helps build Web 3 Apps faster",
+                    subtitle: "Speaker: Sean Kahovec, Blockchain Development and Architecture",
+                    date: "20th September",
+                    time: "7 - 8 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: 'https://us06web.zoom.us/webinar/register/3816631573578/WN_78tyNkRSTDiwNaHg3yqR3w',
+                    watchUrl: ""
+                },
+                {
+                    image: require('~/assets/workshops/fluenceYoutube.png'),
+                    title: "Run peer-to-peer applications and protocols using Fluence",
+                    subtitle: "Speaker: Alexey Pyshnenko, Scala Developer \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                    date: "21st September",
+                    time: "7 - 8 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "https://us06web.zoom.us/webinar/register/9216631573960/WN_NTDxVy6rQIiZxtmcZApmwQ",
+                    watchUrl: ""
+                },
+                {
+                    image: require('~/assets/workshops/tezosYoutube.png'),
+                    title: "Build Scalable solution using Tezos Network",
+                    subtitle: "Speaker: Anshu Jalan, Smart Contract & Backend Engineer",
+                    date: "23rd September",
+                    time: "8 - 9 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "https://us06web.zoom.us/webinar/register/2016631574284/WN_ODjzGC4HTFauGW58rXB-AA",
+                    watchUrl: ""
+                },
+                {
+                    image: require('~/assets/workshops/ic1.png'),
+                    title: "Intro to Building on the Internet Computer",
+                    subtitle: "Speaker: Dominic Wörner, Senior Solutions Architect, Dfinity",
+                    date: "14th September",
+                    time: "7:30 - 8:30 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "",
+                    watchUrl: "https://www.youtube.com/watch?v=hDgml8P2nBY&list=PLpkpEL9gYGexsDL9624qR_bLyKlQ7K2Nr",
                 },
             ],
             //Slider configuration [obj]
