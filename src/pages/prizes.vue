@@ -45,11 +45,10 @@
             <div class="headingSection">
                 <p class="totalPrizeHead">TOTAL PRIZE REWARDS</p>
                 <h1 class="totalPrize">{{tracks.totalPrize}}</h1>
-
                 <h2 class="cardHead" v-if="tracks.card">PRIZE REWARD:</h2>
             </div>
 
-            <div class="card-container">
+            <div v-if="tracks.card" class="card-container">
 
                 <div class="card-layer" v-for="(card, i) in tracks.card" :key="i">
                     <div class="card">
@@ -57,11 +56,11 @@
                         <p class="card-prize">{{card.prize1}}</p>
                         <p class="card-prize">{{card.prize2}}</p>
                         <p class="card-prize">{{card.prize3}}</p>
-                <g-link style="text-decoration: none; cursor: pointer" :to="tracks.url">
-                        <div class="arrow">
-                            <g-image src="~/assets/prizes/arrow.png" />
-                        </div>
-                </g-link>
+                        <g-link style="text-decoration: none; cursor: pointer" :to="tracks.url">
+                            <div class="arrow">
+                                <g-image src="~/assets/prizes/arrow.png" />
+                            </div>
+                        </g-link>
                     </div>
                 </div>
             </div>
@@ -310,7 +309,7 @@ main {
     }
 
     .tracks {
-        max-width: 60%;
+        max-width: 50%;
         margin: 0 auto;
 
         hr {
@@ -324,7 +323,11 @@ main {
                 display: flex;
 
                 .icon {
-                    object-fit: cover;
+                    object-fit: contain;
+
+                    img {
+                        width: 80%;
+                    }
                 }
 
                 .header-title {
@@ -333,7 +336,7 @@ main {
                     font-weight: 700;
                     font-size: 2em;
                     line-height: 145.9%;
-                    padding-left: 1em;
+                    /* padding-left: 1em; */
 
                     letter-spacing: -0.015em;
 
@@ -352,7 +355,7 @@ main {
             font-family: 'Brinnan';
             font-style: normal;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 1em;
             line-height: 145.9%;
             padding: 1.2em;
             border: none;
@@ -362,51 +365,52 @@ main {
             color: #36104C;
         }
 
-        .headingSection{
+        .headingSection {
             margin-top: -1em;
-        .totalPrizeHead {
-            font-family: 'Brinnan';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 1em;
-            line-height: 145.9%;
-            display: flex;
-            align-items: center;
-            letter-spacing: -0.015em;
-            padding: 0 1em;
-        }
 
-        .totalPrize {
-            font-family: 'Brinnan';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 2.5em;
-            line-height: 145.9%;
-            letter-spacing: -0.015em;
-            color: #FDC506;
-            margin-top: -16px;
-            padding: 0 .4em;
-        }
+            .totalPrizeHead {
+                font-family: 'Brinnan';
+                font-style: normal;
+                font-weight: 700;
+                font-size: .8em;
+                line-height: 145.9%;
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.015em;
+                padding: 0 1em;
+            }
 
-        .cardHead {
-            font-family: 'Brinnan';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 1.2em;
-            line-height: 145.9%;
+            .totalPrize {
+                font-family: 'Brinnan';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 2em;
+                line-height: 145.9%;
+                letter-spacing: -0.015em;
+                color: #FDC506;
+                margin-top: -16px;
+                padding: 0 .4em;
+            }
 
-            display: flex;
-            align-items: center;
-            letter-spacing: -0.015em;
-            padding: 0 1em;
-            margin-top: -1em;
+            .cardHead {
+                font-family: 'Brinnan';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1em;
+                line-height: 145.9%;
+
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.015em;
+                padding: 0 1em;
+                margin-top: -1em;
+            }
         }
-    }
 
         .card-container {
             display: flex;
             justify-content: space-between;
-            padding: 1em;       
+            padding: 1em;
             width: 100%;
 
             .card-layer {
@@ -421,13 +425,13 @@ main {
                     background: linear-gradient(180deg, rgba(90, 62, 158, 0.9) 0%, rgba(60, 41, 116, 0.9) 0.01%, rgba(111, 47, 153, 0.9) 100%);
                     border-radius: 9.75104px;
                     max-width: 264px;
-                    padding: 1em 2em;
+                    padding: .5em 1em;
 
                     .card-title {
                         font-family: 'Brinnan';
                         font-style: normal;
                         font-weight: 700;
-                        font-size: 1.2em;
+                        font-size: 1em;
                         line-height: 145.9%;
 
                         display: flex;
@@ -439,7 +443,7 @@ main {
                         font-family: 'Inter';
                         font-style: normal;
                         font-weight: 600;
-                        font-size: 1em;
+                        font-size: .8em;
                         line-height: 145.9%;
 
                         display: flex;
@@ -451,12 +455,14 @@ main {
                         object-fit: contain;
                         display: flex;
                         justify-content: flex-end;
+                        margin-bottom: .5em;
                         cursor: pointer;
-                        :hover{
+
+                        :hover {
                             scale: 1.2;
                         }
                     }
-                    
+
                 }
             }
         }
@@ -473,7 +479,7 @@ main {
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 1.1em;
+                font-size: .9em;
                 line-height: 145.9%;
 
                 display: flex;
@@ -533,9 +539,10 @@ main {
         }
 
         .tracks {
+            width: 90%;
 
             hr {
-                margin: 2em 0;
+                margin: .5em 0;
             }
 
             .header {
@@ -547,30 +554,42 @@ main {
                     display: flex;
                     align-items: center;
 
+                    .icon {
+                        object-fit: contain;
+                        width: 100%;
+                        img {
+                            width: fit-content;
+                        }
+                    }
+
                     .header-title {
-                        font-size: 28px;
+                        font-size: 1.5em;
+                        padding-left: .3em;
                     }
                 }
 
                 .register {
                     margin-top: 3em;
+                    font-size: .8em;
                 }
 
             }
 
-            .headingSection{
+            .headingSection {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                .totalPrizeHead{
-                    font-size: 16px;
+                .totalPrizeHead {
+                    font-size: .8em;
                 }
-                .totalPrize{
-                    font-size: 32px;
+
+                .totalPrize {
+                    font-size: 2em;
                 }
-                .cardHead{
-                    font-size: 20px;
+
+                .cardHead {
+                    font-size: 1em;
                 }
             }
 
@@ -581,20 +600,20 @@ main {
                 margin: 0 auto;
 
                 .card-layer {
-                    margin-top: 1em;
+                    margin-top: .5em;
                     /* margin-right: 0; */
                     width: 100%;
 
                     .card {
                         padding: 1em;
-                        width: 83.5%;
+                        width: 81%;
 
                         .card-title {
-                            font-size: 20px;
+                            font-size: 1em;
                         }
 
                         .card-prize {
-                            font-size: 14px;
+                            font-size: .8em;
                         }
                     }
                 }
