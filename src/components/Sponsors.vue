@@ -91,7 +91,7 @@ export default {
                 {
                     name: "Arcana",
                     logo: require("~/assets/sponsors/logos/arcana.png"),
-                    url: "https://arcana.com/"
+                    url: "https://arcana.network/"
                 },
                 {
                     name: "Komet",
