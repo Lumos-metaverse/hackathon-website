@@ -181,13 +181,13 @@ export default {
                 },
                 {
                     title: "AssetMantle",
-                    icon: require("~/assets/prizes/assetmantle.png"),
+                    icon: require("~/assets/prizes/asset.svg"),
                     totalPrize: "$7,777",
                     url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
                 },
                 {
                     title: "Revise Network",
-                    icon: require("~/assets/prizes/revise.jpeg"),
+                    icon: require("~/assets/prizes/revise.svg"),
                     totalPrize: "$5,000",
                     url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
                 },
@@ -207,14 +207,15 @@ main {
     .home {
         background-image: url("../assets/prizes/blurprizes.png");
         background-position: top;
-        padding: 4em 0;
+        padding-bottom: 1em;
+        padding-top: 3em;
     }
 
     .title {
         font-family: 'Brinnan';
         font-style: normal;
         font-weight: 700;
-        font-size: 62px;
+        font-size: 3em;
         line-height: 145.9%;
         text-align: center;
         letter-spacing: -0.015em;
@@ -224,7 +225,7 @@ main {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
-        font-size: 21px;
+        font-size: 1.2em;
         line-height: 145.9%;
         text-align: center;
         letter-spacing: -0.015em;
@@ -234,10 +235,12 @@ main {
 
     .pedestal {
         text-align: center;
-        padding-bottom: 4em;
+        padding-bottom: 2em;
         object-fit: contain;
 
-        img {}
+        img {
+            width: 30%;
+        }
     }
 
     .wrap {
@@ -291,7 +294,7 @@ main {
         margin: 0 auto;
 
         hr {
-            margin: 4em 1em;
+            margin: 2em 1em;
         }
 
         .header {
@@ -308,7 +311,7 @@ main {
                     font-family: 'Brinnan';
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 38px;
+                    font-size: 2em;
                     line-height: 145.9%;
                     padding-left: 1em;
 
@@ -331,7 +334,7 @@ main {
             font-weight: 700;
             font-size: 14px;
             line-height: 145.9%;
-            padding: 1.5em;
+            padding: 1.2em;
             border: none;
             display: flex;
             align-items: center;
@@ -344,7 +347,7 @@ main {
             font-family: 'Brinnan';
             font-style: normal;
             font-weight: 700;
-            font-size: 21px;
+            font-size: 1em;
             line-height: 145.9%;
             display: flex;
             align-items: center;
@@ -356,19 +359,19 @@ main {
             font-family: 'Brinnan';
             font-style: normal;
             font-weight: 700;
-            font-size: 52px;
+            font-size: 3em;
             line-height: 145.9%;
             letter-spacing: -0.015em;
             color: #FDC506;
             margin-top: -16px;
-            padding: 0 .5em;
+            padding: 0 .4em;
         }
 
         .cardHead {
             font-family: 'Brinnan';
             font-style: normal;
             font-weight: 700;
-            font-size: 26px;
+            font-size: 1.2em;
             line-height: 145.9%;
 
             display: flex;
@@ -381,11 +384,11 @@ main {
         .card-container {
             display: flex;
             justify-content: space-evenly;
-            padding: 1em;
+            /* padding: 1em; */
             width: 100%;
 
             .card-layer {
-                background: linear-gradient(to right bottom, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99));
+                /* background: linear-gradient(to right bottom, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99)); */
                 padding: 1px;
                 border-radius: 9.75104px;
                 margin-right: 16px;
@@ -396,13 +399,13 @@ main {
                     background: linear-gradient(180deg, rgba(90, 62, 158, 0.9) 0%, rgba(60, 41, 116, 0.9) 0.01%, rgba(111, 47, 153, 0.9) 100%);
                     border-radius: 9.75104px;
                     max-width: 264px;
-                    padding: 2em 3em;
+                    padding: 1em 2em;
 
                     .card-title {
                         font-family: 'Brinnan';
                         font-style: normal;
                         font-weight: 700;
-                        font-size: 24px;
+                        font-size: 1.2em;
                         line-height: 145.9%;
 
                         display: flex;
@@ -414,7 +417,7 @@ main {
                         font-family: 'Inter';
                         font-style: normal;
                         font-weight: 600;
-                        font-size: 20px;
+                        font-size: 1em;
                         line-height: 145.9%;
 
                         display: flex;
@@ -438,7 +441,7 @@ main {
 
 
         .otherPrize {
-            margin: 4em 1em;
+            margin: 2em 1em;
             background: #5A2877;
             padding: .2em 0;
             display: flex;
@@ -448,7 +451,7 @@ main {
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 22px;
+                font-size: 1.1em;
                 line-height: 145.9%;
 
                 display: flex;
