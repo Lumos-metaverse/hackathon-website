@@ -4,8 +4,8 @@
             Upcoming Workshops
         </div>
 
-        <div class="wrap" style="height:560px;width:100%;margin:0 auto;padding-left: 1rem;">
-            <hooper ref="carousel" style="width:100%;height:560px;" :settings="hopperSettings">
+        <div class="wrap" style="height:fit-content;width:100%;margin:0 auto;padding-left: 1rem;">
+            <hooper ref="carousel" style="width:100%;height:fit-content;" :settings="hopperSettings">
                 <slide v-for="(item,index) in mentors" :key="index" :style="item.style">
                     <!-- <div
                                 style="width: 100%; max-width: 320px; margin: 0 auto;background-color: aqua;">
@@ -27,16 +27,18 @@
                                 </div>
                             </div> -->
                     <div class="card">
-                        <div class="banner">
-                            <g-image :src="item.image" fit="contain"></g-image>
-                        </div>
-                        <div class="header">
-                            <div class="title-header">{{item.title}}</div>
-                            <div class="subtitle">{{item.subtitle}}</div>
-                        </div>
-                        <div class="date-time">
-                            <div class="date">Date: {{item.date}}</div>
-                            <div class="time">Time: {{item.time}}</div>
+                        <div class="card-header">
+                            <div class="banner">
+                                <g-image :src="item.image" fit="contain"></g-image>
+                            </div>
+                            <div class="header">
+                                <div class="title-header">{{item.title}}</div>
+                                <div class="subtitle">{{item.subtitle}}</div>
+                            </div>
+                            <div class="date-time">
+                                <div class="date">Date: {{item.date}}</div>
+                                <div class="time">Time: {{item.time}}</div>
+                            </div>
                         </div>
                         <div class="footer">
                             <div class="platform">
@@ -51,7 +53,7 @@
                             </g-link>
                             <g-link v-if="item.watchUrl" style="text-decoration: none; cursor: pointer"
                                 :to="item.watchUrl">
-                                <button class="button-link">Watch Here</button>
+                                <button class="button-link watch-link">Watch Here</button>
                             </g-link>
                         </div>
                     </div>
@@ -247,7 +249,10 @@ export default {
     border: 2px solid gray;
     margin: 0 10px;
     border-radius: 9.21867px;
-
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+    
     .banner {
         width: 100%;
 
@@ -298,6 +303,7 @@ export default {
     .footer {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         border-top: 1px solid whitesmoke;
         padding-top: 1rem;
         margin-top: 1rem;
@@ -352,6 +358,10 @@ export default {
             padding: 2rem 0;
         }
 
+        .button-holder{
+            margin-right: 24px;
+            margin-bottom: 24px;
+        }
 
         .card {
             .title-header {
@@ -382,6 +392,36 @@ export default {
 
                 .button-link {
                     padding: 14px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 1024px) {
+    .workshops{
+        .card{
+            .footer{
+                align-items: center;
+                .platform {
+                    .platform-title {
+                        font-size: 12px;
+                    }
+
+                    .platform-img {
+                        img {
+                            width: 80%;
+                            height: 80%;
+                        }
+                    }
+                }
+                .button-link{
+                    padding: 1em 1em;
+                    font-size: .8em;
+                }
+                .watch-link{
+                    font-size: 12px;
+                    padding: 1em 1em;
                 }
             }
         }
