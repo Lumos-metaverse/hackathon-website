@@ -45,10 +45,12 @@
                                     <g-image :src="item.platform" fit="contain"></g-image>
                                 </div>
                             </div>
-                            <g-link v-if="item.registerUrl" style="text-decoration: none; cursor: pointer" :to="item.registerUrl">
+                            <g-link v-if="item.registerUrl" style="text-decoration: none; cursor: pointer"
+                                :to="item.registerUrl">
                                 <button class="button-link">Register</button>
                             </g-link>
-                            <g-link v-if="item.watchUrl" style="text-decoration: none; cursor: pointer" :to="item.watchUrl">
+                            <g-link v-if="item.watchUrl" style="text-decoration: none; cursor: pointer"
+                                :to="item.watchUrl">
                                 <button class="button-link">Watch Here</button>
                             </g-link>
                         </div>
@@ -342,45 +344,48 @@ export default {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 
-    .workshops{
-    .title{
-        font-size: 32px;
-        padding: 2rem 0;
-    }
-
-    
-    .card{
-        .title-header{
-            font-size: 18px;
-        }
-        .subtitle{
-            font-size: 12px;
-        }
-        .date-time{
-            font-size: 12px;
+    .workshops {
+        .title {
+            font-size: 32px;
+            padding: 2rem 0;
         }
 
-        .footer{
-            .platform{
-                .platform-title{
-                    font-size: 12px;
-                }
-                .platform-img{
-                    img{
-                        width: 90%;
-                        height: 90%;
+
+        .card {
+            .title-header {
+                font-size: 18px;
+            }
+
+            .subtitle {
+                font-size: 12px;
+            }
+
+            .date-time {
+                font-size: 12px;
+            }
+
+            .footer {
+                .platform {
+                    .platform-title {
+                        font-size: 12px;
+                    }
+
+                    .platform-img {
+                        img {
+                            width: 90%;
+                            height: 90%;
+                        }
                     }
                 }
-            }
-            .button-link{
-                padding: 14px 20px;
+
+                .button-link {
+                    padding: 14px 20px;
+                }
             }
         }
     }
 }
-}
-
 </style>
     
