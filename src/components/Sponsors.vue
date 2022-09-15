@@ -95,7 +95,7 @@ export default {
                 },
                 {
                     name: "Komet",
-                    logo: require("~/assets/sponsors/logos/komet.svg"),
+                    logo: require("~/assets/sponsors/logos/komet3.svg"),
                     url: "https://Komet.me/"
                 },
                 {

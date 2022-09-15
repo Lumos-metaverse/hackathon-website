@@ -642,7 +642,7 @@ export default {
           deadline: "Jul 10, 2020",
           content:
             "User1 can send assets to User2 by knowing their DID (It could be Vedant.Komet or KID Vedant)",
-          icon: require("~/assets/third/komet1.png"),
+          icon: require("~/assets/third/komet5.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
           url: "https://substrate.io/",
         },

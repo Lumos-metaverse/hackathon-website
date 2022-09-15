@@ -198,10 +198,21 @@
                         name: 'Superwomen DAO',
                         logo: require('~/assets/sponsors/logos/superwomendao.jpg'),
                         url:'https://twitter.com/superwomendao?lang=en'
-                    },{
+                    },
+                    {
                         name: 'States DAO',
                         logo: require('~/assets/sponsors/logos/statesdao.jpg'),
                         url:'https://statesdao.club/'
+                    },
+                    {
+                        name: 'Communiti.dev',
+                        logo: require('~/assets/sponsors/logos/communiti.svg'),
+                        url:'https://www.communiti.dev/'
+                    },
+                    {
+                        name: 'MadrasDAO',
+                        logo: require('~/assets/sponsors/logos/madrasdao.jpg'),
+                        url:'https://mobile.twitter.com/madrasdao'
                     },
                 ],
                 knowledgesponsors:[
@@ -233,7 +244,6 @@
                     name: 'Crypto Newspoint',
                         logo: require('~/assets/sponsors/logos/cnp.svg'),
                         url:'https://www.cryptonewspoint.com/'
-
                 }
                 
                 ]
