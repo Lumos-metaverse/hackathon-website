@@ -121,16 +121,6 @@ export default {
                 //     url: "https://us06web.zoom.us/j/84155956127?pwd=QUlIN3VZa2hqMmlOR1BqZEN0b1hrdz09"
                 // },
                 {
-                    image: require('~/assets/workshops/polygon1.png'),
-                    title: "Building a Full Stack dApp on Polygon",
-                    subtitle: "Speaker: Rahat Chowdhury, Lead Developer Relations Engineer",
-                    date: "16th September",
-                    time: "8 - 9 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    registerUrl: "https://us06web.zoom.us/j/81745813330?pwd=Zk1EY0Z4RHZqY3oxMFZiU29XdjV5dz09",
-                    watchUrl: ""
-                },
-                {
                     image: require('~/assets/workshops/arcanaBanner.png'),
                     title: "Build secure & privacy preserving apps using Arcana",
                     subtitle: "Speaker: Etisha Garg, Developer Relations \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
@@ -171,6 +161,46 @@ export default {
                     watchUrl: ""
                 },
                 {
+                    image: require('~/assets/workshops/routerYoutube.png'),
+                    title: "Build Cross Chain Solution in blockchain using Router Protocol",
+                    subtitle: "Speaker: Lakshika Kothari, VP",
+                    date: "26th September",
+                    time: "7 - 8 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "https://us06web.zoom.us/webinar/register/2416631575781/WN_XVzopxbDSPGmP2sC6jPxNQ",
+                    watchUrl: ""
+                },
+                {
+                    image: require('~/assets/workshops/assetmantleYoutube.png'),
+                    title: "Everything a BUIDLer needs to know about NFTs with Asset Mantle",
+                    subtitle: "Speaker: Kamlesh Parikarath Marar, Core, Product Development & Growth",
+                    date: "30th September",
+                    time: "8 - 9 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "https://us06web.zoom.us/webinar/register/1016631576067/WN_yv3In-xQSeK8zL2p6R61oQ",
+                    watchUrl: ""
+                },
+                {
+                    image: require('~/assets/workshops/reviseYoutube.png'),
+                    title: "Build More Than JPEGs with Revise Network ",
+                    subtitle: "Speaker: Kashi, Developer Evangelist",
+                    date: "3rd October",
+                    time: "8 - 9 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "https://us06web.zoom.us/webinar/register/3516631576522/WN_pv0dawruQWu9Xzh0Qa0tKQ",
+                    watchUrl: ""
+                },
+                {
+                    image: require('~/assets/workshops/kometYoutube.png'),
+                    title: "BUIDL for the Creator Community with Komet",
+                    subtitle: "Speaker: Vedant Pawar, Co-founder, CTO",
+                    date: "5th October",
+                    time: "8 - 9 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "https://us06web.zoom.us/webinar/register/2516631576772/WN_ZITkOwN4SWaE1xuijOf-ug",
+                    watchUrl: ""
+                },
+                {
                     image: require('~/assets/workshops/ic1.png'),
                     title: "Intro to Building on the Internet Computer",
                     subtitle: "Speaker: Dominic Wörner, Senior Solutions Architect, Dfinity",
@@ -179,6 +209,16 @@ export default {
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
                     watchUrl: "https://www.youtube.com/watch?v=hDgml8P2nBY&list=PLpkpEL9gYGexsDL9624qR_bLyKlQ7K2Nr",
+                },
+                {
+                    image: require('~/assets/workshops/polygon1.png'),
+                    title: "Building a Full Stack dApp on Polygon",
+                    subtitle: "Speaker: Rahat Chowdhury, Lead Developer Relations Engineer",
+                    date: "16th September",
+                    time: "8 - 9 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "",
+                    watchUrl: "https://www.binance.com/en/live/video?roomId=2108817"
                 },
             ],
             //Slider configuration [obj]
@@ -346,6 +386,7 @@ export default {
             align-items: center;
             text-align: center;
             letter-spacing: 0.1em;
+            cursor: pointer;
         }
     }
 }
