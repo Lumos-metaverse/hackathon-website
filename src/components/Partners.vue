@@ -221,11 +221,11 @@
                         logo: require('~/assets/sponsors/logos/ieee-blockchain.png'),
                         url:'https://blockchain.ieee.org/'
                     },
-                    {
-                        name: 'IEEE SA Standards Association',
-                        logo: require('~/assets/sponsors/logos/ieee-sa.png'),
-                        url:'https://standards.ieee.org/'
-                    },
+                    // {
+                    //     name: 'IEEE SA Standards Association',
+                    //     logo: require('~/assets/sponsors/logos/ieee-sa.png'),
+                    //     url:'https://standards.ieee.org/'
+                    // },
 
                 ],
                 mediapartners: [{

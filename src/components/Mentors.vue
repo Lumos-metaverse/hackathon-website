@@ -120,7 +120,7 @@ data () {
          companyLogo: require('~/assets/mentors/logo/truts.png'),
        },
        {
-         name:'Muneer Mohammed',
+         name:'Munir Mohammed',
          position:'Senior Program Manager, IEEE',
          image: require('~/assets/mentors/final/muneer.png'),
          companyLogo: require('~/assets/mentors/logo/ieee.png'),
