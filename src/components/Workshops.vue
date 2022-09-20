@@ -152,8 +152,8 @@ export default {
                 },
                 {
                     image: require('~/assets/workshops/routerYoutube.png'),
-                    title: "Build Cross Chain Solution in blockchain using Router Protocol",
-                    subtitle: "Speaker: Lakshika Kothari, VP",
+                    title: "Build Cross Chain Solution using Router Protocol",
+                    subtitle: "Speaker: Lakshika Kothari, VP \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
                     date: "26th September",
                     time: "7 - 8 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
@@ -162,7 +162,7 @@ export default {
                 },
                 {
                     image: require('~/assets/workshops/assetmantleYoutube.png'),
-                    title: "Everything a BUIDLer needs to know about NFTs with Asset Mantle",
+                    title: "Everything a BUIDLer needs to know about NFTs",
                     subtitle: "Speaker: Kamlesh Parikarath Marar, Core, Product Development & Growth",
                     date: "30th September",
                     time: "8 - 9 PM IST",
@@ -173,7 +173,7 @@ export default {
                 {
                     image: require('~/assets/workshops/reviseYoutube.png'),
                     title: "Build More Than JPEGs with Revise Network ",
-                    subtitle: "Speaker: Kashi, Developer Evangelist",
+                    subtitle: "Speaker: Kashi, Developer Evangelist \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
                     date: "3rd October",
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
@@ -183,7 +183,7 @@ export default {
                 {
                     image: require('~/assets/workshops/kometYoutube.png'),
                     title: "BUIDL for the Creator Community with Komet",
-                    subtitle: "Speaker: Vedant Pawar, Co-founder, CTO",
+                    subtitle: "Speaker: Vedant Pawar, Co-founder, CTO \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
                     date: "5th October",
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
@@ -289,9 +289,7 @@ export default {
     border: 2px solid gray;
     margin: 0 10px;
     border-radius: 9.21867px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-end; */
+    
     
     .banner {
         width: 100%;
