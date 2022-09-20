@@ -121,16 +121,6 @@ export default {
                 //     url: "https://us06web.zoom.us/j/84155956127?pwd=QUlIN3VZa2hqMmlOR1BqZEN0b1hrdz09"
                 // },
                 {
-                    image: require('~/assets/workshops/arcanaBanner.png'),
-                    title: "Build secure & privacy preserving apps using Arcana",
-                    subtitle: "Speaker: Etisha Garg, Developer Relations \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
-                    date: "19th September",
-                    time: "7 - 8 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    registerUrl: "https://us06web.zoom.us/webinar/register/9816631573190/WN_qbL4zm7JTMiSAGQUBI6qnA",
-                    watchUrl: ""
-                },
-                {
                     image: require('~/assets/workshops/tatumYoutube.png'),
                     title: "Tatum Framework helps build Web 3 Apps faster",
                     subtitle: "Speaker: Sean Kahovec, Blockchain Development and Architecture",
@@ -219,6 +209,16 @@ export default {
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
                     watchUrl: "https://www.binance.com/en/live/video?roomId=2108817"
+                },
+                {
+                    image: require('~/assets/workshops/arcanaBanner.png'),
+                    title: "Build secure & privacy preserving apps using Arcana",
+                    subtitle: "Speaker: Etisha Garg, Developer Relations \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                    date: "19th September",
+                    time: "7 - 8 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "",
+                    watchUrl: "https://www.binance.com/en/live/video?roomId=2109257"
                 },
             ],
             //Slider configuration [obj]
