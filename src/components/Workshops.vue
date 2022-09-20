@@ -120,16 +120,16 @@ export default {
                 //     platform: require('~/assets/workshops/platform.png'),
                 //     url: "https://us06web.zoom.us/j/84155956127?pwd=QUlIN3VZa2hqMmlOR1BqZEN0b1hrdz09"
                 // },
-                {
-                    image: require('~/assets/workshops/tatumYoutube.png'),
-                    title: "Tatum Framework helps build Web 3 Apps faster",
-                    subtitle: "Speaker: Sean Kahovec, Blockchain Development and Architecture",
-                    date: "20th September",
-                    time: "7 - 8 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    registerUrl: 'https://us06web.zoom.us/webinar/register/3816631573578/WN_78tyNkRSTDiwNaHg3yqR3w',
-                    watchUrl: ""
-                },
+                // {
+                //     image: require('~/assets/workshops/tatumYoutube.png'),
+                //     title: "Tatum Framework helps build Web 3 Apps faster",
+                //     subtitle: "Speaker: Sean Kahovec, Blockchain Development and Architecture",
+                //     date: "20th September",
+                //     time: "7 - 8 PM IST",
+                //     platform: require('~/assets/workshops/platform.png'),
+                //     registerUrl: 'https://us06web.zoom.us/webinar/register/3816631573578/WN_78tyNkRSTDiwNaHg3yqR3w',
+                //     watchUrl: ""
+                // },
                 {
                     image: require('~/assets/workshops/fluenceYoutube.png'),
                     title: "Run peer-to-peer applications and protocols using Fluence",
