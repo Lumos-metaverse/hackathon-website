@@ -131,16 +131,6 @@ export default {
                 //     watchUrl: ""
                 // },
                 {
-                    image: require('~/assets/workshops/fluenceYoutube.png'),
-                    title: "Run peer-to-peer applications and protocols using Fluence",
-                    subtitle: "Speaker: Alexey Pyshnenko, Scala Developer \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
-                    date: "21st September",
-                    time: "7 - 8 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    registerUrl: "https://us06web.zoom.us/webinar/register/9216631573960/WN_NTDxVy6rQIiZxtmcZApmwQ",
-                    watchUrl: ""
-                },
-                {
                     image: require('~/assets/workshops/tezosYoutube.png'),
                     title: "Build Scalable solution using Tezos Network",
                     subtitle: "Speaker: Anshu Jalan, Smart Contract & Backend Engineer",
@@ -219,6 +209,16 @@ export default {
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
                     watchUrl: "https://www.binance.com/en/live/video?roomId=2109257"
+                },
+                {
+                    image: require('~/assets/workshops/fluenceYoutube.png'),
+                    title: "Run peer-to-peer applications and protocols using Fluence",
+                    subtitle: "Speaker: Alexey Pyshnenko, Scala Developer \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                    date: "21st September",
+                    time: "7 - 8 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "",
+                    watchUrl: "https://www.binance.com/en/live/video?roomId=2109263"
                 },
             ],
             //Slider configuration [obj]
