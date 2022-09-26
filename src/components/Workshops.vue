@@ -131,16 +131,6 @@ export default {
                 //     watchUrl: ""
                 // },
                 {
-                    image: require('~/assets/workshops/tezosYoutube.png'),
-                    title: "Build Scalable solution using Tezos Network",
-                    subtitle: "Speaker: Anshu Jalan, Smart Contract & Backend Engineer",
-                    date: "23rd September",
-                    time: "8 - 9 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    registerUrl: "https://us06web.zoom.us/webinar/register/2016631574284/WN_ODjzGC4HTFauGW58rXB-AA",
-                    watchUrl: ""
-                },
-                {
                     image: require('~/assets/workshops/routerYoutube.png'),
                     title: "Build Cross Chain Solution using Router Protocol",
                     subtitle: "Speaker: Lakshika Kothari, VP \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
@@ -219,6 +209,16 @@ export default {
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
                     watchUrl: "https://www.binance.com/en/live/video?roomId=2109263"
+                },
+                {
+                    image: require('~/assets/workshops/tezosYoutube.png'),
+                    title: "Build Scalable solution using Tezos Network",
+                    subtitle: "Speaker: Anshu Jalan, Smart Contract & Backend Engineer",
+                    date: "23rd September",
+                    time: "8 - 9 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "",
+                    watchUrl: "https://www.binance.com/en/live/video?roomId=2109265"
                 },
             ],
             //Slider configuration [obj]
