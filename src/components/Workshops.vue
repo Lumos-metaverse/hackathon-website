@@ -131,16 +131,6 @@ export default {
                 //     watchUrl: ""
                 // },
                 {
-                    image: require('~/assets/workshops/routerYoutube.png'),
-                    title: "Build Cross Chain Solution using Router Protocol",
-                    subtitle: "Speaker: Lakshika Kothari, VP \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
-                    date: "26th September",
-                    time: "7 - 8 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    registerUrl: "https://us06web.zoom.us/webinar/register/2416631575781/WN_XVzopxbDSPGmP2sC6jPxNQ",
-                    watchUrl: ""
-                },
-                {
                     image: require('~/assets/workshops/assetmantleYoutube.png'),
                     title: "Everything a BUIDLer needs to know about NFTs",
                     subtitle: "Speaker: Kamlesh Parikarath Marar, Core, Product Development & Growth",
@@ -178,7 +168,7 @@ export default {
                     time: "7:30 - 8:30 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
-                    watchUrl: "https://www.youtube.com/watch?v=hDgml8P2nBY&list=PLpkpEL9gYGexsDL9624qR_bLyKlQ7K2Nr",
+                    watchUrl: "https://www.youtube.com/watch?v=VA9fV24-IBg",
                 },
                 {
                     image: require('~/assets/workshops/polygon1.png'),
@@ -188,7 +178,7 @@ export default {
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
-                    watchUrl: "https://www.binance.com/en/live/video?roomId=2108817"
+                    watchUrl: "https://www.youtube.com/watch?v=g782ry2xXFM"
                 },
                 {
                     image: require('~/assets/workshops/arcanaBanner.png'),
@@ -198,7 +188,7 @@ export default {
                     time: "7 - 8 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
-                    watchUrl: "https://www.binance.com/en/live/video?roomId=2109257"
+                    watchUrl: "https://www.youtube.com/watch?v=YWlahAmDbbA"
                 },
                 {
                     image: require('~/assets/workshops/fluenceYoutube.png'),
@@ -208,7 +198,7 @@ export default {
                     time: "7 - 8 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
-                    watchUrl: "https://www.binance.com/en/live/video?roomId=2109263"
+                    watchUrl: "https://www.youtube.com/watch?v=QiFhyQpUTF0"
                 },
                 {
                     image: require('~/assets/workshops/tezosYoutube.png'),
@@ -218,7 +208,17 @@ export default {
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
-                    watchUrl: "https://www.binance.com/en/live/video?roomId=2109265"
+                    watchUrl: "https://www.youtube.com/watch?v=INi4GRvVonU"
+                },
+                {
+                    image: require('~/assets/workshops/routerYoutube.png'),
+                    title: "Build Cross Chain Solution using Router Protocol",
+                    subtitle: "Speaker: Lakshika Kothari, VP \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                    date: "26th September",
+                    time: "7 - 8 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "",
+                    watchUrl: "https://www.youtube.com/watch?v=ylg3RkfCTkQ"
                 },
             ],
             //Slider configuration [obj]
