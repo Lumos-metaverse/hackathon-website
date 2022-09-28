@@ -112,33 +112,34 @@ export default {
             //data list [array]
             mentors: [
                 // {
-                //     image: require('~/assets/workshops/workshops1.png'),
-                //     title: "Build Web3 Solutions for scale using Aeternity",
-                //     subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
-                //     date: "12th September",
-                //     time: "7 - 8 PM IST",
-                //     platform: require('~/assets/workshops/platform.png'),
-                //     url: "https://us06web.zoom.us/j/84155956127?pwd=QUlIN3VZa2hqMmlOR1BqZEN0b1hrdz09"
-                // },
-                // {
-                //     image: require('~/assets/workshops/tatumYoutube.png'),
-                //     title: "Tatum Framework helps build Web 3 Apps faster",
-                //     subtitle: "Speaker: Sean Kahovec, Blockchain Development and Architecture",
-                //     date: "20th September",
-                //     time: "7 - 8 PM IST",
-                //     platform: require('~/assets/workshops/platform.png'),
-                //     registerUrl: 'https://us06web.zoom.us/webinar/register/3816631573578/WN_78tyNkRSTDiwNaHg3yqR3w',
-                //     watchUrl: ""
-                // },
-                {
-                    image: require('~/assets/workshops/assetmantleYoutube.png'),
-                    title: "Everything a BUIDLer needs to know about NFTs",
-                    subtitle: "Speaker: Kamlesh Parikarath Marar, Core, Product Development & Growth",
-                    date: "30th September",
-                    time: "8 - 9 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    registerUrl: "https://us06web.zoom.us/webinar/register/1016631576067/WN_yv3In-xQSeK8zL2p6R61oQ",
-                    watchUrl: ""
+                    //     image: require('~/assets/workshops/tatumYoutube.png'),
+                    //     title: "Tatum Framework helps build Web 3 Apps faster",
+                    //     subtitle: "Speaker: Sean Kahovec, Blockchain Development and Architecture",
+                    //     date: "20th September",
+                    //     time: "7 - 8 PM IST",
+                    //     platform: require('~/assets/workshops/platform.png'),
+                    //     registerUrl: 'https://us06web.zoom.us/webinar/register/3816631573578/WN_78tyNkRSTDiwNaHg3yqR3w',
+                    //     watchUrl: ""
+                    // },
+                    // {
+                    //     image: require('~/assets/workshops/workshops1.png'),
+                    //     title: "Build Web3 Solutions for scale using Aeternity",
+                    //     subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
+                    //     date: "28th September",
+                    //     time: "7 - 8 PM IST",
+                    //     platform: require('~/assets/workshops/platform.png'),
+                    //     registerUrl: "",
+                    //     watchUrl: ""
+                    // },
+                    {
+                        image: require('~/assets/workshops/assetmantleYoutube.png'),
+                        title: "Everything a BUIDLer needs to know about NFTs",
+                        subtitle: "Speaker: Kamlesh Parikarath Marar, Core, Product Development & Growth",
+                        date: "30th September",
+                        time: "8 - 9 PM IST",
+                        platform: require('~/assets/workshops/platform.png'),
+                        registerUrl: "https://us06web.zoom.us/webinar/register/1016631576067/WN_yv3In-xQSeK8zL2p6R61oQ",
+                        watchUrl: ""
                 },
                 {
                     image: require('~/assets/workshops/reviseYoutube.png'),
