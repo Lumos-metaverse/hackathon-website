@@ -609,7 +609,7 @@ export default {
             "Climate change is a reality - and *the time to act is now.* The first step of action is Awareness. We rely on you to make your fellow citizens aware of it. Create an NFT using Revise SDK and climate/weather data to showcase the impact it has on humanity.",
           icon: require("~/assets/third/revise1.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "https://www.npmjs.com/package/revise-sdk",
+          url: "http://revise.network/",
         },
         {
           name: "Build on Tezos tokens and solve real world problems",
