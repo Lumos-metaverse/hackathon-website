@@ -144,7 +144,7 @@ export default {
                 {
                     image: require('~/assets/workshops/reviseYoutube.png'),
                     title: "Build More Than JPEGs with Revise Network ",
-                    subtitle: "Speaker: Kashi, Developer Evangelist \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                    subtitle: "Speaker: Akash Mokashi, Developer Relations Manager \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
                     date: "3rd October",
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
