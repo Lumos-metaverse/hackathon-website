@@ -38,6 +38,20 @@
                 </div>
             </div>
         </div>
+
+        <div class="wrap">
+            <div class="row" v-for="(row,idx) in prizes3" :key="idx">
+                <div class="cell" v-for="(cell,idx) in row" :key="idx">
+                    <div v-if="cell && cell.icon" style="margin-right:18px; object-fit:cover;">
+                        <g-image :src="cell.icon" width="60px" height="50px"/>
+                    </div>
+                    <div style="text-align:center">
+                        <div class="name">{{cell.name}}</div>
+                        <div class="cash">{{cell.cash}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -55,7 +69,7 @@
 
                     ],
                 ],
-                 prizes2:[
+                prizes2:[
                     [
                         {
                             name:'WIN UPTO',
@@ -63,9 +77,19 @@
                             icon:require('~/assets/third/bd.png'),
                             //description: "each in Convertible Grants from BuildersTribe"
                         },
+                        
+                    ],
+                ],
+                prizes3:[
+                    [
+                        {
+                            name:'Exciting Prizes',
+                            cash:'Coming Soon',
+                            icon:require('~/assets/third/unstoppable.png'),
+                        },
 
                     ],
-                ]
+                ],
             }
         }
     }
