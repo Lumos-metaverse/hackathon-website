@@ -121,16 +121,7 @@ export default {
                 //     registerUrl: 'https://us06web.zoom.us/webinar/register/3816631573578/WN_78tyNkRSTDiwNaHg3yqR3w',
                 //     watchUrl: ""
                 // },
-                // {
-                //     image: require('~/assets/workshops/workshops1.png'),
-                //     title: "Build Web3 Solutions for scale using Aeternity",
-                //     subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
-                //     date: "28th September",
-                //     time: "7 - 8 PM IST",
-                //     platform: require('~/assets/workshops/platform.png'),
-                //     registerUrl: "",
-                //     watchUrl: ""
-                // },
+                
                 {
                     image: require('~/assets/workshops/kometYoutube.png'),
                     title: "BUIDL for the Creator Community with Komet",
@@ -202,6 +193,16 @@ export default {
                     watchUrl: "https://www.youtube.com/watch?v=ylg3RkfCTkQ"
                 },
                 {
+                    image: require('~/assets/workshops/workshops1.png'),
+                    title: "Build Web3 Solutions for scale using Aeternity",
+                    subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
+                    date: "28th September",
+                    time: "7 - 8 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "",
+                    watchUrl: "https://www.youtube.com/watch?v=AnRBlbIykaI"
+                },
+                {
                     image: require('~/assets/workshops/assetmantleYoutube.png'),
                     title: "Everything a BUIDLer needs to know about NFTs",
                     subtitle: "Speaker: Kamlesh Parikarath Marar, Core, Product Development & Growth",
@@ -209,7 +210,7 @@ export default {
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
-                    watchUrl: "https://www.youtube.com/watch?v=WATg0KCM_M4"
+                    watchUrl: "https://www.youtube.com/watch?v=vwRAWll2jKk"
                 },
                 {
                     image: require('~/assets/workshops/reviseYoutube.png'),
