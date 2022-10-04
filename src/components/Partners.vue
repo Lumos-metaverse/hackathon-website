@@ -130,7 +130,7 @@
  
                     
                     {
-                        name: 'Blockchain San Diago',
+                        name: 'Blockchain San Diego',
                         logo: require('~/assets/sponsors/logos/san.png'),
                         url:'https://blockchain.ucsd.edu/'
                     },

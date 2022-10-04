@@ -42,12 +42,13 @@
         <div class="wrap">
             <div class="row" v-for="(row,idx) in prizes3" :key="idx">
                 <div class="cell" v-for="(cell,idx) in row" :key="idx">
-                    <div v-if="cell && cell.icon" style="margin-right:18px; object-fit:cover;">
+                    <div v-if="cell && cell.icon" style="padding-right:-5px; object-fit:cover;">
                         <g-image :src="cell.icon" width="60px" height="50px"/>
                     </div>
                     <div style="text-align:center">
                         <div class="name">{{cell.name}}</div>
-                        <div class="cash">{{cell.cash}}</div>
+                        <div class="cash1">{{cell.cash}}</div>
+                        <div class="disclamer">*Distributed among top Participants & Winners</div>
                     </div>
                 </div>
             </div>
@@ -83,8 +84,8 @@
                 prizes3:[
                     [
                         {
-                            name:'Exciting Prizes',
-                            cash:'Coming Soon',
+                            name:'DOMAIN CREDITS WORTH',
+                            cash:'$150,000*',
                             icon:require('~/assets/third/unstoppable.png'),
                         },
 
@@ -183,6 +184,7 @@
                         font-size: 12px;
                         letter-spacing: -0.015em;
                         color: #FFFFFF;
+                        padding-left: 5px;
                     }
                 }
             }

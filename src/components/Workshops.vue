@@ -132,16 +132,6 @@ export default {
                 //     watchUrl: ""
                 // },
                 {
-                    image: require('~/assets/workshops/reviseYoutube.png'),
-                    title: "Build More Than JPEGs with Revise Network ",
-                    subtitle: "Speaker: Akash Mokashi, Developer Relations Manager \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
-                    date: "3rd October",
-                    time: "8 - 9 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    registerUrl: "https://us06web.zoom.us/webinar/register/3516631576522/WN_pv0dawruQWu9Xzh0Qa0tKQ",
-                    watchUrl: ""
-                },
-                {
                     image: require('~/assets/workshops/kometYoutube.png'),
                     title: "BUIDL for the Creator Community with Komet",
                     subtitle: "Speaker: Vedant Pawar, Co-founder, CTO \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
@@ -220,6 +210,16 @@ export default {
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
                     watchUrl: "https://www.youtube.com/watch?v=WATg0KCM_M4"
+                },
+                {
+                    image: require('~/assets/workshops/reviseYoutube.png'),
+                    title: "Build More Than JPEGs with Revise Network ",
+                    subtitle: "Speaker: Akash Mokashi, Developer Relations Manager \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                    date: "3rd October",
+                    time: "8 - 9 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "",
+                    watchUrl: "https://www.youtube.com/watch?v=qR-J7g2QE94"
                 },
             ],
             //Slider configuration [obj]
