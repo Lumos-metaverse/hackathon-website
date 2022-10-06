@@ -124,9 +124,9 @@ export default {
                 
                 {
                     image: require('~/assets/workshops/kometYoutube.png'),
-                    title: "BUIDL for the Creator Community with Komet",
+                    title: "Intro to Everything NFTs with Komet",
                     subtitle: "Speaker: Vedant Pawar, Co-founder, CTO \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
-                    date: "6th October",
+                    date: "7th October",
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "https://us06web.zoom.us/webinar/register/2516631576772/WN_ZITkOwN4SWaE1xuijOf-ug",
