@@ -1,100 +1,121 @@
 <template>
-    <section class="hero">
-        <g-image v-if="isMobile" src="~/assets/home/mobile_bg4.jpg"/>
-        <g-image v-else src="~/assets/home/web_bg4.jpg"/>
-        <div class="content">
-          <div class="title">
-            <!-- <div><span>#BUIDL</span> for Web3</div>
+  <section class="hero">
+    <g-image v-if="isMobile" src="~/assets/home/mobile_bg4.jpg" />
+    <g-image v-else src="~/assets/home/web_bg4.jpg" />
+    <div class="content">
+      <div class="title">
+        <!-- <div><span>#BUIDL</span> for Web3</div>
             <div>Hack 2022</div> -->
-            <g-image v-if="isMobile" class="home-hero" src="~/assets/home/build_logo.png"/>
-            <g-image v-else class="home-hero" src="~/assets/home/buidl_logo_mb.png"/>
-          </div>
-          <div class="sub-title">
-            Push the boundaries of the innovation in Web3 and win exciting prizes!
-          </div>
-          <a href="https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149" target="_blank" rel="noopener noreferrer" >
+        <g-image v-if="isMobile" class="home-hero" src="~/assets/home/build_logo.png" />
+        <g-image v-else class="home-hero" src="~/assets/home/buidl_logo_mb.png" />
+      </div>
+      <div class="sub-title">
+        Push the boundaries of the innovation in Web3 and win exciting prizes!
+      </div>
+      <div class="r-btn-container">
+        <a href="https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149" target="_blank"
+          rel="noopener noreferrer">
           <button class="r-btn">
-              REGISTER
-              <g-image style="width:9px;height:9px;margin-left:17px;" width="12" height="12" src="~/assets/arrows/purple-arrow.svg"/>
-            </button></a>
-          <!-- <div class="or">or</div> -->
-          <!-- <a href=" https://discord.gg/WyfmzJpzZd" target="_blank" class="j-btn">JOIN OUR DISCORD COMMUNITY</a> -->
-        </div>
-      </section>
+            REGISTER - UNSTOP
+            <g-image style="width:9px;height:9px;margin-left:8px;" width="12" height="12"
+              src="~/assets/arrows/purple-arrow.svg" />
+          </button></a>
+        <a href="https://hack2skill.com/hack/lumos" target="_blank" rel="noopener noreferrer">
+          <button class="r-btn">
+            REGISTER - Hack2Skill
+            <g-image style="width:9px;height:9px;margin-left:8px;" width="12" height="12"
+              src="~/assets/arrows/purple-arrow.svg" />
+          </button></a>
+      </div>
+      <!-- <div class="or">or</div> -->
+      <!-- <a href=" https://discord.gg/WyfmzJpzZd" target="_blank" class="j-btn">JOIN OUR DISCORD COMMUNITY</a> -->
+    </div>
+  </section>
 </template>
 <script>
 export default {
-    name:'FirstSection',
-    props:{
-        isMobile: {
-            type: Boolean,
-            default: false
-        }
+  name: 'FirstSection',
+  props: {
+    isMobile: {
+      type: Boolean,
+      default: false
     }
+  }
 }
 </script>
 <style lang="scss" scoped>
-.hero{
-    width:100%;
-    height: 100vh;
-    img{
-      width:100%;
-      height:100%;
-      object-fit: cover;
-      /* margin-top: 128px; */
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* margin-top: 128px; */
+  }
+
+  .home-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 128px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 128px;
+
+    .title {
+      // font-family: 'Brinnan';
+      // font-style: normal;
+      // font-weight: 700;
+      // font-size: 80px;
+      // line-height: 145.9%;
+      // text-align: center;
+      // letter-spacing: -0.015em;
+      // color:white;
+      width: 500px;
+      height: 380px;
+
+      span {
+        color: #01C3F1;
+      }
     }
-    .home-hero{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+
+    .sub-title {
+      margin-top: -7px;
+      font-family: 'Brinnan';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 145.9%;
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: rgba(255, 255, 255);
+      max-width: 450px;
     }
-    .content{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: calc(100% - 128px);
+
+    .r-btn-container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 128px;
-      .title{
-        // font-family: 'Brinnan';
-        // font-style: normal;
-        // font-weight: 700;
-        // font-size: 80px;
-        // line-height: 145.9%;
-        // text-align: center;
-        // letter-spacing: -0.015em;
-        // color:white;
-        width:500px;
-        height: 380px;
-      
-        span{
-          color: #01C3F1;
-        }
-      }
-      .sub-title{
-        margin-top:-7px;
+      justify-content: space-evenly;
+      width: 50%;
+
+      .r-btn {
         font-family: 'Brinnan';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 145.9%;
-        text-align: center;
-        letter-spacing: -0.015em;
-        color: rgba(255, 255, 255); 
-        max-width: 450px;
-      }
-      .r-btn{
-       font-family: 'Brinnan';
         background: linear-gradient(95.7deg, #2BF2FF 0.32%, #01C3F1 100.26%);
         box-shadow: 0px 0px 12.1492px rgba(43, 217, 255, 0.55);
         border-radius: 4.85967px;
         margin-top: 42.6px;
-        width: 172px;
+        width: 220px;
         height: 51px;
-        border:none;
+        border: none;
         font-style: normal;
         font-weight: 700;
         font-size: 12px;
@@ -105,94 +126,113 @@ export default {
         color: #36104C;
         cursor: pointer;
       }
-      .or{
-        font-family: 'Brinnan';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 145.9%;
-        text-align: center;
-        letter-spacing: 0.1em;
-        color: rgba(255, 255, 255, 0.8);
-        margin-top: 28px;
-        margin-bottom:29px;
-      }
-      .j-btn{
-       font-family: 'Brinnan';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 145.9%;
-        margin-top: 60px;
-        /* or 23px */
+    }
 
-        text-align: center;
-        letter-spacing: 0.1em;
-        text-decoration-line: underline;
-        background: none;
-        border:none;
-        color: #FFFFFF; 
-      }
+    .or {
+      font-family: 'Brinnan';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 145.9%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 28px;
+      margin-bottom: 29px;
+    }
+
+    .j-btn {
+      font-family: 'Brinnan';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 145.9%;
+      margin-top: 60px;
+      /* or 23px */
+
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-decoration-line: underline;
+      background: none;
+      border: none;
+      color: #FFFFFF;
     }
   }
- @media (max-width: 768px) {
-  .landing{
-    .hero{
-      .content{
-        .title{
-          width:400px;
-          img{
+}
+
+@media (max-width: 768px) {
+  .landing {
+    .hero {
+      .content {
+        .title {
+          width: 400px;
+
+          img {
             object-fit: contain;
           }
         }
-        .sub-title{
+
+        .sub-title {
           font-size: 16px;
         }
-        .r-btn{
+
+        .r-btn {
           width: 120px;
           height: 40px;
         }
-        .or{
+
+        .or {
           font-size: 12px;
           margin-top: 8px;
-          margin-bottom:9px;
+          margin-bottom: 9px;
         }
-        .j-btn{
+
+        .j-btn {
           font-size: 12px;
         }
       }
     }
   }
+
   @media (max-width: 420px) {
-    .landing{
-      .hero{
-        
-        .content{
-          .title{
-            width:300px;
-            height:200px;
-            .span{
-              font-size:40px;
+    .landing {
+      .hero {
+
+        .content {
+          .title {
+            width: 300px;
+            height: 200px;
+
+            .span {
+              font-size: 40px;
             }
           }
-          .sub-title{
+
+          .sub-title {
             font-size: 14px;
             max-width: 68%;
             text-align: center;
           }
-          .r-btn{
-            width: 173.59px;
+
+          .r-btn-container{
+            /* width: 60%; */
+            flex-direction: column;
+            align-items: center;
+          .r-btn {
+            width: 190.59px;
             height: 55px;
           }
-          .or{
+        }
+          .or {
             font-size: 13px;
           }
-          .j-btn{
+
+          .j-btn {
             font-size: 12px;
           }
         }
       }
     }
   }
- }
+}
 </style>

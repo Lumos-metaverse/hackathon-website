@@ -121,17 +121,16 @@ export default {
                 //     registerUrl: 'https://us06web.zoom.us/webinar/register/3816631573578/WN_78tyNkRSTDiwNaHg3yqR3w',
                 //     watchUrl: ""
                 // },
-                
-                {
-                    image: require('~/assets/workshops/kometYoutube.png'),
-                    title: "Intro to Everything NFTs with Komet",
-                    subtitle: "Speaker: Vedant Pawar, Co-founder, CTO \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
-                    date: "7th October",
-                    time: "8 - 9 PM IST",
-                    platform: require('~/assets/workshops/platform.png'),
-                    registerUrl: "https://us06web.zoom.us/webinar/register/2516631576772/WN_ZITkOwN4SWaE1xuijOf-ug",
-                    watchUrl: ""
-                },
+                // {
+                //     image: require('~/assets/workshops/dfinity.png'),
+                //     title: "Ask Me Anything with Dfinity\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                //     subtitle: "Speaker: Dominic Wörner, Senior Solutions Architect, Dfinity",
+                //     date: "12th October",
+                //     time: "6:30 - 7:30 PM IST",
+                //     platform: require('~/assets/workshops/discord.png'),
+                //     registerUrl: "",
+                //     watchUrl: "",
+                // },
                 {
                     image: require('~/assets/workshops/ic1.png'),
                     title: "Intro to Building on the Internet Computer",
@@ -221,6 +220,16 @@ export default {
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
                     watchUrl: "https://www.youtube.com/watch?v=qR-J7g2QE94"
+                },
+                {
+                    image: require('~/assets/workshops/kometYoutube.png'),
+                    title: "Intro to Everything NFTs with Komet",
+                    subtitle: "Speaker: Vedant Pawar, Co-founder, CTO \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                    date: "7th October",
+                    time: "8 - 9 PM IST",
+                    platform: require('~/assets/workshops/platform.png'),
+                    registerUrl: "",
+                    watchUrl: "https://www.youtube.com/watch?v=JLQSyxaJH84"
                 },
             ],
             //Slider configuration [obj]
