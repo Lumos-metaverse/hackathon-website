@@ -12,21 +12,12 @@
       <div class="sub-title">
         Push the boundaries of the innovation in Web3 and win exciting prizes!
       </div>
-      <div class="r-btn-container">
-        <a href="https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149" target="_blank"
-          rel="noopener noreferrer">
-          <button class="r-btn">
-            REGISTER - UNSTOP
-            <g-image style="width:9px;height:9px;margin-left:8px;" width="12" height="12"
-              src="~/assets/arrows/purple-arrow.svg" />
-          </button></a>
         <a href="https://hack2skill.com/hack/lumos" target="_blank" rel="noopener noreferrer">
           <button class="r-btn">
-            REGISTER - Hack2Skill
+            REGISTER
             <g-image style="width:9px;height:9px;margin-left:8px;" width="12" height="12"
               src="~/assets/arrows/purple-arrow.svg" />
           </button></a>
-      </div>
       <!-- <div class="or">or</div> -->
       <!-- <a href=" https://discord.gg/WyfmzJpzZd" target="_blank" class="j-btn">JOIN OUR DISCORD COMMUNITY</a> -->
     </div>
@@ -102,18 +93,14 @@ export default {
       max-width: 450px;
     }
 
-    .r-btn-container {
-      display: flex;
-      justify-content: space-evenly;
-      width: 50%;
-
+    
       .r-btn {
         font-family: 'Brinnan';
         background: linear-gradient(95.7deg, #2BF2FF 0.32%, #01C3F1 100.26%);
         box-shadow: 0px 0px 12.1492px rgba(43, 217, 255, 0.55);
         border-radius: 4.85967px;
         margin-top: 42.6px;
-        width: 220px;
+        width: 174px;
         height: 51px;
         border: none;
         font-style: normal;
@@ -126,7 +113,6 @@ export default {
         color: #36104C;
         cursor: pointer;
       }
-    }
 
     .or {
       font-family: 'Brinnan';
@@ -214,15 +200,11 @@ export default {
             text-align: center;
           }
 
-          .r-btn-container{
-            /* width: 60%; */
-            flex-direction: column;
-            align-items: center;
+         
           .r-btn {
             width: 190.59px;
             height: 55px;
           }
-        }
           .or {
             font-size: 13px;
           }
