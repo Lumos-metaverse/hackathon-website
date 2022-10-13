@@ -12,7 +12,7 @@
                     <div class="title">{{trackObj.title}}</div>
                     <div class="description">{{trackObj.description}}</div>
                     <div class="buttons">
-                        <g-link to="https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149">
+                        <g-link to="https://hack2skill.com/hack/lumos">
                         <button class="register-now">
                             REGISTER NOW <g-image style="width:9px;height:9px;margin-left:18px;" width="12" height="12" src="~/assets/arrows/purple-arrow.svg"/>
                         </button>
