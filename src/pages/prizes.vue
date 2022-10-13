@@ -114,7 +114,7 @@ export default {
                         },
                     ],
                     otherPrize: "10 projects get $500 each",
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
                 {
                     title: "æternity",
@@ -134,7 +134,7 @@ export default {
                             prize1: "Prize Rewards - $5,000",
                         },
                     ],
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
                 {
                     title: "Internet Computer",
@@ -146,31 +146,31 @@ export default {
                             prize1: "Prize Rewards - $ 10,000",
                         },
                     ],
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
                 {
                     title: "Tatum",
                     icon: require("~/assets/prizes/tatum.png"),
                     totalPrize: "$10,000",
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
                 {
                     title: "Tezos",
                     icon: require("~/assets/prizes/tezos.png"),
                     totalPrize: "$2,000",
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
                 {
                     title: "Router Protocol",
                     icon: require("~/assets/prizes/router.png"),
                     totalPrize: "$5,000",
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
                 {
                     title: "Arcana Network",
                     icon: require("~/assets/prizes/arcana.png"),
                     totalPrize: "$5,000",
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
                 {
                     title: "Fluence Network",
@@ -183,7 +183,7 @@ export default {
                             prize2: "2nd Prize - $1,500",
                         },
                     ],
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
                 {
                     title: "Komet",
@@ -196,19 +196,19 @@ export default {
                             prize2: "2nd Prize - $1,500",
                         },
                     ],
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
                 {
                     title: "AssetMantle",
                     icon: require("~/assets/prizes/asset.svg"),
                     totalPrize: "$7,777",
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
                 {
                     title: "Revise Network",
                     icon: require("~/assets/prizes/revise.svg"),
                     totalPrize: "$5,000",
-                    url: "https://unstop.com/p/buidl-for-web3-hackathon-2022-lumos-labs-413149",
+                    url: "https://hack2skill.com/hack/lumos",
                 },
             ]
         };
