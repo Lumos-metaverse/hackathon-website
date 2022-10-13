@@ -25,29 +25,29 @@
                         endDate:'2022-09-02'
                     },
                     {
-                        date:'Oct - 15th',
+                        date:'Oct - 31th',
                         title:'Registration Close',
-                        endDate:'2022-10-15'
+                        endDate:'2022-10-31'
                     },
                     {
                         date:'Sept - Oct',
                         title:'Build phase + Sponsor interactions',
-                        endDate:'2022-10-31'
-                    },
-                    {
-                        date:'Oct 31st',
-                        title:'Submission Deadline',
-                        endDate:'2022-10-31'
+                        endDate:'2022-11-01'
                     },
                     {
                         date:'Nov 1st week',
-                        title:'Evaluation',
+                        title:'Submission Deadline',
                         endDate:'2022-11-07'
                     },
                     {
                         date:'Nov 2nd week',
-                        title:'Finale/Demo Day',
+                        title:'Evaluation',
                         endDate:'2022-11-14'
+                    },
+                    {
+                        date:'Nov 3rd week',
+                        title:'Finale/Demo Day',
+                        endDate:'2022-11-21'
                     }
                 ]
             }
