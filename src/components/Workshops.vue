@@ -55,6 +55,10 @@
                                 :to="item.watchUrl">
                                 <button class="button-link watch-link">Watch Here</button>
                             </g-link>
+                            <g-link v-if="item.joinUrl" style="text-decoration: none; cursor: pointer"
+                                :to="item.joinUrl">
+                                <button class="button-link watch-link">Join Here</button>
+                            </g-link>
                         </div>
                     </div>
                 </slide>
@@ -123,14 +127,26 @@ export default {
                 // },
                 // {
                 //     image: require('~/assets/workshops/dfinity.png'),
-                //     title: "Ask Me Anything with Dfinity\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
-                //     subtitle: "Speaker: Dominic Wörner, Senior Solutions Architect, Dfinity",
-                //     date: "12th October",
-                //     time: "6:30 - 7:30 PM IST",
+                //     title: "Ask Me Anything with Aeternity\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                //     subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
+                //     date: "17th October",
+                //     time: "7 - 8 PM IST",
                 //     platform: require('~/assets/workshops/discord.png'),
                 //     registerUrl: "",
                 //     watchUrl: "",
+                //     joinUrl: "https://discord.com/events/961897117377515611/1030118010909900861"
                 // },
+                {
+                    image: require('~/assets/workshops/dfinity.png'),
+                    title: "Ask Me Anything with Dfinity\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+                    subtitle: "Speaker: Dominic Wörner, Senior Solutions Architect, Dfinity",
+                    date: "19th October",
+                    time: "6:30 - 7:30 PM IST",
+                    platform: require('~/assets/workshops/discord.png'),
+                    registerUrl: "",
+                    watchUrl: "",
+                    joinUrl: "https://discord.com/events/961897117377515611/1030024683745194055"
+                },
                 {
                     image: require('~/assets/workshops/ic1.png'),
                     title: "Intro to Building on the Internet Computer",
