@@ -644,7 +644,7 @@ export default {
             "User1 can send assets to User2 by knowing their DID (It could be Vedant.Komet or KID Vedant)",
           icon: require("~/assets/third/komet5.png"),
           // sponsor: require('~/assets/third/sponsors/solana.png'),
-          url: "https://www.notion.so/Komet-f524121061264ab483f7e98f28af08a7",
+          url: "https://bit.ly/KometxLumosPS",
         },
         {
           name: "Keep Calm and NFT-ise!",
