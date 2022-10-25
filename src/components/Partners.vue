@@ -214,6 +214,27 @@
                         logo: require('~/assets/sponsors/logos/madrasdao.jpg'),
                         url:'https://mobile.twitter.com/madrasdao'
                     },
+                    {
+                        name: 'Pune DAO',
+                        logo: require('~/assets/sponsors/logos/Punedao.png'),
+                        url:'https://twitter.com/pune_dao'
+                    },
+                    {
+                        name: 'Web3 Chennai',
+                        logo: require('~/assets/sponsors/logos/Web3_chennai.jpg'),
+                        url:'https://twitter.com/Web3Chennai'
+                    },
+                    {
+                        name: 'Web3 Kerala',
+                        logo: require('~/assets/sponsors/logos/web3_kerala.jpg'),
+                        url:'https://twitter.com/Web3_kerala'
+                    },
+                    {
+                        name: 'Web3 Panjab',
+                        logo: require('~/assets/sponsors/logos/web3panjab.png'),
+                        url:'https://twitter.com/Web3Panjab'
+                    },
+
                 ],
                 knowledgesponsors:[
                      {
