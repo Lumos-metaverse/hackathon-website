@@ -125,28 +125,6 @@ export default {
                 //     registerUrl: 'https://us06web.zoom.us/webinar/register/3816631573578/WN_78tyNkRSTDiwNaHg3yqR3w',
                 //     watchUrl: ""
                 // },
-                // {
-                //     image: require('~/assets/workshops/dfinity.png'),
-                //     title: "Ask Me Anything with Aeternity\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
-                //     subtitle: "Speaker: Marco Walz, Lead Developer Relations, æternity",
-                //     date: "17th October",
-                //     time: "7 - 8 PM IST",
-                //     platform: require('~/assets/workshops/discord.png'),
-                //     registerUrl: "",
-                //     watchUrl: "",
-                //     joinUrl: "https://discord.com/events/961897117377515611/1030118010909900861"
-                // },
-                {
-                    image: require('~/assets/workshops/dfinity.png'),
-                    title: "Ask Me Anything with Dfinity\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
-                    subtitle: "Speaker: Dominic Wörner, Senior Solutions Architect, Dfinity",
-                    date: "19th October",
-                    time: "6:30 - 7:30 PM IST",
-                    platform: require('~/assets/workshops/discord.png'),
-                    registerUrl: "",
-                    watchUrl: "",
-                    joinUrl: "https://discord.com/events/961897117377515611/1030024683745194055"
-                },
                 {
                     image: require('~/assets/workshops/ic1.png'),
                     title: "Intro to Building on the Internet Computer",
@@ -195,7 +173,7 @@ export default {
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
-                    watchUrl: "https://www.youtube.com/watch?v=INi4GRvVonU"
+                    watchUrl: "https://www.youtube.com/watch?v=WzVvjfNBsoc"
                 },
                 {
                     image: require('~/assets/workshops/routerYoutube.png'),
@@ -205,7 +183,7 @@ export default {
                     time: "7 - 8 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
-                    watchUrl: "https://www.youtube.com/watch?v=ylg3RkfCTkQ"
+                    watchUrl: "https://www.youtube.com/watch?v=n7r-pTyBkjY"
                 },
                 {
                     image: require('~/assets/workshops/workshops1.png'),
@@ -235,7 +213,7 @@ export default {
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
-                    watchUrl: "https://www.youtube.com/watch?v=qR-J7g2QE94"
+                    watchUrl: "https://www.youtube.com/watch?v=ZqDBjh-9k_k"
                 },
                 {
                     image: require('~/assets/workshops/kometYoutube.png'),
@@ -245,7 +223,7 @@ export default {
                     time: "8 - 9 PM IST",
                     platform: require('~/assets/workshops/platform.png'),
                     registerUrl: "",
-                    watchUrl: "https://www.youtube.com/watch?v=JLQSyxaJH84"
+                    watchUrl: "https://www.youtube.com/watch?v=9rqiKaNNauE"
                 },
             ],
             //Slider configuration [obj]
