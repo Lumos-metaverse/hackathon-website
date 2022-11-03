@@ -306,12 +306,12 @@ export default {
                 {
                     name: 'Bitget',
                     logo: require('~/assets/sponsors/logos/bitget.png'),
-                    url: ''
+                    url: 'https://www.bitget.com/'
                 },
                 {
                     name: 'Spheron',
                     logo: require('~/assets/sponsors/logos/spheron.png'),
-                    url: ''
+                    url: 'https://spheron.network/'
                 },
             ]
         }
