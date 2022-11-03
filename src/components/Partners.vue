@@ -2,7 +2,7 @@
     <section class="sponsors">
 
         <!-- Hack day Partners-->
-        <div class="subsection">
+        <div id="partners" class="subsection">
             <div class="subtitle">
                 Hack Day Partners
             </div>
@@ -29,7 +29,7 @@
 
         </div>
 
-        <div id="partners">
+        <div>
             <div class="subtitle">
                 Knowledge Partners
             </div>
