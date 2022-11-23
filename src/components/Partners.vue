@@ -129,22 +129,21 @@ export default {
     data() {
         return {
             partners: [
-                {
-                    name: 'Buildspace',
-                    logo: require('~/assets/sponsors/logos/buildspace.jpeg'),
-                    url: 'https://buildspace.so/'
-                },
-
+                // {
+                //     name: 'Buildspace',
+                //     logo: require('~/assets/sponsors/logos/buildspace.jpeg'),
+                //     url: 'https://buildspace.so/'
+                // },
                 {
                     name: 'Buidlers Tribe',
                     logo: require('~/assets/sponsors/logos/builders.png'),
                     url: 'https://buidlerstribe.com/'
                 },
-                {
-                    name: 'DeveloperDAO',
-                    logo: require('~/assets/sponsors/logos/D_D_logo-dark.svg'),
-                    url: 'https://www.developerdao.com/'
-                },
+                // {
+                //     name: 'DeveloperDAO',
+                //     logo: require('~/assets/sponsors/logos/D_D_logo-dark.svg'),
+                //     url: 'https://www.developerdao.com/'
+                // },
                 {
                     name: 'The Product House',
                     logo: require('~/assets/sponsors/logos/product.png'),
